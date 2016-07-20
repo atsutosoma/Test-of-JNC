@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../xsl/imgfile.xsl"?>
+<!DOCTYPE imgfile.content SYSTEM "../../../dtd/text.ent">
+<imgfile.content module="Product_data_equivalence_definition" file="armexpg2.xml">
+<img src="armexpg2.gif">
+<img.area shape="rect" coords="90,231,321,277" href="../product_data_equivalence_definition/sys/4_info_reqs.xml#Product_data_equivalence_definition_arm.equivalence_date_or_date_time_item" />
+<img.area shape="rect" coords="339,242,670,286" href="../product_data_equivalence_definition/sys/4_info_reqs.xml#Product_data_equivalence_definition_arm.equivalence_organization_or_person_in_organization_item" />
+<img.area shape="rect" coords="48,719,419,744" href="../product_data_equivalence_definition/sys/4_info_reqs.xml#Product_data_equivalence_definition_arm.used_equivalence_representation_select" />
+<img.area shape="rect" coords="33,10,346,35" href="../product_data_equivalence_definition/sys/4_info_reqs.xml#Product_data_equivalence_definition_arm.equivalence_product_data_select" />
+<img.area shape="rect" coords="85,166,325,216" href="../date_time_assignment/sys/4_info_reqs.xml#Date_time_assignment_arm.date_or_date_time_item" />
+<img.area shape="rect" coords="331,146,678,216" href="../person_organization_assignment/sys/4_info_reqs.xml#Person_organization_assignment_arm.organization_or_person_in_organization_item" />
+<img.area shape="rect" coords="470,351,684,403" href="../product_data_equivalence_definition/sys/4_info_reqs.xml#Product_data_equivalence_definition_arm.data_equivalence_definition_relationship" />
+<img.area shape="rect" coords="30,625,437,658" href="../product_data_equivalence_definition/sys/4_info_reqs.xml#Product_data_equivalence_definition_arm.data_equivalence_definition_representation_relationship" />
+<img.area shape="rect" coords="14,85,365,118" href="../product_data_equivalence_definition/sys/4_info_reqs.xml#Product_data_equivalence_definition_arm.product_data_and_data_equivalence_relationship" />
+<img.area shape="rect" coords="10,348,235,404" href="../product_data_equivalence_definition/sys/4_info_reqs.xml#Product_data_equivalence_definition_arm.data_equivalence_definition" />
+<img.area shape="rect" coords="282,531,561,564" href="../product_data_equivalence_definition/sys/4_info_reqs.xml#Product_data_equivalence_definition_arm.software_for_data_equivalence_check" />
+</img>
+</imgfile.content>
