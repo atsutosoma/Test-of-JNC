@@ -1,0 +1,31 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <TITLE>Integrated Resource: family_schema</TITLE>
+   </HEAD>
+   <body>
+      <h2>Schema: family_schema</h2><code><br><br><a name="family_schema">SCHEMA <b>family_schema</b>;</a><br><br></code><code><br><A NAME="family_schema.female">ENTITY <b>Female</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="#family_schema.person">Person</A>);<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="family_schema.male">ENTITY <b>Male</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="#family_schema.person">Person</A>);<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="family_schema.person">ENTITY <b>Person</b></A><br>
+         &nbsp;&nbsp;ABSTRACT SUPERTYPE
+         
+         OF&nbsp;(ONEOF&nbsp;(<A HREF="#family_schema.male">Male</A>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#family_schema.female">Female</A>));<br>
+         &nbsp;&nbsp;<A NAME="family_schema.person.name">name : </A>STRING;<br>
+         &nbsp;&nbsp;<A NAME="family_schema.person.mother">mother : </A>
+         OPTIONAL 
+         <A HREF="#family_schema.female">Female</A>;<br>
+         &nbsp;&nbsp;<A NAME="family_schema.person.father">father : </A>
+         OPTIONAL 
+         <A HREF="#family_schema.male">Male</A>;<br>
+         
+         END_ENTITY;<br></code><code><br>
+         END_SCHEMA;&nbsp;&nbsp;--&nbsp;family_schema<br></code></body>
+</HTML>

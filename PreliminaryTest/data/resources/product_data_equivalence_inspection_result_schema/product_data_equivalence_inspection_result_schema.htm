@@ -1,0 +1,81 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <TITLE>Integrated Resource: product_data_equivalence_inspection_result_schema</TITLE>
+   </HEAD>
+   <body>
+      <h2>Schema: product_data_equivalence_inspection_result_schema</h2>
+      <p><i>Source : </i></p><code><br><br><a name="product_data_equivalence_inspection_result_schema">SCHEMA <b>product_data_equivalence_inspection_result_schema</b>;</a><br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema">product_data_equivalence_criteria_schema</A><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error IF-3: The reference parameter for product_data_equivalence_criteria_schema has not been specified. Add             
+               @reference (e.g. ISO 10303-***) to data/resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.xml.</i></font><br><br>&nbsp;&nbsp;(<A HREF="../../../data/resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema.data_equivalence_criterion">data_equivalence_criterion</A>,<br>
+         &nbsp;&nbsp;
+         <A HREF="../../../data/resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema.data_equivalence_inspection_requirement">data_equivalence_inspection_requirement</A>);
+         <br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema">product_data_quality_inspection_result_schema</A>&nbsp;&nbsp;&nbsp;-- ISO 10303-59<br>&nbsp;&nbsp;(<A HREF="../../../data/resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.statistical_value_type">statistical_value_type</A>);
+         <br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema">representation_schema</A>&nbsp;&nbsp;&nbsp;-- ISO 10303-43<br>&nbsp;&nbsp;(<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation">representation</A>,<br>
+         &nbsp;&nbsp;
+         <A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item">representation_item</A>,<br>
+         &nbsp;&nbsp;
+         <A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item_relationship">representation_item_relationship</A>);
+         <br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema">support_resource_schema</A>&nbsp;&nbsp;&nbsp;-- ISO 10303-41<br>&nbsp;&nbsp;(<A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>);
+         <br><br></code><code><br><A NAME="product_data_equivalence_inspection_result_schema.inspected_equivalence_element_select">TYPE </A><b>inspected_equivalence_element_select</b> =
+         
+         EXTENSIBLE
+         
+         GENERIC_ENTITY
+         
+         
+         SELECT;<br>
+         END_TYPE; 
+         <br></code><code><br><A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_criterion_report">ENTITY <b>data_equivalence_inspection_criterion_report</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_report">data_equivalence_inspection_report</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_criterion_report.statistical_values">statistical_values : </A>SET[1:2] OF <A HREF="#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_criterion_report_item">data_equivalence_inspection_criterion_report_item</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_criterion_report_item">ENTITY <b>data_equivalence_inspection_criterion_report_item</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item">representation_item</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_criterion_report_item.statistical_value">statistical_value : </A>INTEGER;<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_criterion_report_item.value_type">value_type : </A><A HREF="../../../data/resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.statistical_value_type">statistical_value_type</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_instance_report">ENTITY <b>data_equivalence_inspection_instance_report</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_report">data_equivalence_inspection_report</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_instance_report.inspected_instances">inspected_instances : </A>LIST[1:?] OF <A HREF="#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_instance_report_item">data_equivalence_inspection_instance_report_item</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_instance_report_item">ENTITY <b>data_equivalence_inspection_instance_report_item</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item">representation_item</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_instance_report_item.inspected_elements">inspected_elements : </A>SET[1:?] OF <A HREF="#product_data_equivalence_inspection_result_schema.inspected_equivalence_element_select">inspected_equivalence_element_select</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_report">ENTITY <b>data_equivalence_inspection_report</b></A><br>
+         &nbsp;&nbsp;SUPERTYPE OF 
+         (ONEOF&nbsp;(<A HREF="#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_criterion_report">data_equivalence_inspection_criterion_report</A>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_instance_report">data_equivalence_inspection_instance_report</A>))<br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item">representation_item</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_report.inspection_result">inspection_result : </A><A HREF="#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result">data_equivalence_inspection_result</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result">ENTITY <b>data_equivalence_inspection_result</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item">representation_item</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result.criterion_inspected">criterion_inspected : </A><A HREF="../../../data/resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema.data_equivalence_criterion">data_equivalence_criterion</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_representation">ENTITY <b>data_equivalence_inspection_result_representation</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation">representation</A>);<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_with_judgement">ENTITY <b>data_equivalence_inspection_result_with_judgement</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result">data_equivalence_inspection_result</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_with_judgement.judgement">judgement : </A>BOOLEAN;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_report_measurement_association">ENTITY <b>data_equivalence_report_measurement_association</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item_relationship">representation_item_relationship</A>);<br>
+         &nbsp;&nbsp;SELF\<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item_relationship">representation_item_relationship</A>.<A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_report_measurement_association.relating_representation_item">relating_representation_item : </A><A HREF="../../../data/resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema.data_equivalence_inspection_requirement">data_equivalence_inspection_requirement</A>;<br>
+         &nbsp;&nbsp;SELF\<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item_relationship">representation_item_relationship</A>.<A NAME="product_data_equivalence_inspection_result_schema.data_equivalence_report_measurement_association.related_representation_item">related_representation_item : </A><A HREF="#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_report">data_equivalence_inspection_report</A>;<br>
+         
+         END_ENTITY;<br></code><code><br>
+         END_SCHEMA;&nbsp;&nbsp;--&nbsp;product_data_equivalence_inspection_result_schema<br></code></body>
+</HTML>

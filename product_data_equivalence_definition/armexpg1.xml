@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../xsl/imgfile.xsl"?>
+<!DOCTYPE imgfile.content SYSTEM "../../../dtd/text.ent">
+<imgfile.content module="Product_data_equivalence_definition" file="armexpg1.xml">
+<img src="armexpg1.gif">
+<img.area shape="rect" coords="260,18,527,67" href="../person_organization_assignment/armexpg1.xml" />
+<img.area shape="rect" coords="10,10,208,59" href="../date_time_assignment/armexpg1.xml" />
+<img.area shape="rect" coords="83,192,379,241" href="../product_data_equivalence_definition/armexpg2.xml" />
+</img>
+</imgfile.content>

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <TITLE>Integrated Resource: product_data_equivalence_definition_schema</TITLE>
+   </HEAD>
+   <body>
+      <h2>Schema: product_data_equivalence_definition_schema</h2>
+      <p><i>Source : </i></p><code><br><br><a name="product_data_equivalence_definition_schema">SCHEMA <b>product_data_equivalence_definition_schema</b>;</a><br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema">product_data_equivalence_criteria_schema</A><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error IF-3: The reference parameter for product_data_equivalence_criteria_schema has not been specified. Add             
+               @reference (e.g. ISO 10303-***) to data/resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.xml.</i></font><br><br>&nbsp;&nbsp;(<A HREF="../../../data/resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema.data_equivalence_criteria_representation">data_equivalence_criteria_representation</A>);
+         <br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.htm#product_data_equivalence_inspection_result_schema">product_data_equivalence_inspection_result_schema</A><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error IF-3: The reference parameter for product_data_equivalence_inspection_result_schema has not been specified. Add    
+               @reference (e.g. ISO 10303-***) to data/resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.xml.</i></font><br><br>&nbsp;&nbsp;(<A HREF="../../../data/resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.htm#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_representation">data_equivalence_inspection_result_representation</A>);
+         <br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema">product_definition_schema</A>&nbsp;&nbsp;&nbsp;-- ISO 10303-41<br>&nbsp;&nbsp;(<A HREF="../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition_or_reference">product_definition_or_reference</A>,<br>
+         &nbsp;&nbsp;
+         <A HREF="../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition_relationship">product_definition_relationship</A>);
+         <br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema">support_resource_schema</A>&nbsp;&nbsp;&nbsp;-- ISO 10303-41<br>&nbsp;&nbsp;(<A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>);
+         <br><br></code><code><br><A NAME="product_data_equivalence_definition_schema.equivalence_product_data_select">TYPE </A><b>equivalence_product_data_select</b> =
+         
+         
+         SELECT<br>
+         &nbsp;&nbsp;&nbsp;(<A HREF="../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition_or_reference">product_definition_or_reference</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition_relationship">product_definition_relationship</A>);<br>
+         END_TYPE; 
+         <br></code><code><br><A NAME="product_data_equivalence_definition_schema.used_equivalence_representation_select">TYPE </A><b>used_equivalence_representation_select</b> =
+         
+         
+         SELECT<br>
+         &nbsp;&nbsp;&nbsp;(<A HREF="../../../data/resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema.data_equivalence_criteria_representation">data_equivalence_criteria_representation</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="../../../data/resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.htm#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_representation">data_equivalence_inspection_result_representation</A>);<br>
+         END_TYPE; 
+         <br></code><code><br><A NAME="product_data_equivalence_definition_schema.data_equivalence_definition">ENTITY <b>data_equivalence_definition</b></A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_definition_schema.data_equivalence_definition.description">description : </A><A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_equivalence_definition_schema.data_equivalence_definition_relationship">ENTITY <b>data_equivalence_definition_relationship</b></A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_definition_schema.data_equivalence_definition_relationship.description">description : </A><A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_definition_schema.data_equivalence_definition_relationship.relating_data_equivalence_definition">relating_data_equivalence_definition : </A><A HREF="#product_data_equivalence_definition_schema.data_equivalence_definition">data_equivalence_definition</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_definition_schema.data_equivalence_definition_relationship.related_data_equivalence_definition">related_data_equivalence_definition : </A><A HREF="#product_data_equivalence_definition_schema.data_equivalence_definition">data_equivalence_definition</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship">ENTITY <b>data_equivalence_definition_representation_relationship</b></A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship.description">description : </A><A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship.definition">definition : </A><A HREF="#product_data_equivalence_definition_schema.data_equivalence_definition">data_equivalence_definition</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship.used_representation">used_representation : </A><A HREF="#product_data_equivalence_definition_schema.used_equivalence_representation_select">used_equivalence_representation_select</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship">ENTITY <b>product_data_and_data_equivalence_relationship</b></A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship.description">description : </A><A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship.product_data">product_data : </A><A HREF="#product_data_equivalence_definition_schema.equivalence_product_data_select">equivalence_product_data_select</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship.data_equivalence">data_equivalence : </A><A HREF="#product_data_equivalence_definition_schema.data_equivalence_definition">data_equivalence_definition</A>;<br>
+         
+         END_ENTITY;<br></code><code><br>
+         END_SCHEMA;&nbsp;&nbsp;--&nbsp;product_data_equivalence_definition_schema<br></code></body>
+</HTML>

@@ -1,0 +1,170 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="schema.DC" href="http://www.dublincore.org/documents/2003/02/04/dces/">
+      <META name="DC.Title" content="&#xA;&#xA;  Integrated application resource">
+      <META name="DC.Dates" content="">
+      <META name="DC.Published" content="">
+      <META name="DC.Contributor" content="Hiraoka, Hiroyuki">
+      <META name="DC.Creator" content="Ohtaka, Akihiko">
+      <META name="DC.Description" content="The integrated resource family">
+      <META name="DC.Subject" content="STEP, ISO 10303, integrated resource, #keywords#">
+      <META name="DC.Identifier" content="ISO/TC 184/SC 4/WG 12&nbsp;N0000">
+      <META name="DC.Replaces" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.version" content="1">
+      <META name="SC4.checklist.internal_review" content="ISO/TC 184/SC4/WG12 N">
+      <META name="SC4.checklist.project_leader" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.checklist.convener" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="STEPMOD.resource.rcs.date" content="Date: ">
+      <META name="STEPMOD.resource.rcs.revision" content="Revision: ">
+      <TITLE>ISO/WD 10303-100</TITLE>
+   </HEAD>
+   <BODY>
+      <TABLE cellspacing="0" border="0" width="100%">
+         <TR>
+            <TD><small><a href="../sys/isocover.htm">ISO cover</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../repository_index.htm">Modules Index</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../ballots/index.htm">Ballot home</a></small></TD>
+         </TR>
+         <TR>
+            <TD valign="MIDDLE"><B>
+                  
+                  	  Integrated application resource: Family</B></TD>
+            <TD valign="MIDDLE" align="RIGHT"><b>ISO/WD 10303-100</b></TD>
+         </TR>
+      </TABLE>
+      <TABLE border="1" cellspacing="1" width="100%">
+         <TR>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/cover.htm">Cover page</A><BR><A HREF="../sys/contents.htm">Table of contents</A><BR><A HREF="../sys/cover.htm#copyright">Copyright</A><BR><A HREF="../sys/foreword.htm">Foreword</A><BR><A HREF="../sys/introduction.htm">Introduction</A><BR><A HREF="../sys/1_scope.htm">1 Scope</A><BR><A HREF="../sys/2_refs.htm">2 Normative references</A><BR><A HREF="../sys/3_defs.htm">
+                     3 Terms, definitions and abbreviated terms
+                     </A><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#termsdefns">3.1 Terms and definitions</a><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#abbrv">3.2 Abbreviated terms</a><br></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/4_schema.htm">4 Family</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#gen">4.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#funcon">4.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#entities">4.3 Family entity definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/a_short_names.htm">A Short names of entities</A><BR><A HREF="../sys/b_obj_reg.htm">B Information object
+                     registration</A><BR><A HREF="../sys/c_exp.htm">C Computer interpretable listings</A><BR><A HREF="../sys/d_expg.htm">
+                     D EXPRESS-G diagrams
+                     </A><BR><A HREF="../sys/tech_discussion.htm#tech_discssion">E Technical discussion</A><BR><A HREF="../sys/examples.htm">F  Examples</A><BR><A HREF="../sys/biblio.htm#bibliography">Bibliography</A><BR><A HREF="../sys/resdocindex.htm">Index</A><BR></p>
+            </TD>
+         </TR>
+      </TABLE>
+      <H2><A NAME="schema$schema_no+3">4 Family schema</A></H2>
+      <H2><A NAME="gen">4.1 General</A></H2>
+            
+      <p>#.................................................<b>introduction</b>.................................................#.
+      </p>
+          This clause defines the information requirements to which implementations shall conform using the EXPRESS language as defined
+      in ISO 10303-11. The following EXPRESS declaration begins the <b>family_schema</b>
+      and identifies the necessary external references.
+      	    
+      <p></p><u>EXPRESS specification: </u><code><br><br>
+         *)<br><a name="family_schema">
+            	SCHEMA family_schema;</a></code><H2><A NAME="funcon">4.2 Fundamental concepts and assumptions</A></H2>
+            
+      <p>#.................................................<b>fund_cons</b>.................................................#.
+      </p>
+          
+      <h2><A NAME="entities">4.3 family_schema entity definition</A></h2>
+      <h2><A NAME="family_schema.female">4.3.1 Female</A>
+         &nbsp;&nbsp;<a href="../../../resources/family_schema/family_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+        A <b>Female</b> is a type of
+              
+              <a href="../../../resources/family_schema/family_schema.htm#family_schema.person"><b>Person</b></a>.
+      #.............................descriptions............................#.
+      
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY Female<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="#family_schema.person">Person</A>);<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <h2><A NAME="family_schema.male">4.3.2 Male</A>
+         &nbsp;&nbsp;<a href="../../../resources/family_schema/family_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+              A <b>Male</b> is a type of
+              
+              <a href="../../../resources/family_schema/family_schema.htm#family_schema.person"><b>Person</b></a>.
+              #.............................descriptions............................#.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY Male<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="#family_schema.person">Person</A>);<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <h2><A NAME="family_schema.person">4.3.3 Person</A>
+         &nbsp;&nbsp;<a href="../../../resources/family_schema/family_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+              A <b>Person</b> is a
+              #.............................descriptions............................#.
+            
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY Person<br>
+            &nbsp;&nbsp;ABSTRACT SUPERTYPE
+            
+            OF&nbsp;(ONEOF&nbsp;(<A HREF="#family_schema.male">Male</A>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#family_schema.female">Female</A>));<br>
+            
+            
+            &nbsp;&nbsp;name : STRING;<br>
+            
+            
+            &nbsp;&nbsp;mother : 
+            OPTIONAL 
+            <A HREF="#family_schema.female">Female</A>;<br>
+            
+            
+            &nbsp;&nbsp;father : 
+            OPTIONAL 
+            <A HREF="#family_schema.male">Male</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="family_schema.person.name">name:
+               </a></b>
+                 the words by which the <b>Person</b> is known.
+                 #.............................descriptions............................#.
+               
+      </p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Attr1: The first word of the attribute                     definition should be lower case. It is: T</i></font><br><p class="expressdescription"><b><a name="family_schema.person.mother">mother:
+               </a></b>
+               The value of this attribute need not be specified.
+                 #.............................descriptions............................#.
+             
+      </p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Attr1: The first word of the attribute                     definition should be lower case. It is: T</i></font><br><p class="expressdescription"><b><a name="family_schema.person.father">father:
+               </a></b>
+               The value of this attribute need not be specified.
+                 #.............................descriptions............................#.
+             
+      </p><code><br><br>
+         *)<br>
+         END_SCHEMA;&nbsp;&nbsp;--&nbsp;family_schema<br>(*
+         </code><br><br><p>&copy; ISO  &#8212; All rights reserved</p>
+   </BODY>
+</HTML>

@@ -1,0 +1,219 @@
+<h1>Product data equivalence criteria schema</h1>
+<h2>product data equivalence criteria type definitions</h2>
+<b>detailed_report_request_type</b>
+A<b> detailed_report_request_type</b> is a type to allow selection of required type of detailed inspection result report. It has two enumerated values. One is <b>INSPECTED_ELEMENT</b> that requests instance report on inspected data element irrespective of if it has non-equivalent defect or not. The other is <b>NON-EQUIVALENCT_ELEMENT</b> that requests instance report only for instances having non-equivalent defect The selection of this type affects to <b>data_equivalence_inspection_instance_report</b> as defined in clause 6.4.7
+NOTE This type is used in the definition of <b>detailed_report_request</b> entity defined in clause 5.4.10. 
+EXPRESS specification:
+*)
+ TYPE detailed_report_request_type = ENUMERATION OF
+  (INSPECTED_ELEMENT,
+   NON-EQUIVALENCE_ELEMENT);
+ END_TYPE; 
+(*
+Enumerated item definitions:
+<b>INSPECTED_ELEMENT</b>: A detailed report is required on all the inspected elements represented by<b> data_equivalence_inspection_instance_report_item</b>.
+<b>NON-EQUIVALENCE_ELEMENT</b>: A detailed report is required only on elements with non-equivalence defects represented by <b>data_equivalence_inspection_instance_report_item</b>.
+<b>preferred_ordering</b>
+A <b>preferred_ordering</b> has two enumerated values, which determines in what order to present detailed report. 
+<note id="1">This type is used in the definition of <b>detailed_report_request</b> entity defined in clause 5.4.10.</note> 
+EXPRESS specification:
+*)
+ TYPE preferred_ordering = ENUMERATION OF
+  (EXTREMITY_ORDER,
+   DETECTED_ORDER);
+ END_TYPE;
+ (*
+Enumerated item definitions:
+<b>EXTREMITY_ORDER</b>: The inspected data shall be reported in extremity order. The most extreme data shall be reported first.
+<note id="2">Whether the largest value or the smallest value is the most extreme data depends on the criterion.</note>
+<b>DETECTED_ORDER</b>: The inspected data shall be reported in detected order.
+<b>summary_report_request_type</b>
+A <b>summary_report_requet_type</b> is a type to allow selection of required type of summarized inspection result report. It has five enumerated values. The selection of this type affects to <b>data_equivalence_inspection_criterion_report_item</b> as defined in clause 6.4.6.
+<note>This type is used in the definition of <b>summary_report_request</b> entity defined in clause 5.4.9.</note> 
+EXPRESS specification:
+*)
+ TYPE summary_report_request_type = ENUMERATION OF
+  (UNSPECIFIED,
+   CONCLUSION_ONLY,
+   NUMBER_OF_NON-EQUVALENCE_DEFECTS,
+   NUMBER_OF_INSPECTIONS_AND_CONCLUSION,
+   FULL_STATISTICS);
+ END_TYPE; 
+(*
+Enumerated item definitions:
+<b>UNSPECIFIED</b>: Report type is not specified.
+<b>CONCLUSION_ONLY</b>: Only conclusion showing non-equivalent defect free or not is requested.
+<b>NUMBER_OF_NON-EQUIVALENT_DEFECTS</b>: Report on the number of non-equivalent defect is requested.
+<b>NUMBER_OF_INSPECTIONS_AND_CONCLUSION</b>: Report on the number of inspected elements and conclusion is requested.
+<b>FULL_STATISTICS</b>: All types of information, namely, conclusion, the number of inspected elements and the number of non-equivalent defect are requested.
+<h2>product data equivalence criteria entity definitions</h2>
+<b>data_equivalence_criteria_representation</b>
+A <b>data_equivalence_criteria_representation</b> represents a selected set of criteria on data equivalence. An instance of this entity may be used independently to represent only equivalence requirement or may be used together with <b>data_equivalence_inspection_result_representation</b> as defined in clause 6 that represents results of inspection against particular product data.
+EXPRESS specification:
+*)
+ ENTITY data_equivalence_criteria_representation
+  SUBTYPE OF(representation);
+  WHERE
+   WR1: SIZEOF( QUERY( q <* SELF\representation.items|
+                'PRODUCT_DATA_EQUIVALENCE_REPRESENTATION_SCHEMA.' +
+                'DATA_EQUIVALENCE_CRITERION' IN TYPEOF(q))) > 0;
+ END_ENTITY;
+(*
+Formal propositions:
+<b>WR1</b>: At least one instance of <b>representation_item</b> referenced by a <b>data_equivalence_criteria_representation</b> shall be of type <b>data_equivalence_criterion</b>.
+<b>data_equivalence_criterion</b>
+A <b>data_equivalence_criterion</b> represents a criterion that is an aspect of the requirement on product data equivalence. 
+EXPRESS specification:
+*)
+ ENTITY data_equivalence_criterion
+  SUBTYPE OF(representation_item);
+   report_request_types: SET [1:2] OF data_equivalence_report_type;
+  WHERE
+   WR1: SIZEOF(USEDIN(SELF,
+      'PRODUCT_DATA_EQUIVALENCE_INSPECTION_RESULT_SCHEMA.'+
+      'DATA_EQUIVALENCE_INSPECTION_RESULT_REPRESENTATION.ITEMS')
+      )=0;
+ END_ENTITY;
+(*
+Attribute definitions:
+<b>report_request_types</b>: the required type of the inspection report for this equivalence criterion.
+Formal propositions:
+<b>WR1</b>: The <b>data_equivalence_criterion</b> shall not be a constituent of the <b>data_equivalence_inspection_result_representation</b>.
+<b>data_equivalence_assessment_specification</b>
+A <b>data_equivalence_assessment_specification</b> represents a specification to be applied to evaluate inspection results for each criterion. 
+EXPRESS specification:
+*)
+ ENTITY data_equivalence_assessment_specification;
+   description: text;
+ END_ENTITY;
+(*
+Attribute definitions:
+<b>description</b>: A textual description that characterizes the <b>data_equivalence_assessment_specification</b>.
+<b>data_equivalence_inspection_requirement</b>
+A <b>data_equivalence_inspection_requirement</b> represents requirements on acceptable inspection method for inspecting whether pertaining criterion on data equivalence is satisfied (non-equivalent defect is existing) or not.
+EXPRESS specification:
+*)
+ ENTITY data_equivalence_inspection_requirement
+  SUBTYPE OF(representation_item);
+  WHERE
+   WR1: SIZEOF(USEDIN(SELF,
+      'PRODUCT_DATA_EQUIVALENCE_INSPECTION_RESULT_SCHEMA.'+
+      'DATA_EQUIVALENCE_INSPECTION_RESULT_REPRESENTATION.ITEMS')
+      )=0;
+ END_ENTITY;
+(*
+Formal propositions:
+<b>WR1</b>: <b>data_equivalence_inspection_requirement</b> shall not be a constituent of the <b>data_equivalence_inspection_result_representation</b>.
+<b>data_equivalence_criterion_assessment_association</b>
+A <b>data_equivalence_criterion_assessment_association</b> represents a relationship between a criterion and an assessment specification. 
+<note>For a criterion that does not require pertaining assessment specification, this entity will not be instantiated. For a criterion that requires pertaining two or more assessment specifications, multiple instances of this entity will be created to represent relationship to each assessment specification. This entity may also be used for relating an assessment specification to two or more criteria sharing that assessment specification.</note>
+EXPRESS specification:
+*)
+ ENTITY data_equivalence_criterion_assessment_association;
+   assessment_specification : data_equivalence_assessment_specification;
+   criterion: data_equivalence_criterion;
+ END_ENTITY;
+ (*
+Attribute definitions:
+<b>criterion</b>: the criterion that requires <b>assessment_specification</b> as its assessment specification.
+<b>assessment_specification</b>: the assessment specification used for the <b>criterion</b>.
+<b>data_equivalence_criterion_inspection_association</b>
+A <b>data_equivalence_criterion_inspection_association</b> represents a relationship between a criterion and its pertaining inspection requirement. 
+<note>For a criterion that does not require pertaining inspection requirement, this entity will not be instantiated. For a criterion that requires pertaining two or more inspection requirements, multiple instances of this entity will be created to represent relationship to each inspection requirement. This entity may also be used for relating an inspection requirement to two or more criteria sharing that inspection requirement.</note>
+i
+EXPRESS specification:
+*)
+ ENTITY data_equivalence_criterion_inspection_association
+  SUBTYPE OF(representation_item_relationship);
+   SELF\representation_item_relationship.relating_representation_item :
+      data_equivalence_criterion;
+   SELF\representation_item_relationship.related_representation_item :
+      data_equivalence_inspection_requirement;
+ END_ENTITY;
+(*
+Attribute definitions:
+<b>SELF\representation_item_relationship.relating_representation_item</b>: the criterion that requires associated inspection requirement.
+<b>SELF\representation_item_relationship.related_representation_item</b>: the inspection requirement 
+used for the <b>criterion</b>.
+<b>data_equivalence_assessment_inspection_association</b>
+A <b>data_equivalence_assessment_inspection_association</b> represents a relationship between an inspection requirement and its corresponding assessment specification. 
+<note>This entity will be used for specifying which assessment specification shall be used for an inspection requirement when multiple inspection requirements or multiple assessment specifications are specified for a criterion,.</note>
+EXPRESS specification:
+*)
+ ENTITY data_equivalence_assessment_inspection_association;
+   assessment_specification : 
+       data_equivalence_criterion_assessment_association;
+   inspection_requirement : 
+       data_equivalence_criterion_inspection_association;
+  WHERE
+   WR1: SELF.inspection_requirement\representation_item_relationship.
+      relating_representation_item :=:
+      SELF.assessment_specification.criterion;
+ END_ENTITY;
+ (*
+Attribute definitions:
+<b>inspection_requirement</b>: the relationship in which the inspection requirement concerned participates.
+<b>assessment_specification</b>: the relationship in which the assessment specification concerned participates.
+Formal propositions:
+<b>WR1</b>: The criterion specified in <b>inspection_requirement</b> shall be identical with the criterion specified in <b>assessment_specification</b>.
+<b>data_equivalence_report_request</b>
+A <b>data_equivalence_report_request</b> represents the specification of a report to be generated as a result of inspection for a <b>data_equivalence_criterion</b>. It is either a <b>summary_equivalence_report_request</b> requiring a summarized report or a <b>detailed_equivalence_report_request</b> requiring a report on the details of the inspection result.
+EXPRESS specification:
+*)
+ ENTITY data_equivalence_report_request
+  ABSTRACT SUPERTYPE OF (ONEOF(summary_equivalence_report_request,
+ detailed_equivalence_report_request));
+   description : text;
+   criterion_of_report_request : data_equivalence_criterion;
+ END_ENTITY;
+ (*
+Attribute definitions:
+<b>description</b>: A textual description characterizing the <b>data_equivalence_report_request</b>.
+<b>criterion_of_report_request</b>: A <b>data_equivalence_criterion</b> concerned.
+<b>summary_equivalence_report_request</b>
+A <b>summary_equivalence_report_request</b> requests a summarized inspection report on the criterion concerned. An entity <b>data_equivalence_inspection_criterion_report</b> as defined in <b>product_data_equivalence_inspection_result_schema</b> shall be instantiated as a summarized report.
+EXPRESS specification:
+*)
+ ENTITY summary_equivalence_report_request
+  SUBTYPE OF(data_equivalence_report_request);
+   summary_report_request_type : summary_report_request_type;
+ END_ENTITY;
+(*
+Attribute definitions:
+<b>summary_report_request_type</b>: <b>summary_report_report_type</b> to select one of <b>UNSPECIFIED, CONCLUSION_ONLY, NUMBER_OF_NON-EQUIVALENT_DEFECTS, NUMBER_OF_INSPECTIONS_AND_CONCLUSION</b> and <b>FULL_STATISTICS</b>.
+<b>detailed_equivalence_report_request</b>
+A <b>detailed_equivalence_report_request</b> requests a detailed inspection report on the criterion concerned. In order to control the volume of the report and report sequence, two attributes are provided.
+EXAMPLE What entity instance caused non-equivalent defect and what is the inspected value calculated will be a typical detailed report that may be used for improving the product model concerned.
+<note><b>data_equivalence_inspection_instance_report</b> defined in <b>product_data_equivalence_inspection_result_schema</b> shall be instantiated as the detailed report corresponding to the specification defined in this entity.</note>
+EXPRESS specification:
+*)
+ ENTITY detailed_equivalence_report_request
+  SUBTYPE OF(data_quality_report_request);
+   detailed_report_request_type : detailed_report_request_type;
+   report_sequence      :preferred_ordering;
+ END_ENTITY;
+ (*
+Attribute definitions:
+<b>detailed_report_request_type</b>: <b>detailed_report_request_type</b> to select either <b>INSPECTED_ELEMENT</b> or <b>NON-EQUIVALENT_ELEMENT</b>.
+<b>report_sequence</b>: <b>preferred_ordering</b> to select either <b>EXTREMITY_ORDER</b> or <b>DETECTED_ORDER</b>.
+<b>detailed_equivalence_report_request_with_number_of_data</b>
+A <b>detailed_equivalence_report_request_with_number_of_data</b> is a type of <b>detailed_report_request</b> that controls maximum number of report.
+EXPRESS specification:
+*)
+ ENTITY detailed_equivalence_report_request_with_number_of_data
+  SUBTYPE OF(detailed_report_request);
+   number_of_data : INTEGER;
+  WHERE
+   WR1 :SELF\detailed_equivalence_report_request.detailed_report_request_type
+      <> INFERIOR_QUALITY_ELEMENT;
+ END_ENTITY;
+(*
+Attribute definitions:
+<b>number_of_data</b>: An INTEGER value to control maximum number of report
+Formal propositions:
+<b>WR1</b>: The value of the attribute <b>detailed_report_request_type</b> of the supertype <b>detailed_equivalence_report_request</b> shall not be <b>NON-EQUIVALENT_ELEMENT</b>.
+EXPRESS specification:
+*)
+END_SCHEMA; -- end product_data_equivalence_criteria_schema
+(*
+

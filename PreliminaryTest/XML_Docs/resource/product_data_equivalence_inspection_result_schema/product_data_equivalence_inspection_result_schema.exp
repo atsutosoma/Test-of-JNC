@@ -1,0 +1,94 @@
+(*
+
+ISO 10303 TC184/SC4/WG12 Nxxxx
+
+EXPRESS Source:
+ISO 10303-62 ed1 Equivalence validation of product data - Product data equivalence inspection result schema
+
+The following permission notice and disclaimer shall be included in all copies of this EXPRESS schema ("the Schema"), 
+and derivations of the Schema:
+
+Copyright ISO 2014  All rights reserved
+Permission is hereby granted, free of charge in perpetuity, to any person obtaining a copy of the Schema,
+to use, copy, modify, merge and distribute free of charge, copies of the Schema for the purposes of developing, 
+implementing, installing and using software based on the Schema, and to permit persons to whom the Schema is furnished to do so, 
+subject to the following conditions:
+
+THE SCHEMA IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SCHEMA OR THE 
+USE OR OTHER DEALINGS IN THE SCHEMA.
+
+In addition, any modified copy of the Schema shall include the following notice:
+
+THIS SCHEMA HAS BEEN MODIFIED FROM THE SCHEMA DEFINED IN
+ISO 10303-62 ed1 Equivalence validation of product data - Product data equivalence inspection result schema
+AND SHOULD NOT BE INTERPRETED AS COMPLYING WITH THAT STANDARD
+*)
+
+SCHEMA product_data_equivalence_inspection_result_schema '{iso standard 10303 part(62) version(1) object(1) product_data_equivalence_inspection_result_schema(1)}';
+
+  REFERENCE FROM product_data_equivalence_criteria_schema
+    (data_equivalence_criterion,data_equivalence_inspection_requirement);
+    
+  REFERENCE FROM product_data_quality_inspection_result_schema
+    (statistical_value_type);
+
+  REFERENCE FROM representation_schema
+    (representation,representation_item,representation_item_relationship);
+
+  REFERENCE FROM support_resource_schema (text);
+
+  TYPE inspected_equivalence_element_select = EXTENSIBLE GENERIC_ENTITY SELECT;
+  END_TYPE;
+
+  ENTITY data_equivalence_inspection_criterion_report
+    SUBTYPE OF(data_equivalence_inspection_report);
+      statistical_values : SET [1:2] OF data_equivalence_inspection_criterion_report_item;
+  END_ENTITY;
+
+  ENTITY data_equivalence_inspection_criterion_report_item
+    SUBTYPE OF(representation_item);
+      statistical_value : INTEGER;
+      value_type        : statistical_value_type;
+  END_ENTITY;
+
+  ENTITY data_equivalence_inspection_instance_report
+    SUBTYPE OF(data_equivalence_inspection_report);
+      inspected_instances : LIST [1:?] OF data_equivalence_inspection_instance_report_item;
+  END_ENTITY;
+
+  ENTITY data_equivalence_inspection_instance_report_item
+    SUBTYPE OF(representation_item);
+     inspected_elements : SET [1:?] OF inspected_equivalence_element_select;
+  END_ENTITY;
+
+  ENTITY data_equivalence_report_measurement_association
+    SUBTYPE OF(representation_item_relationship);
+      SELF\representation_item_relationship.relating_representation_item : data_equivalence_inspection_requirement;
+      SELF\representation_item_relationship.related_representation_item  : data_equivalence_inspection_report;
+  END_ENTITY;
+
+  ENTITY data_equivalence_inspection_report
+    SUPERTYPE OF (ONEOF(data_equivalence_inspection_criterion_report, data_equivalence_inspection_instance_report))
+    SUBTYPE OF(representation_item);
+      inspection_result : data_equivalence_inspection_result;
+  END_ENTITY;
+
+  ENTITY data_equivalence_inspection_result
+    SUBTYPE OF(representation_item);
+      criterion_inspected : data_equivalence_criterion;
+  END_ENTITY;
+
+  ENTITY data_equivalence_inspection_result_representation
+    SUBTYPE OF(representation);
+  END_ENTITY;
+
+  ENTITY data_equivalence_inspection_result_with_judgement
+    SUBTYPE OF(data_equivalence_inspection_result);
+      judgement : BOOLEAN;
+  END_ENTITY;
+
+END_SCHEMA; -- product_data_equivalence_inspection_result_schema

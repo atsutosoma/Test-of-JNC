@@ -1,0 +1,156 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <TITLE>Integrated Resource: product_data_quality_inspection_result_schema</TITLE>
+   </HEAD>
+   <body>
+      <h2>Schema: product_data_quality_inspection_result_schema</h2>
+      <p><i>Source : ISO 10303-59</i></p><code><br><br><a name="product_data_quality_inspection_result_schema">SCHEMA <b>product_data_quality_inspection_result_schema</b>;</a><br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema">product_data_quality_criteria_schema</A>;
+         &nbsp;&nbsp;&nbsp;-- ISO 10303-59<br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema">product_data_quality_definition_schema</A>&nbsp;&nbsp;&nbsp;-- ISO 10303-59<br>&nbsp;&nbsp;(<A HREF="../../../data/resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema.data_quality_definition_representation_relationship">data_quality_definition_representation_relationship</A>,<br>
+         &nbsp;&nbsp;
+         <A HREF="../../../data/resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema.product_data_and_data_quality_relationship">product_data_and_data_quality_relationship</A>);
+         <br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema">product_definition_schema</A>&nbsp;&nbsp;&nbsp;-- ISO 10303-41<br>&nbsp;&nbsp;(<A HREF="../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition">product_definition</A>);
+         <br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema">representation_schema</A>&nbsp;&nbsp;&nbsp;-- ISO 10303-43<br>&nbsp;&nbsp;(<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation">representation</A>,<br>
+         &nbsp;&nbsp;
+         <A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item">representation_item</A>,<br>
+         &nbsp;&nbsp;
+         <A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item_relationship">representation_item_relationship</A>);
+         <br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema">support_resource_schema</A>&nbsp;&nbsp;&nbsp;-- ISO 10303-41<br>&nbsp;&nbsp;(<A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.bag_to_set">bag_to_set</A>);
+         <br><br></code><code><br><A NAME="product_data_quality_inspection_result_schema.inspected_element_select">TYPE </A><b>inspected_element_select</b> =
+         
+         EXTENSIBLE
+         
+         GENERIC_ENTITY
+         
+         
+         SELECT;<br>
+         END_TYPE; 
+         <br></code><code><br><A NAME="product_data_quality_inspection_result_schema.statistical_value_type">TYPE </A><b>statistical_value_type</b> =
+         
+         ENUMERATION
+         
+         OF
+         <br>
+         &nbsp;&nbsp; 
+         (number_of_inspected_instances,<br>&nbsp;&nbsp;&nbsp;&nbsp;number_of_quality_defects_detected);<br>
+         END_TYPE; 
+         <br></code><code><br><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report">ENTITY <b>data_quality_inspection_criterion_report</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_report">data_quality_inspection_report</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report.statistical_values">statistical_values : </A>SET[1:2] OF <A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item">data_quality_inspection_criterion_report_item</A>;<br>WHERE<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report.wr:wr1">WR1: SIZEOF(QUERY(i1&lt;*bag_to_set(USEDIN(
+            SELF\data_quality_inspection_report.
+            inspection_result.criterion_inspected,
+            'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DATA_QUALITY_REPORT_REQUEST.CRITERION_OF_REPORT_REQUEST'))|
+            'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'SUMMARY_REPORT_REQUEST'
+            IN TYPEOF(i1)))&gt;0;</A><br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report.wr:wr2">WR2: (SIZEOF(SELF.statistical_values) = 1 ) OR 
+            (SELF.statistical_values[1].value_type &lt;&gt;
+            SELF.statistical_values[2].value_type);</A><br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item">ENTITY <b>data_quality_inspection_criterion_report_item</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item">representation_item</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item.statistical_value">statistical_value : </A>INTEGER;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item.value_type">value_type : </A><A HREF="#product_data_quality_inspection_result_schema.statistical_value_type">statistical_value_type</A>;<br>WHERE<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item.wr:wr1">WR1: SIZEOF(QUERY(q &lt;* bag_to_set( USEDIN(SELF,
+            'REPRESENTATION_SCHEMA.REPRESENTATION.ITEMS'))
+            |'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DATA_QUALITY_CRITERIA_REPRESENTATION'
+            IN TYPEOF(q)))=0;</A><br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_instance_report">ENTITY <b>data_quality_inspection_instance_report</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_report">data_quality_inspection_report</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_instance_report.inspected_instances">inspected_instances : </A>LIST[1:?] OF <A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item">data_quality_inspection_instance_report_item</A>;<br>WHERE<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_instance_report.wr:wr1">WR1: SIZEOF(QUERY(i1&lt;*bag_to_set(USEDIN(
+            SELF\data_quality_inspection_report.
+            inspection_result.criterion_inspected,
+            'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DATA_QUALITY_REPORT_REQUEST.CRITERION_OF_REPORT_REQUEST'))|
+            'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DETAILED_REPORT_REQUEST'
+            IN TYPEOF(i1)))&gt;0;</A><br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item">ENTITY <b>data_quality_inspection_instance_report_item</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item">representation_item</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item.inspected_elements">inspected_elements : </A>SET[1:?] OF <A HREF="#product_data_quality_inspection_result_schema.inspected_element_select">inspected_element_select</A>;<br>WHERE<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item.wr:wr1">WR1: SIZEOF(QUERY(q &lt;* bag_to_set( USEDIN(SELF,
+            'REPRESENTATION_SCHEMA.REPRESENTATION.ITEMS'))
+            |'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DATA_QUALITY_CRITERIA_REPRESENTATION'
+            IN TYPEOF(q)))=0;</A><br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_report">ENTITY <b>data_quality_inspection_report</b></A><br>
+         &nbsp;&nbsp;SUPERTYPE OF 
+         (ONEOF&nbsp;(<A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report">data_quality_inspection_criterion_report</A>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report">data_quality_inspection_instance_report</A>))<br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item">representation_item</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_report.inspection_result">inspection_result : </A><A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_result">data_quality_inspection_result</A>;<br>WHERE<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_report.wr:wr1">WR1: SIZEOF(QUERY(q &lt;* bag_to_set( USEDIN(SELF,
+            'REPRESENTATION_SCHEMA.REPRESENTATION.ITEMS'))
+            |'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DATA_QUALITY_CRITERIA_REPRESENTATION'
+            IN TYPEOF(q)))=0;</A><br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_result">ENTITY <b>data_quality_inspection_result</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item">representation_item</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_result.criterion_inspected">criterion_inspected : </A><A HREF="../../../data/resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_criterion">data_quality_criterion</A>;<br>WHERE<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_result.wr:wr1">WR1: SIZEOF(QUERY(q &lt;* bag_to_set( USEDIN(SELF,
+            'REPRESENTATION_SCHEMA.REPRESENTATION.ITEMS'))
+            |'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DATA_QUALITY_CRITERIA_REPRESENTATION'
+            IN TYPEOF(q)))=0;</A><br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_result_representation">ENTITY <b>data_quality_inspection_result_representation</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation">representation</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_result_representation.criteria_inspected">criteria_inspected : </A><A HREF="../../../data/resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_criteria_representation">data_quality_criteria_representation</A>;<br>WHERE<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_result_representation.wr:wr1">WR1: SIZEOF( QUERY( q &lt;* SELF\representation.items|
+            'PRODUCT_DATA_QUALITY_INSPECTION_RESULT_SCHEMA.' +
+            'DATA_QUALITY_INSPECTION_RESULT' IN TYPEOF(q))) &gt; 0;</A><br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_result_representation.wr:wr2">WR2: SIZEOF(inspected_product_definition(SELF)) &gt; 0;</A><br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_result_with_judgement">ENTITY <b>data_quality_inspection_result_with_judgement</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_result">data_quality_inspection_result</A>);<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_result_with_judgement.judgement">judgement : </A>BOOLEAN;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_quality_inspection_result_schema.data_quality_report_measurement_association">ENTITY <b>data_quality_report_measurement_association</b></A><br>
+         &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item_relationship">representation_item_relationship</A>);<br>
+         &nbsp;&nbsp;SELF\<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item_relationship">representation_item_relationship</A>.<A NAME="product_data_quality_inspection_result_schema.data_quality_report_measurement_association.relating_representation_item">relating_representation_item : </A><A HREF="../../../data/resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_measurement_requirement">data_quality_measurement_requirement</A>;<br>
+         &nbsp;&nbsp;SELF\<A HREF="../../../data/resources/representation_schema/representation_schema.htm#representation_schema.representation_item_relationship">representation_item_relationship</A>.<A NAME="product_data_quality_inspection_result_schema.data_quality_report_measurement_association.related_representation_item">related_representation_item : </A><A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_report">data_quality_inspection_report</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_quality_inspection_result_schema.inspected_product_definition">FUNCTION <b>inspected_product_definition</b></A><br>&nbsp;(dqir : <A HREF="../../../data/resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result_representation">data_quality_inspection_result_representation</A>) : BAG[0:?] OF <A HREF="../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition">product_definition</A>;
+         </code><pre>LOCAL
+      dqdr :BAG OF data_quality_definition_representation_relationship:= [];
+      pdqdr :BAG OF product_data_and_data_quality_relationship:= [];
+      pd   :BAG OF product_definition:= [];
+    END_LOCAL;
+    dqdr := USEDIN(dqir,'PRODUCT_DATA_QUALITY_DEFINITION_SCHEMA.'
+                       +'DATA_QUALITY_DEFINITION_REPRESENTATION_RELATIONSHIP.'
+                       +'USED_REPRESENTATION');
+    REPEAT i:= 1 TO SIZEOF(dqdr);
+      pdqdr := USEDIN(dqdr[i].definition,
+                      'PRODUCT_DATA_QUALITY_DEFINITION_SCHEMA.'
+                     +'PRODUCT_DATA_AND_DATA_QUALITY_RELATIONSHIP.'
+                     +'DATA_QUALITY');
+      REPEAT j:= 1 TO SIZEOF(pdqdr);
+        pd := pd + pdqdr[j].product_data; 
+      END_REPEAT;
+    END_REPEAT;
+    RETURN(pd);</pre><code>
+         END_FUNCTION;
+         </code><br><code><br>
+         END_SCHEMA;&nbsp;&nbsp;--&nbsp;product_data_quality_inspection_result_schema<br></code></body>
+</HTML>

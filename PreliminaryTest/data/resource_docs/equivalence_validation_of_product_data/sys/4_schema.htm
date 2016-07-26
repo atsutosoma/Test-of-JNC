@@ -1,0 +1,419 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="schema.DC" href="http://www.dublincore.org/documents/2003/02/04/dces/">
+      <META name="DC.Title" content="&#xA;&#xA;  Integrated generic resource">
+      <META name="DC.Dates" content="">
+      <META name="DC.Published" content="">
+      <META name="DC.Contributor" content="Hiraoka, Hiroyuki">
+      <META name="DC.Creator" content="Ohtaka, Akihiko">
+      <META name="DC.Description" content="The integrated resource equivalence_validation_of_product_data">
+      <META name="DC.Subject" content="STEP, ISO 10303, integrated resource, Product data equivalence, Product shape data equivalence, Assembly data equivalence, PMI data equivalence, Criteria representation, Inspection requirement, Threshold, Accuracy , Inspection result representation">
+      <META name="DC.Identifier" content="ISO/TC 184/SC 4/WG 12&nbsp;N0000">
+      <META name="DC.Replaces" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.version" content="1">
+      <META name="SC4.checklist.internal_review" content="ISO/TC 184/SC4/WG12 N">
+      <META name="SC4.checklist.project_leader" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.checklist.convener" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="STEPMOD.resource.rcs.date" content="Date: ">
+      <META name="STEPMOD.resource.rcs.revision" content="Revision: ">
+      <TITLE>ISO/WD 10303-62</TITLE>
+   </HEAD>
+   <BODY>
+      <TABLE cellspacing="0" border="0" width="100%">
+         <TR>
+            <TD><small><a href="../sys/isocover.htm">ISO cover</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../repository_index.htm">Modules Index</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../ballots/index.htm">Ballot home</a></small></TD>
+         </TR>
+         <TR>
+            <TD valign="MIDDLE"><B>
+                  
+                  	  Integrated generic resource: Equivalence validation of product data</B></TD>
+            <TD valign="MIDDLE" align="RIGHT"><b>ISO/WD 10303-62</b></TD>
+         </TR>
+      </TABLE>
+      <TABLE border="1" cellspacing="1" width="100%">
+         <TR>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/cover.htm">Cover page</A><BR><A HREF="../sys/contents.htm">Table of contents</A><BR><A HREF="../sys/cover.htm#copyright">Copyright</A><BR><A HREF="../sys/foreword.htm">Foreword</A><BR><A HREF="../sys/introduction.htm">Introduction</A><BR><A HREF="../sys/1_scope.htm">1 Scope</A><BR><A HREF="../sys/2_refs.htm">2 Normative references</A><BR><A HREF="../sys/3_defs.htm">
+                     3 Terms, definitions and abbreviated terms
+                     </A><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#termsdefns">3.1 Terms and definitions</a><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#abbrv">3.2 Abbreviated terms</a><br><A HREF="../sys/4_schema.htm">4 Product data equivalence definition</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#gen">4.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#funcon">4.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#types">4.3 Product data equivalence definition type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#entities">4.4 Product data equivalence definition entity definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/5_schema.htm">5 Product data equivalence criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#gen">5.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#funcon">5.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#entities">5.3 Product data equivalence criteria entity definitions</A><BR></small><A HREF="../sys/6_schema.htm">6 Product data equivalence inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#gen">6.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#funcon">6.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#types">6.3 Product data equivalence inspection result type definition</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#entities">6.4 Product data equivalence inspection result entity definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/7_schema.htm">7 Annotated model 3d equivalence criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#gen">7.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#funcon">7.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#entities">7.3 Annotated model 3d equivalence criteria entity definition</A><BR></small><A HREF="../sys/8_schema.htm">8 Annotated model 3d equivalence inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#gen">8.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#funcon">8.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#entities">8.3 Annotated model 3d equivalence inspection result entity definition</A><BR></small><A HREF="../sys/a_short_names.htm">A Short names of entities</A><BR><A HREF="../sys/b_obj_reg.htm">B Information object
+                     registration</A><BR><A HREF="../sys/c_exp.htm">C Computer interpretable listings</A><BR><A HREF="../sys/d_expg.htm">
+                     D EXPRESS-G diagrams
+                     </A><BR><A HREF="../sys/biblio.htm#bibliography">Bibliography</A><BR><A HREF="../sys/resdocindex.htm">Index</A><BR></p>
+            </TD>
+         </TR>
+      </TABLE>
+      <H2><A NAME="schema$schema_no+3">4 Product data equivalence definition schema</A></H2>
+      <H2><A NAME="gen">4.1 General</A></H2>This clause defines the information requirements to which implementations shall conform using the EXPRESS language as defined
+      in ISO 10303-11. The following EXPRESS declaration begins the <b>product_data_equivalence_definition_schema</b>
+      and identifies the necessary external references.
+      	    
+      <p></p><u>EXPRESS specification: </u><code><br><br>
+         *)<br><a name="product_data_equivalence_definition_schema">
+            	SCHEMA product_data_equivalence_definition_schema;</a></code><a name="interfaces"></a><p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resource_docs/equivalence_validation_of_product_data/sys/5_schema.htm#product_data_equivalence_criteria_schema">product_data_equivalence_criteria_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            <br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error IF-3: The reference parameter for product_data_equivalence_criteria_schema has not been specified </i></font><br><br>&nbsp;&nbsp;(<A HREF="../../../../data/resource_docs/equivalence_validation_of_product_data/sys/5_schema.htm#product_data_equivalence_criteria_schema.data_equivalence_criteria_representation">data_equivalence_criteria_representation</A>);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resource_docs/equivalence_validation_of_product_data/sys/6_schema.htm#product_data_equivalence_inspection_result_schema">product_data_equivalence_inspection_result_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            <br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error IF-3: The reference parameter for product_data_equivalence_inspection_result_schema has not been specified </i></font><br><br>&nbsp;&nbsp;(<A HREF="../../../../data/resource_docs/equivalence_validation_of_product_data/sys/6_schema.htm#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_representation">data_equivalence_inspection_result_representation</A>);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema">product_definition_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-41<br>&nbsp;&nbsp;(product_definition_or_reference,<br>
+            &nbsp;&nbsp;
+            product_definition_relationship);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema">support_resource_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-41<br>&nbsp;&nbsp;(text);
+            <br>(*<br><br></code></p>
+      <p class="note"><small>
+            NOTE&nbsp;1&nbsp;&nbsp;
+            	
+            		        The schemas referenced above are specified in the following 
+            		        parts:
+            		</small></p>
+      <blockquote>
+         <table>
+            <tr>
+               <td width="266"><b><small>product_data_equivalence_criteria_schema</small></b></td>
+               <td width="127"><small><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error IF-3: The reference parameter for product_data_equivalence_criteria_schema has not been specified </i></font><br></small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>product_data_equivalence_inspection_result_schema</small></b></td>
+               <td width="127"><small><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error IF-3: The reference parameter for product_data_equivalence_inspection_result_schema has not been specified </i></font><br></small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>product_definition_schema</small></b></td>
+               <td width="127"><small>ISO 10303-41</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>support_resource_schema</small></b></td>
+               <td width="127"><small>ISO 10303-41</small></td>
+            </tr>
+         </table>
+      </blockquote>
+      <p class="note"><small>
+            NOTE&nbsp;2&nbsp;&nbsp;
+            
+            See Annex <a href="d_expg.htm">D</a>
+            for a graphical representation of this schema.
+            </small></p>
+      <H2><A NAME="funcon">4.2 Fundamental concepts and assumptions</A></H2>        This schema provides the following information;                                                                  
+                                   
+                  
+      <ul>
+                         
+         <li>identification and definition of product data equivalence information.                                                   
+                                                                                                                        
+                                
+            <p>It is understood that equivalence validation information is not a constituent of a product data. In case some designed product
+               data converted from other product data is inspected whether or not it is equivalent with the original product data , then
+               the inspection results will be created relating to a particular couple of product data. Therefore, equivalence validation
+               information shall be identified and defined separately from a product definition with relationship to the pertaining product
+               definitions as necessary.
+            </p>
+                            
+         </li>
+                         
+         <li>relationship between product data equivalence information and product data.                                              
+                                                                                                                             
+                                
+            <p>This relationship is required to represent inspection results of a particular couple of product data. Actual relationship
+               will be created between an equivalence definition entity and a couple of product definition entities.
+            </p>
+                            
+         </li>
+                     
+      </ul>
+                  
+      <p>Existence of a data equivalence definition entity implies the existence of a set of product data equivalence criteria. Related
+         inspection results may also exist. The product data equivalence criteria are represented using entities defined in       
+                                                                                                                  
+                         <b>product_data_equivalence_criteria_schema</b> and the inspection results are represented using entities defined in                                                    
+                                                                     
+                         <b>product_data_equivalence_inspection_result_schema</b>.                                                                                    
+                     
+      </p>
+              
+      <h2><A NAME="types">4.3 product_data_equivalence_definition_schema type definitions</A></h2>
+      <h2><A NAME="product_data_equivalence_definition_schema.equivalence_product_data_select">4.3.1 equivalence_product_data_select</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      
+      
+      The <b>equivalence_product_data_select</b> type is a list of
+      alternate data types. It provides a mechanism to refer to an
+      instance of one of these data types.  
+      An 
+          <b>equivalence_product_data_select</b> type allows selection of either 
+          <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> for comparing two representations in the same 
+          <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> or 
+          <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition_relationship"><b>product_definition_relationship</b></a> for comparing different 
+          <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a>s.
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            TYPE 
+            equivalence_product_data_select
+            =
+            
+            
+            SELECT<br>
+            &nbsp;&nbsp;&nbsp;(product_definition_or_reference, <br>&nbsp;&nbsp;&nbsp;&nbsp;product_definition_relationship);<br>
+            END_TYPE; <br>
+            (*
+            </code></p>
+      <h2><A NAME="product_data_equivalence_definition_schema.used_equivalence_representation_select">4.3.2 used_equivalence_representation_select</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      
+      
+      The <b>used_equivalence_representation_select</b> type is a list of
+      alternate data types. It provides a mechanism to refer to an
+      instance of one of these data types.  
+      An 
+          <b>used_equivalence_representation_select</b> type allows selection of either 
+          <a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema.data_equivalence_criteria_representation"><b>data_equivalence_criteria_representation</b></a> or 
+          <a href="../../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.htm#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_representation"><b>data_equivalence_inspection_result_representation</b></a>.
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            TYPE 
+            used_equivalence_representation_select
+            =
+            
+            
+            SELECT<br>
+            &nbsp;&nbsp;&nbsp;(<A HREF="../../../../data/resource_docs/equivalence_validation_of_product_data/sys/5_schema.htm#product_data_equivalence_criteria_schema.data_equivalence_criteria_representation">data_equivalence_criteria_representation</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="../../../../data/resource_docs/equivalence_validation_of_product_data/sys/6_schema.htm#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_representation">data_equivalence_inspection_result_representation</A>);<br>
+            END_TYPE; <br>
+            (*
+            </code></p>
+      <h2><A NAME="entities">4.4 product_data_equivalence_definition_schema entity definitions</A></h2>
+      <h2><A NAME="product_data_equivalence_definition_schema.data_equivalence_definition">4.4.1 data_equivalence_definition</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_definition_schema.data_equivalence_definition. Check that the description starts with
+            "     A or an data_equivalence_definition is 
+            "  </i></font><br>        An instance of 
+          <b>data_equivalence_definition</b> represents a set of information on product data equivalence. Identification of the product data equivalence information represented
+      will be given by 
+          <b>data_equivalence_definition_representation</b>. Information on the inspected couple of product data and management data for product data equivalence shall be related with
+      this entity as necessary.      
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_equivalence_definition;<br>
+            
+            
+            &nbsp;&nbsp;description : text;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Attr1: The first word of the attribute                     definition should be lower case. It is: A</i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_definition_schema.data_equivalence_definition.description">description:
+               </a></b>        A textual description characterizing the 
+             <b>data_equivalence_definition</b>.      
+           
+      </p>
+      <h2><A NAME="product_data_equivalence_definition_schema.data_equivalence_definition_relationship">4.4.2 data_equivalence_definition_relationship</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_definition_schema.data_equivalence_definition_relationship. Check that the description
+            starts with
+            "     A or an data_equivalence_definition_relationship is 
+            "  </i></font><br><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent7:  check for express identifier not bold nor linked </i></font><br>
+          
+      <p>An instance of 
+               <b>data_equivalence_definition_relationship</b> represents a relationship between two 
+               <a href="../../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schema.htm#product_data_equivalence_definition_schema.data_equivalence_definition"><b>data_equivalence_definition</b></a>s.
+             
+      </p>
+          
+      <p class="example"><small><a name="example_">EXAMPLE&nbsp;</a>&nbsp;&nbsp;
+            
+            When product data equivalence of a CAD data is checked multiple times with different requirements, data_equivalence_definition
+            representing the former inspection can be related with the one representing the latter inspection using this entity to show
+            the sequence of inspections.</small></p>
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_equivalence_definition_relationship;<br>
+            
+            
+            &nbsp;&nbsp;description : text;<br>
+            
+            
+            &nbsp;&nbsp;relating_data_equivalence_definition : <A HREF="#product_data_equivalence_definition_schema.data_equivalence_definition">data_equivalence_definition</A>;<br>
+            
+            
+            &nbsp;&nbsp;related_data_equivalence_definition : <A HREF="#product_data_equivalence_definition_schema.data_equivalence_definition">data_equivalence_definition</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Attr1: The first word of the attribute                     definition should be lower case. It is: A</i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_definition_schema.data_equivalence_definition_relationship.description">description:
+               </a></b>        A textual description characterizing the 
+             <b>data_equivalence_definition_relationship</b>.      
+           
+      </p>
+      <p class="expressdescription"><b><a name="product_data_equivalence_definition_schema.data_equivalence_definition_relationship.relating_data_equivalence_definition">relating_data_equivalence_definition:
+               </a></b>one 
+             <a href="../../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schema.htm#product_data_equivalence_definition_schema.data_equivalence_definition"><b>data_equivalence_definition</b></a> that relates to 
+             <b>related_data_equivalence_definition</b>.
+           
+      </p>
+      <p class="expressdescription"><b><a name="product_data_equivalence_definition_schema.data_equivalence_definition_relationship.related_data_equivalence_definition">related_data_equivalence_definition:
+               </a></b>another 
+             <a href="../../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schema.htm#product_data_equivalence_definition_schema.data_equivalence_definition"><b>data_equivalence_definition</b></a> that is related with 
+             <b>relating_data_equivalence_definition</b>.
+           
+      </p>
+      <h2><A NAME="product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship">4.4.3 data_equivalence_definition_representation_relationship</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship. Check that
+            the description starts with
+            "     A or an data_equivalence_definition_representation_relationship is 
+            "  </i></font><br>        An instance of 
+          <b>data_equivalence_definition_representation_relationship</b> represents a relationship between an instance of 
+          <a href="../../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schema.htm#product_data_equivalence_definition_schema.data_equivalence_definition"><b>data_equivalence_definition</b></a> and an instance of pertaining 
+          <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation"><b>representation</b></a> of product data equivalence. The 
+          <b>used_representation</b> may be a 
+          <a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema.data_equivalence_criteria_representation"><b>data_equivalence_criteria_representation</b></a> as defined in 
+          <a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema"><b>product_data_equivalence_criteria_schema</b></a> or a 
+          <a href="../../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.htm#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_representation"><b>data_equivalence_inspection_result_representation</b></a> as defined in 
+          <a href="../../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.htm#product_data_equivalence_inspection_result_schema"><b>product_data_equivalence_inspection_result_schema</b></a>.      
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_equivalence_definition_representation_relationship;<br>
+            
+            
+            &nbsp;&nbsp;description : text;<br>
+            
+            
+            &nbsp;&nbsp;definition : <A HREF="#product_data_equivalence_definition_schema.data_equivalence_definition">data_equivalence_definition</A>;<br>
+            
+            
+            &nbsp;&nbsp;used_representation : <A HREF="#product_data_equivalence_definition_schema.used_equivalence_representation_select">used_equivalence_representation_select</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Attr1: The first word of the attribute                     definition should be lower case. It is: A</i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship.description">description:
+               </a></b>        A textual description characterizing the 
+             <b>data_equivalence_definition_representation_relationship</b>.      
+           
+      </p>
+      <p class="expressdescription"><b><a name="product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship.definition">definition:
+               </a></b>the 
+             <a href="../../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schema.htm#product_data_equivalence_definition_schema.data_equivalence_definition"><b>data_equivalence_definition</b></a> whose information is represented by 
+             <b>used_representation</b>.
+           
+      </p>
+      <p class="expressdescription"><b><a name="product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship.used_representation">used_representation:
+               </a></b>the 
+             <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation"><b>representation</b></a> that represents the information of 
+             <b>definition</b>.
+           
+      </p>
+      <h2><A NAME="product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship">4.4.4 product_data_and_data_equivalence_relationship</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship. Check that the description
+            starts with
+            "     A or an product_data_and_data_equivalence_relationship is 
+            "  </i></font><br>        An instance of 
+          <b>product_data_and_data_equivalence_relationship</b> represents a relationship between the product data equivalence information defined by 
+          <a href="../../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schema.htm#product_data_equivalence_definition_schema.data_equivalence_definition"><b>data_equivalence_definition</b></a> and the target product data inspected.      
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY product_data_and_data_equivalence_relationship;<br>
+            
+            
+            &nbsp;&nbsp;description : text;<br>
+            
+            
+            &nbsp;&nbsp;product_data : <A HREF="#product_data_equivalence_definition_schema.equivalence_product_data_select">equivalence_product_data_select</A>;<br>
+            
+            
+            &nbsp;&nbsp;data_equivalence : <A HREF="#product_data_equivalence_definition_schema.data_equivalence_definition">data_equivalence_definition</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Attr1: The first word of the attribute                     definition should be lower case. It is: A</i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship.description">description:
+               </a></b>        A textual description characterizing the 
+             <b>product_data_and_data_equivalence_relationship</b>.      
+           
+      </p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Attr1: The first word of the attribute                     definition should be lower case. It is: T</i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship.product_data">product_data:
+               </a></b>The product data whose equivalence is inspected.
+      </p>
+      <p class="expressdescription"><b><a name="product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship.data_equivalence">data_equivalence:
+               </a></b>product data equivalence information obtained by inspecting 
+             <b>product_data</b>.
+           
+      </p><code><br><br>
+         *)<br>
+         END_SCHEMA;&nbsp;&nbsp;--&nbsp;product_data_equivalence_definition_schema<br>(*
+         </code><br><br><p>&copy; ISO 2016 &#8212; All rights reserved</p>
+   </BODY>
+</HTML>

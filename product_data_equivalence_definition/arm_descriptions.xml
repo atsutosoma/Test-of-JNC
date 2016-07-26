@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<?xml-stylesheet 
+  type="text/xsl" 
+  href="../../../xsl/descriptions.xsl"?>
+<!DOCTYPE ext_descriptions SYSTEM "../../../dtd/description.dtd">
+<ext_descriptions module_directory="product_data_equivalence_definition" schema_file="arm.xml" describe.selects="YES" describe.subtype_constraints="YES" rcs.date="$Date: 2004/11/16 07:30:26 $" rcs.revision="$Revision: 1.13 $">
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Schema: Product_data_equivalence_definition_arm
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<ext_description linkend="Product_data_equivalence_definition_arm">
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Type: Equivalence_date_or_date_time_item 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Equivalence_date_or_date_time_item"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Equivalence_date_or_date_time_item">
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Type: Equivalence_organization_or_person_in_organization_item 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Equivalence_organization_or_person_in_organization_item"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Equivalence_organization_or_person_in_organization_item">
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Type: Equivalence_product_data_select 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Equivalence_product_data_select"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Equivalence_product_data_select">
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Type: Used_equivalence_representation_select 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Used_equivalence_representation_select"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Used_equivalence_representation_select">
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Data_equivalence_definition  
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Data_equivalence_definition"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Data_equivalence_definition">
+        A <b>Data_equivalence_definition</b> is a
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Data_equivalence_definition  Attribute: description 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Data_equivalence_definition.description"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Data_equivalence_definition.description">
+        the text that provides further information about the <b>Data_equivalence_definition</b>.
+      </ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Data_equivalence_definition_relationship  
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Data_equivalence_definition_relationship"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Data_equivalence_definition_relationship">
+        A <b>Data_equivalence_definition_relationship</b> is a
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Data_equivalence_definition_relationship  Attribute: description 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Data_equivalence_definition_relationship.description"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Data_equivalence_definition_relationship.description">
+        the text that provides further information about the <b>Data_equivalence_definition_relationship</b>.
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Data_equivalence_definition_relationship  Attribute: relating_data_quality_definition 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Data_equivalence_definition_relationship.relating_data_quality_definition"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Data_equivalence_definition_relationship.relating_data_quality_definition">
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Data_equivalence_definition_relationship  Attribute: related_data_quality_definition 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Data_equivalence_definition_relationship.related_data_quality_definition"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Data_equivalence_definition_relationship.related_data_quality_definition">
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Data_equivalence_definition_representation_relationship  
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Data_equivalence_definition_representation_relationship"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Data_equivalence_definition_representation_relationship">
+        A <b>Data_equivalence_definition_representation_relationship</b> is a
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Data_equivalence_definition_representation_relationship  Attribute: description 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Data_equivalence_definition_representation_relationship.description"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Data_equivalence_definition_representation_relationship.description">
+        the text that provides further information about the <b>Data_equivalence_definition_representation_relationship</b>.
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Data_equivalence_definition_representation_relationship  Attribute: definition 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Data_equivalence_definition_representation_relationship.definition"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Data_equivalence_definition_representation_relationship.definition">
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Data_equivalence_definition_representation_relationship  Attribute: used_representation 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Data_equivalence_definition_representation_relationship.used_representation"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Data_equivalence_definition_representation_relationship.used_representation">
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Product_data_and_data_equivalence_relationship  
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Product_data_and_data_equivalence_relationship"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Product_data_and_data_equivalence_relationship">
+        A <b>Product_data_and_data_equivalence_relationship</b> is a
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Product_data_and_data_equivalence_relationship  Attribute: description 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Product_data_and_data_equivalence_relationship.description"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Product_data_and_data_equivalence_relationship.description">
+        the text that provides further information about the <b>Product_data_and_data_equivalence_relationship</b>.
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Product_data_and_data_equivalence_relationship  Attribute: product_data 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Product_data_and_data_equivalence_relationship.product_data"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Product_data_and_data_equivalence_relationship.product_data">
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Product_data_and_data_equivalence_relationship  Attribute: data_quality 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Product_data_and_data_equivalence_relationship.data_quality"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Product_data_and_data_equivalence_relationship.data_quality">
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Software_for_data_equivalence_check  
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Software_for_data_equivalence_check"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Software_for_data_equivalence_check">
+        A <b>Software_for_data_equivalence_check</b> is a
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Software_for_data_equivalence_check  Attribute: description 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Software_for_data_equivalence_check.description"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Software_for_data_equivalence_check.description">
+        the text that provides further information about the <b>Software_for_data_equivalence_check</b>.
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Software_for_data_equivalence_check  Attribute: software_name 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Software_for_data_equivalence_check.software_name"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Software_for_data_equivalence_check.software_name">
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Software_for_data_equivalence_check  Attribute: software_version 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Software_for_data_equivalence_check.software_version"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Software_for_data_equivalence_check.software_version">
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: Product_data_equivalence_definition_arm  Entity: Software_for_data_equivalence_check  Attribute: data_equivalence 
+   <express_ref linkend="product_data_equivalence_definition:arm:Product_data_equivalence_definition_arm.Software_for_data_equivalence_check.data_equivalence"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="Product_data_equivalence_definition_arm.Software_for_data_equivalence_check.data_equivalence">
+</ext_description>
+</ext_descriptions>

@@ -1,0 +1,672 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="schema.DC" href="http://www.dublincore.org/documents/2003/02/04/dces/">
+      <META name="DC.Title" content="&#xA;&#xA;  Integrated generic resource">
+      <META name="DC.Dates" content="">
+      <META name="DC.Published" content="">
+      <META name="DC.Contributor" content="Hiraoka, Hiroyuki">
+      <META name="DC.Creator" content="Ohtaka, Akihiko">
+      <META name="DC.Description" content="The integrated resource equivalence_validation_of_product_data">
+      <META name="DC.Subject" content="STEP, ISO 10303, integrated resource, Product data equivalence, Product shape data equivalence, Assembly data equivalence, PMI data equivalence, Criteria representation, Inspection requirement, Threshold, Accuracy , Inspection result representation">
+      <META name="DC.Identifier" content="ISO/TC 184/SC 4/WG 12&nbsp;N0000">
+      <META name="DC.Replaces" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.version" content="1">
+      <META name="SC4.checklist.internal_review" content="ISO/TC 184/SC4/WG12 N">
+      <META name="SC4.checklist.project_leader" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.checklist.convener" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="STEPMOD.resource.rcs.date" content="Date: ">
+      <META name="STEPMOD.resource.rcs.revision" content="Revision: ">
+      <TITLE>ISO/WD 10303-62</TITLE>
+   </HEAD>
+   <BODY>
+      <TABLE cellspacing="0" border="0" width="100%">
+         <TR>
+            <TD><small><a href="../sys/isocover.htm">ISO cover</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../repository_index.htm">Modules Index</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../ballots/index.htm">Ballot home</a></small></TD>
+         </TR>
+         <TR>
+            <TD valign="MIDDLE"><B>
+                  
+                  	  Integrated generic resource: Equivalence validation of product data</B></TD>
+            <TD valign="MIDDLE" align="RIGHT"><b>ISO/WD 10303-62</b></TD>
+         </TR>
+      </TABLE>
+      <TABLE border="1" cellspacing="1" width="100%">
+         <TR>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/cover.htm">Cover page</A><BR><A HREF="../sys/contents.htm">Table of contents</A><BR><A HREF="../sys/cover.htm#copyright">Copyright</A><BR><A HREF="../sys/foreword.htm">Foreword</A><BR><A HREF="../sys/introduction.htm">Introduction</A><BR><A HREF="../sys/1_scope.htm">1 Scope</A><BR><A HREF="../sys/2_refs.htm">2 Normative references</A><BR><A HREF="../sys/3_defs.htm">
+                     3 Terms, definitions and abbreviated terms
+                     </A><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#termsdefns">3.1 Terms and definitions</a><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#abbrv">3.2 Abbreviated terms</a><br><A HREF="../sys/4_schema.htm">4 Product data equivalence definition</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#gen">4.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#funcon">4.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#types">4.3 Product data equivalence definition type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#entities">4.4 Product data equivalence definition entity definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/5_schema.htm">5 Product data equivalence criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#gen">5.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#funcon">5.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#entities">5.3 Product data equivalence criteria entity definitions</A><BR></small><A HREF="../sys/6_schema.htm">6 Product data equivalence inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#gen">6.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#funcon">6.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#types">6.3 Product data equivalence inspection result type definition</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#entities">6.4 Product data equivalence inspection result entity definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/7_schema.htm">7 Annotated model 3d equivalence criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#gen">7.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#funcon">7.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#entities">7.3 Annotated model 3d equivalence criteria entity definition</A><BR></small><A HREF="../sys/8_schema.htm">8 Annotated model 3d equivalence inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#gen">8.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#funcon">8.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#entities">8.3 Annotated model 3d equivalence inspection result entity definition</A><BR></small><A HREF="../sys/a_short_names.htm">A Short names of entities</A><BR><A HREF="../sys/b_obj_reg.htm">B Information object
+                     registration</A><BR><A HREF="../sys/c_exp.htm">C Computer interpretable listings</A><BR><A HREF="../sys/d_expg.htm">
+                     D EXPRESS-G diagrams
+                     </A><BR><A HREF="../sys/biblio.htm#bibliography">Bibliography</A><BR><A HREF="../sys/resdocindex.htm">Index</A><BR></p>
+            </TD>
+         </TR>
+      </TABLE>
+      <H2><A NAME="schema$schema_no+3">5 Product data equivalence criteria schema</A></H2>
+      <H2><A NAME="gen">5.1 General</A></H2>This clause defines the information requirements to which implementations shall conform using the EXPRESS language as defined
+      in ISO 10303-11. The following EXPRESS declaration begins the <b>product_data_equivalence_criteria_schema</b>
+      and identifies the necessary external references.
+      	    
+      <p></p><u>EXPRESS specification: </u><code><br><br>
+         *)<br><a name="product_data_equivalence_criteria_schema">
+            	SCHEMA product_data_equivalence_criteria_schema;</a></code><a name="interfaces"></a><p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema">product_data_quality_criteria_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-59<br>&nbsp;&nbsp;(detailed_report_type,<br>
+            &nbsp;&nbsp;
+            summary_report_type,<br>
+            &nbsp;&nbsp;
+            preferred_ordering);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/representation_schema/representation_schema.htm#representation_schema">representation_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-43<br>&nbsp;&nbsp;(representation,<br>
+            &nbsp;&nbsp;
+            representation_item,<br>
+            &nbsp;&nbsp;
+            representation_item_relationship);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema">support_resource_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-41<br>&nbsp;&nbsp;(text);
+            <br>(*<br><br></code></p>
+      <p class="note"><small>
+            NOTE&nbsp;1&nbsp;&nbsp;
+            	
+            		        The schemas referenced above are specified in the following 
+            		        parts:
+            		</small></p>
+      <blockquote>
+         <table>
+            <tr>
+               <td width="266"><b><small>product_data_quality_criteria_schema</small></b></td>
+               <td width="127"><small>ISO 10303-59</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>representation_schema</small></b></td>
+               <td width="127"><small>ISO 10303-43</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>support_resource_schema</small></b></td>
+               <td width="127"><small>ISO 10303-41</small></td>
+            </tr>
+         </table>
+      </blockquote>
+      <p class="note"><small>
+            NOTE&nbsp;2&nbsp;&nbsp;
+            
+            See Annex <a href="d_expg.htm">D</a>
+            for a graphical representation of this schema.
+            </small></p>
+      <H2><A NAME="funcon">5.2 Fundamental concepts and assumptions</A></H2>
+                  
+      <p>In order to unambiguously share product data equivalence information, the following are required:</p>
+                  
+      <ol type="a">
+                         
+         <li>A clear statement of each equivalence requirement.  Such a requirement will be referred to as a &#8216;equivalence criterion&#8217; in
+            this standard;
+         </li>
+                         
+         <li>Specification of necessary conditions for the inspection to be used for ensuring that equivalence criteria are met.  Such
+            conditions are referred to as &#8216;inspection requirement&#8217; in this standard.  Each inspection requirement shall specify the types
+            of entities to be checked, the inspection process to be used (if definable), and the required accuracy of the inspection.
+             Inspection processes are specified in descriptive terms only &#8212; the actual inspection algorithms are outside the scope of
+            this standard;
+         </li>
+                         
+         <li>Specification of criteria for judging the acceptability of the equivalence inspection.  Such specifications are referred to
+            as &#8216;assessment specifications&#8217; in this standard.  Assessment specifications for the equivalence of annotated model 3d fall
+            into two classes, the first involving numerical tests with one or two thresholds for acceptability, and the second involving
+            logical tests (details will be presented in clause 7);
+         </li>
+                         
+         <li>A method for the representation of the requirements for reporting on the equivalence of annotated model 3d;</li>
+                         
+         <li>A method for the representation of inspection results;</li>
+                     
+      </ol>
+                  
+      <p>This schema provides representations for items a. &#8211; d. in the foregoing list, which are mandatory in any application.</p>
+                  
+      <p class="note"><small><a name="note_1">NOTE&nbsp;1</a>&nbsp;&nbsp;
+            
+            Scenarios of the expected use of this standard are described in Annex G.</small></p>
+                  
+      <p class="note"><small><a name="note_2">NOTE&nbsp;2</a>&nbsp;&nbsp;
+            
+            The information corresponding to e. above is specified in                                 
+                            <b>product_data_equivalence_inspection_result_schema</b>.                        
+                        </small></p>
+                  <b>5.2.1    Representation of product data equivalence criteria</b>
+                  
+      <p>Product data equivalence can be unambiguously represented by a combination of equivalence criteria. Each criterion may have
+         one or more associated inspection requirement and assessment specification.
+      </p>
+                  
+      <p>It is anticipated that there are equivalence criteria of which inspection requirement is not possible to clearly specify.
+         For this reason, this schema provides both equivalence criteria with or without relationship to pertaining inspection requirement.
+      </p>
+                  
+      <p class="example"><small><a name="example_1">EXAMPLE&nbsp;1</a>&nbsp;&nbsp;
+            
+            &#8216;implied semantics shall be completely converted&#8217; is a clear and important product data equivalence requirement. In this case,
+            &#8216;identical implied semantics&#8217; will become a criterion. Therefore, satisfaction of the criterion implies existence of equivalence
+            defect. But, unambiguous specification of identical implied semantics will be quite difficult to define.</small></p>
+                  
+      <p class="example"><small><a name="example_2">EXAMPLE&nbsp;2</a>&nbsp;&nbsp;
+            
+            Significant deviation between corresponding positions of the two product data will be problematic for receiver side since
+            it will deteriorate reliability of the data. In order to detect this type of non-equivalent data, the criterion &#8216;        
+                                   
+                            <b>domain_matching_of_arcwise-connected_surfaces</b>&#8217; as defined in the                                 
+                            <b>annotated_model_3d_equivalence_shape_module</b> is prepared. In order to judge the equivalence, related inspection shall be based on the calculation of distance between
+            two corresponding surfaces. The distance shall be calculated ideally for any point on a surface as minimum distance to the
+            corresponding surface. After calculating this distance for all points on the surface, maximum value among them shall be obtained.
+            Then this maximum distance shall be compared with the threshold defined for this criterion for evaluating if non-equivalent
+            defect is existing or not. This example shows combination of quality criterion, associated inspection requirement and assessment
+            specification form core part of equivalence validation model representation.                                    
+                        </small></p>
+                  
+      <p>Equivalence requirement is application dependent and target design requirement dependent. This schema allows users to select
+         a set of necessary criteria from the standardized criteria and combine them to represent his requirements on product data
+         equivalence.
+      </p>
+                  
+      <p>Specifications in this schema are enough general so that they can be applied for equivalence of any property of a product
+         data. Specialization of this schema to annotated model 3d data is given in clause 7. Specialization to product data equivalence
+         of any property other than annotated model 3d data will also be possible in the future as a specialization of this schema.
+      </p>
+                  <b>5.2.2    Correspondence of data elements to compare</b>
+                  
+      <p>Correspondence of data elements to compare, one in the original product model, the other in the converted model shall be exactly
+         known. As for shape model, external specification of correspondence finding algorithm is given in the <b>annotated_model_3d_shape_equivalence</b> module.
+      </p>
+                  
+      <p>As for assembly model and PMI data, it is understood that there is no commonly used method for detecting the correspondence,
+         but the use of user given name when applicable, or bounding box for knowing spatial extent, etc. are used. In the definition
+         of criteria in <b>annotated_model_3d_equivalence_assembly</b> module and <b>annotated_model_3d_equivalence_PMI</b> module, it is assumed that the correspondence is known outside of those standards. If unique naming method such as UUID is
+         developed in the future, it is assumed that unique name will be transferred via STEP translator.
+      </p>
+                  <b>5.2.3    Representation of the requirement on inspection of product data quivalence</b>
+                  
+      <p>In order to inspect if a non-equivalent defect is existing or not, reliable inspection shall be associated to each equivalence
+         criterion.
+      </p>
+                  
+      <p>The following are requirements for reliable inspection:</p>
+                  
+      <ol type="1">
+                         
+         <li>Appropriate data element shall be inspected.</li>
+                         
+         <li>Necessary conditions for appropriate inspection shall be clarified such as mandatory inspection process if definable, what
+            physical quantity shall be inspected, what special cases shall be taken into account, required precision of inspection result,
+            etc.
+         </li>
+                         
+         <li>Robust algorithm that satisfies all the requirements represented by 1. above shall be deployed.</li>
+                     
+      </ol>
+                  
+      <p>It is understood that inspection algorithm belongs to competitive arena for engineering system vendors and therefore shall
+         not be standardized by an International Standard. By this reason, requirement 3. above is outside the scope of this standard.
+      </p>
+                  
+      <p>The representation of inspection requirement is designed so that it can be used both for equivalence criteria representation
+         and inspection result representation.
+      </p>
+                  <b>5.2.4    Control of inspection result report</b>
+                  
+      <p>Type of information and level of details of inspection result report may differ depending on the scenario of its use or the
+         purpose of the inspection. The entity                
+                         <b>data_equivalence_report_request</b> provides the representation of a request for an inspection report with regard to a particular criterion. It has two subtypes,
+                         
+                         <b>summary_equivalence_report_request</b> and                 
+                         <b>detailed_equivalence_report_request</b>. The use of                 
+                         <b>summary_equivalence_report_request</b> is recommended to capture overall equivalence level such as how many entities were checked regarding the criterion and how
+         many entities among them were judged as having non-equivalent defect. The use of                 
+                         <b>detailed_equivalence_report_request</b> is suited to obtain more detailed report such as what entity instance caused non-equivalent defect and how serious it is.
+         It has attributes to request a report on all the inspected elements or only on elements with non-equivalent defect. Expected
+         number of elements to be reported and expected sequence of report may also be specified. Since these specifications affects
+         to other schemas in this standard, it is recommended to look into Figure 1 of Introduction to understand related entities
+         in other schemas.                            
+                         <b>data_equivalence_inspection_report</b> of                 
+                         <b>product_data_equivalence_inspection_result_schema</b> corresponds to                                                                                                          
+           
+                         <b>data_equivalence_report_request</b> of this schema. It has two subtypes,                 
+                         <b>data_equivalence_inspection_criterion_report</b> which corresponds to                                                                                                    
+                 
+                         <b>summary_equivalence_report_request</b> of this schema and                 
+                         <b>data_equivalence_inspection_instance_report</b> which corresponds to                                                                                                    
+                 
+                         <b>detailed_equivalence_report_request</b> of this schema.                 
+                         <b>data_equivalence_inspection_instance_report</b> is a collection of                                                                                                      
+               
+                         <b>data_equivalence_inspection_instance_report_item</b> which corresponds to one instance or one pair of instances of the given product data.                                   
+                                                         
+                     
+      </p>
+                  
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            In                                                                                                                 
+                            <b>annotated_model_3d_equivalence_inspection_result_schema</b>,                 
+                            <b>data_equivalence_inspection_inspection_instance_report_item</b> is specialized to                                                                                                       
+                     
+                            <b>annotated_model_3d_equivalence_inspection_instance_report_item</b> which has a subtype                 
+                            <b>instance_report_item_with_extreme_instances</b> for representing non-equivalent defect in annotated_model_3d instance level and how serious it is.                      
+                                                                                     
+                        </small></p>
+                  
+      <p class="example"><small><a name="example_">EXAMPLE&nbsp;</a>&nbsp;&nbsp;
+            
+            The following explanation assumes the case where only report on non-equivalent elements is requested. In the case of &#8216;
+                            <b>domain matching by Gaussian G2 continuity</b>&#8217; criterion as defined in 
+                            <b>shape_equivalence_module</b>, two or more surfaces may be detected as having non-equivalent defect by losing G2 continuity. The entity               
+                                                                                                             
+                            <b>data_equivalence_inspection_instance_report</b> (or                 
+                            <b>annotated_model_3d_equivalence_inspection_instance_report</b>) will report all the detected surfaces. The entity                                                                      
+                                                      
+                            <b>data_equivalence_inspection_instance_report_item</b> (or                 
+                            <b>annotated_model_3d_equivalence_inspection_instance_report_item</b>) corresponds to one detected surface.                        
+                        </small></p>
+              
+      <h2><A NAME="entities">5.3 product_data_equivalence_criteria_schema entity definition</A></h2>
+      <h2><A NAME="product_data_equivalence_criteria_schema.data_equivalence_assessment_inspection_association">5.3.1 data_equivalence_assessment_inspection_association</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_criteria_schema.data_equivalence_assessment_inspection_association. Check that the
+            description starts with
+            "     A or an data_equivalence_assessment_inspection_association is 
+            "  </i></font><br>        A 
+          <b>data_equivalence_assessment_inspection_association</b> represents a relationship between an inspection requirement and its corresponding assessment specification. 
+          
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            This entity will be used for specifying which assessment specification shall be used for an inspection requirement when multiple
+            inspection requirements or multiple assessment specifications are specified for a criterion,.</small></p>
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_equivalence_assessment_inspection_association;<br>
+            
+            
+            &nbsp;&nbsp;assessment_specification : <A HREF="#product_data_equivalence_criteria_schema.data_equivalence_criterion_assessment_association">data_equivalence_criterion_assessment_association</A>;<br>
+            
+            
+            &nbsp;&nbsp;measurement_requirement : <A HREF="#product_data_equivalence_criteria_schema.data_equivalence_criterion_inspection_association">data_equivalence_criterion_inspection_association</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.data_equivalence_assessment_inspection_association.assessment_specification">assessment_specification:
+               </a></b>the relationship in which the assessment specification concerned participates.
+      </p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Attr1: The first word of the attribute                     definition should be lower case. It is: </i></font><br><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error ATTR2: attribute descriptions (product_data_equivalence_criteria_schema.data_equivalence_assessment_inspection_association.measurement_requirement)
+            must start with a p element, not </i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.data_equivalence_assessment_inspection_association.measurement_requirement">measurement_requirement:
+               </a></b></p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error e4: No description provided for product_data_equivalence_criteria_schema.data_equivalence_assessment_inspection_association.measurement_requirement</i></font><br><h2><A NAME="product_data_equivalence_criteria_schema.data_equivalence_assessment_specification">5.3.2 data_equivalence_assessment_specification</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_criteria_schema.data_equivalence_assessment_specification. Check that the description
+            starts with
+            "     A or an data_equivalence_assessment_specification is 
+            "  </i></font><br>        A 
+          <b>data_equivalence_assessment_specification</b> represents a specification to be applied to evaluate inspection results for each criterion.       
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_equivalence_assessment_specification;<br>
+            
+            
+            &nbsp;&nbsp;description : text;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Attr1: The first word of the attribute                     definition should be lower case. It is: A</i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.data_equivalence_assessment_specification.description">description:
+               </a></b>        A textual description that characterizes the 
+             <b>data_equivalence_assessment_specification</b>.      
+           
+      </p>
+      <h2><A NAME="product_data_equivalence_criteria_schema.data_equivalence_criteria_representation">5.3.3 data_equivalence_criteria_representation</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_criteria_schema.data_equivalence_criteria_representation. Check that the description
+            starts with
+            "     A or an data_equivalence_criteria_representation is 
+            "  </i></font><br><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent6: product_data_equivalence_criteria_schema.data_equivalence_criteria_representation check for
+            
+            "               is a type of representation. 
+            " . Supertype(s) should be tagged as express_ref    </i></font><br>        A 
+          <b>data_equivalence_criteria_representation</b> represents a selected set of criteria on data equivalence. An instance of this entity may be used independently to represent
+      only equivalence requirement or may be used together with 
+          <a href="../../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.htm#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_representation"><b>data_equivalence_inspection_result_representation</b></a> as defined in clause 6 that represents results of inspection against particular product data.
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_equivalence_criteria_representation<br>
+            &nbsp;&nbsp;SUBTYPE OF (representation);<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <h2><A NAME="product_data_equivalence_criteria_schema.data_equivalence_criterion">5.3.4 data_equivalence_criterion</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_criteria_schema.data_equivalence_criterion. Check that the description starts with
+            "     A or an data_equivalence_criterion is 
+            "  </i></font><br><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent6: product_data_equivalence_criteria_schema.data_equivalence_criterion check for
+            
+            "               is a type of representation_item. 
+            " . Supertype(s) should be tagged as express_ref    </i></font><br>        A 
+          <b>data_equivalence_criterion</b> represents a criterion that is an aspect of the requirement on product data equivalence.
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_equivalence_criterion<br>
+            &nbsp;&nbsp;SUBTYPE OF (representation_item);<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <h2><A NAME="product_data_equivalence_criteria_schema.data_equivalence_criterion_assessment_association">5.3.5 data_equivalence_criterion_assessment_association</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_criteria_schema.data_equivalence_criterion_assessment_association. Check that the description
+            starts with
+            "     A or an data_equivalence_criterion_assessment_association is 
+            "  </i></font><br>        A 
+          <b>data_equivalence_criterion_assessment_association</b> represents a relationship between a criterion and an assessment specification. 
+          
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            For a criterion that does not require pertaining assessment specification, this entity will not be instantiated. For a criterion
+            that requires pertaining two or more assessment specifications, multiple instances of this entity will be created to represent
+            relationship to each assessment specification. This entity may also be used for relating an assessment specification to two
+            or more criteria sharing that assessment specification.</small></p>
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_equivalence_criterion_assessment_association;<br>
+            
+            
+            &nbsp;&nbsp;criterion : <A HREF="#product_data_equivalence_criteria_schema.data_equivalence_criterion">data_equivalence_criterion</A>;<br>
+            
+            
+            &nbsp;&nbsp;assessment_specification : <A HREF="#product_data_equivalence_criteria_schema.data_equivalence_assessment_specification">data_equivalence_assessment_specification</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.data_equivalence_criterion_assessment_association.criterion">criterion:
+               </a></b>the criterion that requires 
+             <b>assessment_specification</b> as its assessment specification.
+           
+      </p>
+      <p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.data_equivalence_criterion_assessment_association.assessment_specification">assessment_specification:
+               </a></b>the assessment specification used for the 
+             <b>criterion</b>.
+           
+      </p>
+      <h2><A NAME="product_data_equivalence_criteria_schema.data_equivalence_criterion_inspection_association">5.3.6 data_equivalence_criterion_inspection_association</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_criteria_schema.data_equivalence_criterion_inspection_association. Check that the description
+            starts with
+            "     A or an data_equivalence_criterion_inspection_association is 
+            "  </i></font><br><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent6: product_data_equivalence_criteria_schema.data_equivalence_criterion_inspection_association check for
+            
+            "               is a type of representation_item_relationship. 
+            " . Supertype(s) should be tagged as express_ref    </i></font><br>        A 
+          <b>data_equivalence_criterion_inspection_association</b> represents a relationship between a criterion and its pertaining inspection requirement. 
+          
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            For a criterion that does not require pertaining inspection requirement, this entity will not be instantiated. For a criterion
+            that requires pertaining two or more inspection requirements, multiple instances of this entity will be created to represent
+            relationship to each inspection requirement. This entity may also be used for relating an inspection requirement to two or
+            more criteria sharing that inspection requirement.</small></p>i
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_equivalence_criterion_inspection_association<br>
+            &nbsp;&nbsp;SUBTYPE OF (representation_item_relationship);<br>
+            
+            
+            &nbsp;&nbsp;SELF\representation_item_relationship.relating_representation_item : <A HREF="#product_data_equivalence_criteria_schema.data_equivalence_criterion">data_equivalence_criterion</A>;<br>
+            
+            
+            &nbsp;&nbsp;SELF\representation_item_relationship.related_representation_item : <A HREF="#product_data_equivalence_criteria_schema.data_equivalence_inspection_requirement">data_equivalence_inspection_requirement</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.data_equivalence_criterion_inspection_association.relating_representation_item">relating_representation_item:
+               </a></b>the criterion that requires associated inspection requirement.
+      </p>
+      <p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.data_equivalence_criterion_inspection_association.related_representation_item">related_representation_item:
+               </a></b>the inspection requirement used for the 
+             <b>criterion</b>.
+           
+      </p>
+      <h2><A NAME="product_data_equivalence_criteria_schema.data_equivalence_inspection_requirement">5.3.7 data_equivalence_inspection_requirement</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_criteria_schema.data_equivalence_inspection_requirement. Check that the description
+            starts with
+            "     A or an data_equivalence_inspection_requirement is 
+            "  </i></font><br><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent6: product_data_equivalence_criteria_schema.data_equivalence_inspection_requirement check for
+            
+            "               is a type of representation_item. 
+            " . Supertype(s) should be tagged as express_ref    </i></font><br>        A 
+          <b>data_equivalence_inspection_requirement</b> represents requirements on acceptable inspection method for inspecting whether pertaining criterion on data equivalence is
+      satisfied (non-equivalent defect is existing) or not.
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_equivalence_inspection_requirement<br>
+            &nbsp;&nbsp;SUBTYPE OF (representation_item);<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <h2><A NAME="product_data_equivalence_criteria_schema.data_equivalence_report_request">5.3.8 data_equivalence_report_request</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_criteria_schema.data_equivalence_report_request. Check that the description starts
+            with
+            "     A or an data_equivalence_report_request is 
+            "  </i></font><br>        A 
+          <b>data_equivalence_report_request</b> represents the specification of a report to be generated as a result of inspection for a 
+          <a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema.data_equivalence_criterion"><b>data_equivalence_criterion</b></a>. It is either a 
+          <a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema.summary_equivalence_report_request"><b>summary_equivalence_report_request</b></a> requiring a summarized report or a 
+          <a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema.summary_equivalence_report_request"><b>summary_equivalence_report_request</b></a> requiring a report on the details of the inspection result.      
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_equivalence_report_request<br>
+            &nbsp;&nbsp;ABSTRACT SUPERTYPE
+            
+            OF&nbsp;(ONEOF&nbsp;(<A HREF="#product_data_equivalence_criteria_schema.summary_equivalence_report_request">summary_equivalence_report_request</A>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#product_data_equivalence_criteria_schema.detailed_equivalence_report_request">detailed_equivalence_report_request</A>));<br>
+            
+            
+            &nbsp;&nbsp;description : text;<br>
+            
+            
+            &nbsp;&nbsp;criterion_of_report_request : <A HREF="#product_data_equivalence_criteria_schema.data_equivalence_criterion">data_equivalence_criterion</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Attr1: The first word of the attribute                     definition should be lower case. It is: A</i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.data_equivalence_report_request.description">description:
+               </a></b>        A textual description characterizing the 
+             <b>data_equivalence_report_request</b>.      
+           
+      </p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Attr1: The first word of the attribute                     definition should be lower case. It is: A</i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.data_equivalence_report_request.criterion_of_report_request">criterion_of_report_request:
+               </a></b>A 
+             <a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema.data_equivalence_criterion"><b>data_equivalence_criterion</b></a>	
+          concerned.
+           
+      </p>
+      <h2><A NAME="product_data_equivalence_criteria_schema.detailed_equivalence_report_request">5.3.9 detailed_equivalence_report_request</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_criteria_schema.detailed_equivalence_report_request. Check that the description starts
+            with
+            "     A or an detailed_equivalence_report_request is 
+            "  </i></font><br><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent6: product_data_equivalence_criteria_schema.detailed_equivalence_report_request check for
+            
+            "               is a type of data_equivalence_report_request. 
+            " . Supertype(s) should be tagged as express_ref    </i></font><br>
+          
+      <p>A 
+             <b>detailed_equivalence_report_request</b> requests a detailed inspection report on the criterion concerned. In order to control the volume of the report and report
+         sequence, two attributes are provided.
+      </p>
+          
+      <p class="example"><small><a name="example_">EXAMPLE&nbsp;</a>&nbsp;&nbsp;
+            
+             What entity instance caused non-equivalent defect and what is the inspected value calculated will be a typical detailed report
+            that may be used for improving the product model concerned.</small></p>
+          
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+                  A <a href="../../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.htm#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_instance_report"><b>data_equivalence_inspection_instance_report</b></a>	
+             defined in 
+                  <a href="../../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.htm#product_data_equivalence_inspection_result_schema"><b>product_data_equivalence_inspection_result_schema</b></a>	
+             shall be instantiated as the detailed report corresponding to the specification defined in this entity.
+                </small></p>
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY detailed_equivalence_report_request<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="#product_data_equivalence_criteria_schema.data_equivalence_report_request">data_equivalence_report_request</A>);<br>
+            
+            
+            &nbsp;&nbsp;detailed_report_request_type : detailed_report_type;<br>
+            
+            
+            &nbsp;&nbsp;report_sequence : preferred_ordering;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error ATTR2: attribute descriptions (product_data_equivalence_criteria_schema.detailed_equivalence_report_request.detailed_report_request_type)
+            must start with a p element, not b</i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.detailed_equivalence_report_request.detailed_report_request_type">detailed_report_request_type:
+               </a></b>
+             <b>detailed_report_request_type</b> to select either 
+             <b>INSPECTED_ELEMENT</b> or 
+             <b>NON-EQUIVALENT_ELEMENT</b>.
+           
+      </p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error ATTR2: attribute descriptions (product_data_equivalence_criteria_schema.detailed_equivalence_report_request.report_sequence)
+            must start with a p element, not b</i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.detailed_equivalence_report_request.report_sequence">report_sequence:
+               </a></b>
+             <b>preferred_ordering</b> to select either 
+             <b>EXTREMITY_ORDER</b> or 
+             <b>DETECTED_ORDER</b>.
+           
+      </p>
+      <h2><A NAME="product_data_equivalence_criteria_schema.detailed_equivalence_report_request_with_number_of_data">5.3.10 detailed_equivalence_report_request_with_number_of_data</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>        A 
+          <b>detailed_equivalence_report_request_with_number_of_data</b> is a type of 
+          <a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.htm#product_data_equivalence_criteria_schema.detailed_equivalence_report_request"><b>detailed_equivalence_report_request</b></a>	
+       that controls maximum number of report.
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY detailed_equivalence_report_request_with_number_of_data<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="#product_data_equivalence_criteria_schema.detailed_equivalence_report_request">detailed_equivalence_report_request</A>);<br>
+            
+            
+            &nbsp;&nbsp;number_of_data : INTEGER;<br>DERIVE<br>
+            &nbsp;&nbsp;SELF\<A HREF="../../../../data/resource_docs/equivalence_validation_of_product_data/sys/5_schema.htm#product_data_equivalence_criteria_schema.detailed_equivalence_report_request">detailed_equivalence_report_request</A>.detailed_report_request_type : detailed_report_type := measured_element;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Attr1: The first word of the attribute                     definition should be lower case. It is: A</i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.detailed_equivalence_report_request_with_number_of_data.number_of_data">number_of_data:
+               </a></b>An INTEGER value to control maximum number of report
+      </p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Attr1: The first word of the attribute                     definition should be lower case. It is: </i></font><br><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error ATTR2: attribute descriptions (product_data_equivalence_criteria_schema.detailed_equivalence_report_request_with_number_of_data.detailed_report_request_type)
+            must start with a p element, not </i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.detailed_equivalence_report_request_with_number_of_data.detailed_report_request_type">detailed_report_request_type:
+               </a></b></p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error e6: No description provided for product_data_equivalence_criteria_schema.detailed_equivalence_report_request_with_number_of_data.detailed_report_request_type</i></font><br><h2><A NAME="product_data_equivalence_criteria_schema.summary_equivalence_report_request">5.3.11 summary_equivalence_report_request</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent3: product_data_equivalence_criteria_schema.summary_equivalence_report_request. Check that the description starts
+            with
+            "     A or an summary_equivalence_report_request is 
+            "  </i></font><br><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Warning Ent6: product_data_equivalence_criteria_schema.summary_equivalence_report_request check for
+            
+            "               is a type of data_equivalence_report_request. 
+            " . Supertype(s) should be tagged as express_ref    </i></font><br>        A 
+          <b>summary_equivalence_report_request</b> requests a summarized inspection report on the criterion concerned. An entity 
+          <a href="../../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.htm#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_criterion_report"><b>data_equivalence_inspection_criterion_report</b></a>	
+       as defined in 
+          <a href="../../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.htm#product_data_equivalence_inspection_result_schema"><b>product_data_equivalence_inspection_result_schema</b></a>	
+       shall be instantiated as a summarized report.
+        
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY summary_equivalence_report_request<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="#product_data_equivalence_criteria_schema.data_equivalence_report_request">data_equivalence_report_request</A>);<br>
+            
+            
+            &nbsp;&nbsp;summary_report_request_type : summary_report_type;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p><br><IMG SRC="../../../../images/warning.gif" ALT="[warning:]" align="bottom" border="0" width="20" height="20"><font color="#FF0000" size="-1"><i>Error ATTR2: attribute descriptions (product_data_equivalence_criteria_schema.summary_equivalence_report_request.summary_report_request_type)
+            must start with a p element, not b</i></font><br><p class="expressdescription"><b><a name="product_data_equivalence_criteria_schema.summary_equivalence_report_request.summary_report_request_type">summary_report_request_type:
+               </a></b>
+             <b>summary_report_report_type</b> to select one of 
+             <b>UNSPECIFIED, CONCLUSION_ONLY, NUMBER_OF_NON-EQUIVALENT_DEFECTS, NUMBER_OF_INSPECTIONS_AND_CONCLUSION</b> and 
+             <b>FULL_STATISTICS</b>.
+           
+      </p><code><br><br>
+         *)<br>
+         END_SCHEMA;&nbsp;&nbsp;--&nbsp;product_data_equivalence_criteria_schema<br>(*
+         </code><br><br><p>&copy; ISO 2016 &#8212; All rights reserved</p>
+   </BODY>
+</HTML>

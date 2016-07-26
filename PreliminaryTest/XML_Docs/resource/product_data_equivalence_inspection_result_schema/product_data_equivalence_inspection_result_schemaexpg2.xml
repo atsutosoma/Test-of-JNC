@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../xsl/res_doc/imgfile.xsl"?>
+<!DOCTYPE imgfile.content SYSTEM "../../../dtd/text.ent">
+<imgfile.content module="equivalence_validation_of_product_data" file="product_data_equivalence_inspection_result_schemaexpg2.xml">
+<img src="product_data_equivalence_inspection_result_schemaexpg2.gif">
+<img.area shape="rect" coords="482,875,682,949" href="../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.xml#product_data_equivalence_inspection_result_schema.inspected_equivalence_element_select" />
+<img.area shape="rect" coords="308,813,499,863" href="../../resources/representation_schema/representation_schema.xml#representation_schema.representation_item" />
+<img.area shape="rect" coords="372,477,666,527" href="../../resources/representation_schema/representation_schema.xml#representation_schema.representation_item_relationship" />
+<img.area shape="rect" coords="48,903,345,953" href="../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.xml#product_data_quality_inspection_result_schema.statistical_value_type" />
+<img.area shape="rect" coords="20,532,210,583" href="../../resources/representation_schema/representation_schema.xml#representation_schema.representation_item" />
+<img.area shape="rect" coords="345,53,674,103" href="../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.xml#product_data_equivalence_criteria_schema.data_equivalence_criterion" />
+<img.area shape="rect" coords="12,61,327,92" href="../../resources/representation_schema/representation_schema.xml#representation_schema.representation_item" />
+<img.area shape="rect" coords="10,11,285,42" href="../../resources/representation_schema/representation_schema.xml#representation_schema.representation" />
+<img.area shape="rect" coords="314,275,666,325" href="../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.xml#product_data_equivalence_criteria_schema.data_equivalence_inspection_requirement" />
+<img.area shape="rect" coords="50,715,352,767" href="../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.xml#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_criterion_report_item" />
+<img.area shape="rect" coords="307,377,674,410" href="../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.xml#product_data_equivalence_inspection_result_schema.data_equivalence_report_measurement_association" />
+<img.area shape="rect" coords="81,472,342,505" href="../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.xml#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_report" />
+<img.area shape="rect" coords="420,715,679,767" href="../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.xml#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_instance_report_item" />
+<img.area shape="rect" coords="380,601,706,634" href="../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.xml#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_instance_report" />
+<img.area shape="rect" coords="318,10,683,43" href="../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.xml#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_representation" />
+<img.area shape="rect" coords="312,165,688,198" href="../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.xml#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_with_judgement" />
+<img.area shape="rect" coords="19,605,349,638" href="../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.xml#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_criterion_report" />
+<img.area shape="rect" coords="17,165,275,198" href="../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.xml#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result" />
+</img>
+</imgfile.content>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../xsl/res_doc/imgfile.xsl"?>
+<!DOCTYPE imgfile.content SYSTEM "../../../dtd/text.ent">
+<imgfile.content module="equivalence_validation_of_product_data" file="product_data_equivalence_inspection_result_schemaexpg1.xml">
+<img src="product_data_equivalence_inspection_result_schemaexpg1.gif">
+<img.area shape="rect" coords="111,231,482,280" href="../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.xml" />
+<img.area shape="rect" coords="110,17,296,66" href="../../resources/support_resource_schema/support_resource_schema.xml" />
+<img.area shape="rect" coords="369,445,671,494" href="../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.xml" />
+<img.area shape="rect" coords="391,10,555,59" href="../../resources/representation_schema/representation_schema.xml" />
+<img.area shape="rect" coords="10,456,347,505" href="../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.xml" />
+</img>
+</imgfile.content>

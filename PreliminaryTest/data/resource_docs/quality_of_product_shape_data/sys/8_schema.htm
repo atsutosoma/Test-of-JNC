@@ -1,0 +1,1872 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="schema.DC" href="http://www.dublincore.org/documents/2003/02/04/dces/">
+      <META name="DC.Title" content="&#xA;&#xA;  Integrated generic resource">
+      <META name="DC.Dates" content="2014/06/28 15:53:12">
+      <META name="DC.Published" content="2014-05-01">
+      <META name="DC.Contributor" content="Ohtaka, Akihiko">
+      <META name="DC.Creator" content="Hiraoka, Hiroyuki">
+      <META name="DC.Description" content="The integrated resource quality_of_product_shape_data">
+      <META name="DC.Subject" content="STEP, ISO 10303, integrated resource, Product data quality, Product shape data quality, Criteria representation, Measurement requirement, Threshold, Accuracy , Inspection result representation">
+      <META name="DC.Identifier" content="ISO/TC 184/SC 4/WG 12&nbsp;N8313">
+      <META name="DC.Replaces" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.version" content="2">
+      <META name="SC4.checklist.internal_review" content="ISO/TC 184/SC4/WG12 N">
+      <META name="SC4.checklist.project_leader" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.checklist.convener" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="STEPMOD.resource.rcs.date" content="Date: 2014/06/28 15:53:12 ">
+      <META name="STEPMOD.resource.rcs.revision" content="Revision: 1.10 ">
+      <TITLE>ISO 10303-59:2014(E) </TITLE>
+   </HEAD>
+   <BODY>
+      <TABLE cellspacing="0" border="0" width="100%">
+         <TR>
+            <TD><small><a href="../sys/isocover.htm">ISO cover</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../repository_index.htm">Modules Index</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../ballots/index.htm">Ballot home</a></small></TD>
+         </TR>
+         <TR>
+            <TD valign="MIDDLE"><B>
+                  
+                  	  Integrated generic resource: Quality of product shape data</B></TD>
+            <TD valign="MIDDLE" align="RIGHT"><b>ISO 10303-59:2014(E) <br>
+                  &copy; ISO
+                  </b></TD>
+         </TR>
+      </TABLE>
+      <TABLE border="1" cellspacing="1" width="100%">
+         <TR>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/cover.htm">Cover page</A><BR><A HREF="../sys/contents.htm">Table of contents</A><BR><A HREF="../sys/cover.htm#copyright">Copyright</A><BR><A HREF="../sys/foreword.htm">Foreword</A><BR><A HREF="../sys/introduction.htm">Introduction</A><BR><A HREF="../sys/1_scope.htm">1 Scope</A><BR><A HREF="../sys/2_refs.htm">2 Normative references</A><BR><A HREF="../sys/3_defs.htm">
+                     3 Terms, definitions and abbreviated terms
+                     </A><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#termsdefns">3.1 Terms and definitions</a><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#abbrv">3.2 Abbreviated terms</a><br><A HREF="../sys/4_schema.htm">4 Product data quality definition</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#gen">4.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#funcon">4.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#types">4.3 Product data quality definition type definition</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#entities">4.4 Product data quality definition entity definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/5_schema.htm">5 Product data quality criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#gen">5.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#funcon">5.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#types">5.3 Product data quality criteria type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#entities">5.4 Product data quality criteria entity definitions</A><BR></small><A HREF="../sys/6_schema.htm">6 Product data quality inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#gen">6.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#funcon">6.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#types">6.3 Product data quality inspection result type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#entities">6.4 Product data quality inspection result entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#functions">6.5 Product data quality inspection result function definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/7_schema.htm">7 Shape data quality criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#gen">7.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#funcon">7.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#types">7.3 Shape data quality criteria type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#entities">7.4 Shape data quality criteria entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#functions">7.5 Shape data quality criteria function definitions</A><BR></small><A HREF="../sys/8_schema.htm">8 Shape data quality inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#gen">8.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#funcon">8.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#types">8.3 Shape data quality inspection result type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#entities">8.4 Shape data quality inspection result entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#functions">8.5 Shape data quality inspection result function definitions</A><BR></small><A HREF="../sys/a_short_names.htm">A Short names of entities</A><BR><A HREF="../sys/b_obj_reg.htm">B Information object
+                     registration</A><BR><A HREF="../sys/c_exp.htm">C Computer interpretable listings</A><BR><A HREF="../sys/d_expg.htm">
+                     D EXPRESS-G diagrams
+                     </A><BR><A HREF="../sys/tech_discussion.htm#tech_discssion">E Technical discussion</A><BR><A HREF="../sys/examples.htm">F  Examples</A><BR><A HREF="../sys/g_change.htm">G Change history</A><BR><A HREF="../sys/biblio.htm#bibliography">Bibliography</A><BR><A HREF="../sys/resdocindex.htm">Index</A><BR></p>
+            </TD>
+         </TR>
+      </TABLE>
+      <H2><A NAME="schema$schema_no+3">8 Shape data quality inspection result schema</A></H2>
+      <H2><A NAME="gen">8.1 General</A></H2>
+      
+      <p>
+         This schema provides representation of inspection results of three dimensional product shape data quality. 
+         This schema is a specialization of <b>product_data_quality_inspection_result_schema</b> defined in clause 6 
+         to the quality of three dimensional product shape. 
+         Therefore, all the fundamental concepts and assumptions described in 6.2 also apply. 
+         
+      </p>
+      
+      <p>
+         As this schema deals with inspection result of the quality of product shape data, 
+         a relationship is established between <b>shape_data_quality_inspection_result_representation</b> 
+         that is a type of <b>data_quality_inspection_result_representation</b> defined in 
+         <b>product_data_quality_inspection_result_schema</b> and <b>shape_representation</b> representing the 
+         inspected product shape data by <b>shape_data_quality_inspected_shape_and_result_relationship</b>.
+         
+      </p>
+      
+      <p class="note"><small><a name="note_1">NOTE&nbsp;1</a>&nbsp;&nbsp;
+            
+            
+            Geometric data newly created for representing inspection results, such as points where quality defect was detected, 
+            shall be created in the context of the inspected product shape data.
+            </small></p>
+      
+      <p>
+         A <b>shape_data_quality_inspection_criterion_report</b> is a type of 
+         <b>data_quality_inspection_criterion_report</b> (see clause 6.4.5) that represents a summary inspection result 
+         based on a specific shape data quality criterion. 
+         It specifies how many entities were inspected, and how many among them were judged to have a 
+         quality defect as judged by this criterion. 
+         It also specifies a <b>representative_measured_value</b> that is a typical <b>measured_value</b> 
+         resulting from the inspection, which may be useful to judge how serious the overall quality defect is. 
+         
+      </p>
+      
+      <p>
+         A <b>shape_data_quality_inspection_instance_report</b> is a type of <b>data_quality_inspection_instance_report</b> 
+         (see clause 6.4.6) that represents the most detailed inspection results for a specific shape data quality criterion. 
+         Two or more instances will in general be inspected or reported as having a quality defect. 
+         The concept corresponding to one inspected instance or pair of instances is 
+         <b>shape_data_quality_inspection_instance_report_item</b>, a type of 
+         <b>data_quality_inspection_instance_report_item</b> (see clause 6.4.7). 
+         An instance of this entity is created for each instance inspected or pair of instances inspected, 
+         and it includes information concerning the shape element types inspected and the corresponding measured values. 
+         If it is required to capture precisely where an extreme measured value was detected, 
+         <b>instance_report_item_with_extreme_instances</b> shall be used. 
+         This is a type of <b>shape_data_quality_inspection_instance_report_item</b> that provides the required  
+         location information.
+         
+      </p>
+      
+      <p class="note"><small><a name="note_2">NOTE&nbsp;2</a>&nbsp;&nbsp;
+            
+            
+            The type of shape element to be measured and the type of shape element to represent the location of 
+            quality defect are controlled by each subtype of <b>shape_data_quality_criterion</b> defined in 
+            <b>shape_data_quality_criteria_schema</b>. 
+            The number of <b>shape_data_quality_inspection_instance_report_item</b> instances to be generated can be 
+            controlled by the attributes of <b>data_quality_report_request</b> defined in 
+            <b>product_data_quality_criteria_schema</b>.
+            </small></p>
+      
+      <p>
+         Users will specify thresholds to judge if a criterion is satisfied or not, which depends on business situation. 
+         They may or may not specify the accuracy for controlling precision of numerical calculation used in the measurement.  
+         But there are many cases that the information on the accuracy that is actually applied by the measurement 
+         is useful to interpret an inspection result. 
+         For this purpose, representation of a common accuracy applied to every measurement as well as the accuracy 
+         applied to the measurement of a specific criterion is provided in this schema.
+         
+      </p>
+         This clause defines the information requirements to which implementations shall conform using the EXPRESS language as defined
+      in ISO 10303-11. The following EXPRESS declaration begins the <b>shape_data_quality_inspection_result_schema</b>
+      and identifies the necessary external references.
+      	    
+      <p></p><u>EXPRESS specification: </u><code><br><br>
+         *)<br><a name="shape_data_quality_inspection_result_schema">
+            	SCHEMA shape_data_quality_inspection_result_schema;</a></code><a name="interfaces"></a><p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/geometric_model_schema/geometric_model_schema.htm#geometric_model_schema">geometric_model_schema</A>;
+            &nbsp;&nbsp;&nbsp;--&nbsp;              
+            ISO 10303-42<br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/geometry_schema/geometry_schema.htm#geometry_schema">geometry_schema</A>;
+            &nbsp;&nbsp;&nbsp;--&nbsp;              
+            ISO 10303-42<br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/measure_schema/measure_schema.htm#measure_schema">measure_schema</A>;
+            &nbsp;&nbsp;&nbsp;--&nbsp;              
+            ISO 10303-41<br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/5_schema.htm#product_data_quality_criteria_schema">product_data_quality_criteria_schema</A>;
+            &nbsp;&nbsp;&nbsp;--&nbsp;              
+            ISO 10303-59<br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/6_schema.htm#product_data_quality_inspection_result_schema">product_data_quality_inspection_result_schema</A>;
+            &nbsp;&nbsp;&nbsp;--&nbsp;              
+            ISO 10303-59<br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema">product_definition_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-41<br>&nbsp;&nbsp;(product_definition);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/product_property_definition_schema/product_property_definition_schema.htm#product_property_definition_schema">product_property_definition_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-41<br>&nbsp;&nbsp;(property_definition,<br>
+            &nbsp;&nbsp;
+            product_definition_shape,<br>
+            &nbsp;&nbsp;
+            characterized_product_definition);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema">product_property_representation_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-41<br>&nbsp;&nbsp;(property_definition_representation,<br>
+            &nbsp;&nbsp;
+            shape_representation,<br>
+            &nbsp;&nbsp;
+            shape_representation_relationship,<br>
+            &nbsp;&nbsp;
+            shape_definition_representation);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/qualified_measure_schema/qualified_measure_schema.htm#qualified_measure_schema">qualified_measure_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-45<br>&nbsp;&nbsp;(qualified_representation_item,<br>
+            &nbsp;&nbsp;
+            value_qualifier,<br>
+            &nbsp;&nbsp;
+            type_qualifier,<br>
+            &nbsp;&nbsp;
+            measure_representation_item);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/representation_schema/representation_schema.htm#representation_schema">representation_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-43<br>&nbsp;&nbsp;(founded_item_select,<br>
+            &nbsp;&nbsp;
+            founded_item,<br>
+            &nbsp;&nbsp;
+            representation,<br>
+            &nbsp;&nbsp;
+            representation_item,<br>
+            &nbsp;&nbsp;
+            using_representations,<br>
+            &nbsp;&nbsp;
+            representation_relationship,<br>
+            &nbsp;&nbsp;
+            compound_representation_item,<br>
+            &nbsp;&nbsp;
+            value_representation_item,<br>
+            &nbsp;&nbsp;
+            set_representation_item);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/7_schema.htm#shape_data_quality_criteria_schema">shape_data_quality_criteria_schema</A>;
+            &nbsp;&nbsp;&nbsp;--&nbsp;              
+            ISO 10303-59<br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema">support_resource_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-41<br>&nbsp;&nbsp;(bag_to_set);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/topology_schema/topology_schema.htm#topology_schema">topology_schema</A>;
+            &nbsp;&nbsp;&nbsp;--&nbsp;              
+            ISO 10303-42<br>(*<br><br></code></p>
+      <p class="note"><small>
+            NOTE&nbsp;1&nbsp;&nbsp;
+            	
+            		        The schemas referenced above are specified in the following 
+            		        parts:
+            		</small></p>
+      <blockquote>
+         <table>
+            <tr>
+               <td width="266"><b><small>geometric_model_schema</small></b></td>
+               <td width="127"><small>ISO 10303-42</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>geometry_schema</small></b></td>
+               <td width="127"><small>ISO 10303-42</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>measure_schema</small></b></td>
+               <td width="127"><small>ISO 10303-41</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>product_data_quality_criteria_schema</small></b></td>
+               <td width="127"><small>ISO 10303-59</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>product_data_quality_inspection_result_schema</small></b></td>
+               <td width="127"><small>ISO 10303-59</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>product_definition_schema</small></b></td>
+               <td width="127"><small>ISO 10303-41</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>product_property_definition_schema</small></b></td>
+               <td width="127"><small>ISO 10303-41</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>product_property_representation_schema</small></b></td>
+               <td width="127"><small>ISO 10303-41</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>qualified_measure_schema</small></b></td>
+               <td width="127"><small>ISO 10303-45</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>representation_schema</small></b></td>
+               <td width="127"><small>ISO 10303-43</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>shape_data_quality_criteria_schema</small></b></td>
+               <td width="127"><small>ISO 10303-59</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>support_resource_schema</small></b></td>
+               <td width="127"><small>ISO 10303-41</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>topology_schema</small></b></td>
+               <td width="127"><small>ISO 10303-42</small></td>
+            </tr>
+         </table>
+      </blockquote>
+      <p class="note"><small>
+            NOTE&nbsp;2&nbsp;&nbsp;
+            
+            See Annex <a href="d_expg.htm">D</a>
+            for a graphical representation of this schema.
+            </small></p>
+      <H2><A NAME="funcon">8.2 Fundamental concepts and assumptions</A></H2>
+         
+      <p>
+            Concepts and assumptions necessary for understanding this schema follow.
+         
+      </p><b>
+         8.2.1  Representation of location information on existing quality defect
+         </b>
+      
+      <p>
+         This schema allows representation of precise location information on existing quality defects.
+         
+      </p>
+      
+      <p class="example"><small><a name="example_">EXAMPLE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            A <b>point_on_edge_curve</b> can be used to represent the location of a quality defect regarding the 
+            test on &#8216;<b>gap_between_edge_and_base_surface</b>&#8217; criterion. 
+            </small></p>
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            In the example above, the detected <b>edge_curve</b> should be reliably identified by all checking systems 
+            but the point information should be treated as a reference to approximate location.
+            </small></p>
+      
+      
+      <h2><A NAME="types">8.3 shape_data_quality_inspection_result_schema type definitions</A></h2>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.b_spline_or_composite_curve_select">8.3.1 b_spline_or_composite_curve_select</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      
+      
+      The <b>b_spline_or_composite_curve_select</b> type is a list of
+      alternate data types. It provides a mechanism to refer to an
+      instance of one of these data types.  
+      
+      A <b>b_spline_or_composite_curve_select</b> allows selection of either 
+      <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_curve"><b>b_spline_curve</b></a> or 
+      <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.composite_curve"><b>composite_curve</b></a>. 
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_curve"><b>b_spline_curve</b></a> and 
+            the <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.composite_curve"><b>composite_curve</b></a> 
+            are defined in <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema"><b> 
+                  geometry_schema</b></a> of ISO 10303-42.
+            </small></p>
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            TYPE 
+            b_spline_or_composite_curve_select
+            =
+            
+            
+            SELECT<br>
+            &nbsp;&nbsp;&nbsp;(b_spline_curve, <br>&nbsp;&nbsp;&nbsp;&nbsp;composite_curve);<br>
+            END_TYPE; <br>
+            (*
+            </code></p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.b_spline_or_rectangular_composite_surface_select">8.3.2 b_spline_or_rectangular_composite_surface_select</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      
+      
+      The <b>b_spline_or_rectangular_composite_surface_select</b> type is a list of
+      alternate data types. It provides a mechanism to refer to an
+      instance of one of these data types.  
+      
+      A <b>b_spline_or_rectangular_composite_surface_select</b> allows selection of either 
+      <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a> or 
+      <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.rectangular_composite_surface"><b>rectangular_composite_surface</b></a>. 
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a> and
+            the <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.rectangular_composite_surface"><b>rectangular_composite_surface</b></a>
+             are defined in 
+            <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema"><b>
+                  geometry_schema</b></a> of ISO 10303-42.
+            </small></p>
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            TYPE 
+            b_spline_or_rectangular_composite_surface_select
+            =
+            
+            
+            SELECT<br>
+            &nbsp;&nbsp;&nbsp;(b_spline_surface, <br>&nbsp;&nbsp;&nbsp;&nbsp;rectangular_composite_surface);<br>
+            END_TYPE; <br>
+            (*
+            </code></p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.boolean_value">8.3.3 boolean_value</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>boolean_value</b> is used for selecting Boolean measured value.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            TYPE 
+            boolean_value
+            =
+            BOOLEAN;<br>
+            END_TYPE; <br>
+            (*
+            </code></p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.closed_or_open_shell_select">8.3.4 closed_or_open_shell_select</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      
+      
+      The <b>closed_or_open_shell_select</b> type is a list of
+      alternate data types. It provides a mechanism to refer to an
+      instance of one of these data types.  
+      
+      A <b>closed_or_open_shell_select</b> allows selection of the type of topological dimensionality-2 shell either
+      <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.closed_shell"><b>closed_shell</b></a> 
+      or 
+      <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.open_shell"><b>open_shell</b></a>. 
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.closed_shell"><b>closed_shell</b></a> 
+            and
+            the <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.open_shell"><b>open_shell</b></a>
+            are defined in 
+            <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema"><b> 
+                  topology_schema</b></a> of ISO 10303-42.
+            </small></p>
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            TYPE 
+            closed_or_open_shell_select
+            =
+            
+            
+            SELECT<br>
+            &nbsp;&nbsp;&nbsp;(closed_shell, <br>&nbsp;&nbsp;&nbsp;&nbsp;open_shell);<br>
+            END_TYPE; <br>
+            (*
+            </code></p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.inspected_shape_element_select">8.3.5 inspected_shape_element_select</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      
+      
+      The <b>inspected_shape_element_select</b> type is an extension
+      of the 
+      <b><A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/6_schema.htm#product_data_quality_inspection_result_schema.inspected_element_select">inspected_element_select</A></b> type. 
+      
+      It adds the data 
+      
+      types
+      edge_loop, edge_curve, face_surface, curve, surface, vertex_point, <A HREF="#shape_data_quality_inspection_result_schema.closed_or_open_shell_select">closed_or_open_shell_select</A>, <A HREF="#shape_data_quality_inspection_result_schema.b_spline_or_composite_curve_select">b_spline_or_composite_curve_select</A>, <A HREF="#shape_data_quality_inspection_result_schema.b_spline_or_rectangular_composite_surface_select">b_spline_or_rectangular_composite_surface_select</A>, point, connected_face_set, manifold_solid_brep, direction
+      
+      and
+      
+      placement
+      to the list of alternate data types.
+      
+      <p class="note"><small>
+            NOTE&nbsp;&nbsp;The list of entity data types will be
+            extended in application resources that use the constructs of
+            this resource.                 
+            </small></p>
+      An <b>inspected_shape_element_select</b> allows selection of the shape element type to be inspected that is
+      clarified in each measurement requirement.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            TYPE 
+            inspected_shape_element_select
+            =
+            
+            EXTENSIBLE
+            
+            GENERIC_ENTITY
+            
+            
+            SELECT
+            BASED_ON 
+            <A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/6_schema.htm#product_data_quality_inspection_result_schema.inspected_element_select">inspected_element_select</A>
+            WITH 
+            <br>
+            &nbsp;&nbsp;&nbsp;(edge_loop, <br>&nbsp;&nbsp;&nbsp;&nbsp;edge_curve, <br>&nbsp;&nbsp;&nbsp;&nbsp;face_surface, <br>&nbsp;&nbsp;&nbsp;&nbsp;curve, <br>&nbsp;&nbsp;&nbsp;&nbsp;surface, <br>&nbsp;&nbsp;&nbsp;&nbsp;vertex_point, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.closed_or_open_shell_select">closed_or_open_shell_select</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.b_spline_or_composite_curve_select">b_spline_or_composite_curve_select</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.b_spline_or_rectangular_composite_surface_select">b_spline_or_rectangular_composite_surface_select</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;point, <br>&nbsp;&nbsp;&nbsp;&nbsp;connected_face_set, <br>&nbsp;&nbsp;&nbsp;&nbsp;manifold_solid_brep, <br>&nbsp;&nbsp;&nbsp;&nbsp;direction, <br>&nbsp;&nbsp;&nbsp;&nbsp;placement);<br>
+            END_TYPE; <br>
+            (*
+            </code></p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.location_of_extreme_value_select">8.3.6 location_of_extreme_value_select</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg4.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      
+      
+      The <b>location_of_extreme_value_select</b> type is a list of
+      alternate data types. It provides a mechanism to refer to an
+      instance of one of these data types.  
+      
+      A <b>location_of_extreme_value_select</b> allows selection of the type of location representing where the
+      extreme value is measured.
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The extreme value may be the measured value that causes quality defect, or the measured value that is
+            close to the threshold though not within the specified range. 
+            The extreme value is represented by the attribute
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.extreme_instance.measured_value"><b>measured_value</b></a> 
+            of an entity 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.extreme_instance"><b>extreme_instance</b></a> 
+            referred from the 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances"><b>instance_report_item_with_extreme_instances</b></a>. 
+            </small></p>
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            TYPE 
+            location_of_extreme_value_select
+            =
+            
+            
+            SELECT<br>
+            &nbsp;&nbsp;&nbsp;(<A HREF="#shape_data_quality_inspection_result_schema.inspected_shape_element_select">inspected_shape_element_select</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.b_spline_surface_knot_locator">b_spline_surface_knot_locator</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.b_spline_curve_knot_locator">b_spline_curve_knot_locator</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.b_spline_curve_segment">b_spline_curve_segment</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.b_spline_surface_strip">b_spline_surface_strip</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.b_spline_surface_patch">b_spline_surface_patch</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.composite_curve_transition_locator">composite_curve_transition_locator</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator">rectangular_composite_surface_transition_locator</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.boundary_curve_of_b_spline_or_rectangular_composite_surface">boundary_curve_of_b_spline_or_rectangular_composite_surface</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;oriented_edge, <br>&nbsp;&nbsp;&nbsp;&nbsp;face_bound, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.point_on_edge_curve">point_on_edge_curve</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.point_on_face_surface">point_on_face_surface</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;subedge, <br>&nbsp;&nbsp;&nbsp;&nbsp;subface);<br>
+            END_TYPE; <br>
+            (*
+            </code></p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.measured_value_select">8.3.7 measured_value_select</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      
+      
+      The <b>measured_value_select</b> type is a list of
+      alternate data types. It provides a mechanism to refer to an
+      instance of one of these data types.  
+      
+      A <b>measured_value_select</b> allows selection of the type of measured value that shall be calculated by
+      PDQ-checking software based on the measurement requirement.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            TYPE 
+            measured_value_select
+            =
+            
+            
+            SELECT<br>
+            &nbsp;&nbsp;&nbsp;(<A HREF="#shape_data_quality_inspection_result_schema.boolean_value">boolean_value</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;measure_value, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.plane_angle_and_ratio_pair">plane_angle_and_ratio_pair</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#shape_data_quality_inspection_result_schema.plane_angle_and_length_pair">plane_angle_and_length_pair</A>);<br>
+            END_TYPE; <br>
+            (*
+            </code></p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.surface_boundary_type">8.3.8 surface_boundary_type</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>surface_boundary_type</b> allows selection of a surface parameter terminal.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            TYPE 
+            surface_boundary_type
+            =
+            
+            ENUMERATION
+            
+            OF
+            <br>
+            &nbsp;&nbsp; 
+            (u_parameter_min,<br>&nbsp;&nbsp;&nbsp;&nbsp;v_parameter_min,<br>&nbsp;&nbsp;&nbsp;&nbsp;u_parameter_max,<br>&nbsp;&nbsp;&nbsp;&nbsp;v_parameter_max);<br>
+            END_TYPE; <br>
+            (*
+            </code></p>
+      <p><u>Enumerated item definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.surface_boundary_type.u_parameter_min">u_parameter_min:
+               </a></b>
+         the selected boundary is the minimum value of the <i>u</i> parameter.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.surface_boundary_type.v_parameter_min">v_parameter_min:
+               </a></b>
+         the selected boundary is the minimum value of the <i>v</i> parameter.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.surface_boundary_type.u_parameter_max">u_parameter_max:
+               </a></b>
+         the selected boundary is the maximum value of the <i>u</i> parameter.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.surface_boundary_type.v_parameter_max">v_parameter_max:
+               </a></b>
+         the selected boundary is the maximum value of the <i>v</i> parameter.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.u_or_v_parameter">8.3.9 u_or_v_parameter</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      An <b>u_or_v_parameter</b> allows selection of a parameter representing a surface.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            TYPE 
+            u_or_v_parameter
+            =
+            
+            ENUMERATION
+            
+            OF
+            <br>
+            &nbsp;&nbsp; 
+            (u_parameter,<br>&nbsp;&nbsp;&nbsp;&nbsp;v_parameter);<br>
+            END_TYPE; <br>
+            (*
+            </code></p>
+      <p><u>Enumerated item definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.u_or_v_parameter.u_parameter">u_parameter:
+               </a></b>
+         the selected parameter is <i>u</i> parameter.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.u_or_v_parameter.v_parameter">v_parameter:
+               </a></b>
+         the selected parameter is <i>v</i> parameter.
+         
+      </p>
+      <h2><A NAME="entities">8.4 shape_data_quality_inspection_result_schema entity definitions</A></h2>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.b_spline_curve_knot_locator">8.4.1 b_spline_curve_knot_locator</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg4.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>b_spline_curve_knot_locator</b>
+       
+       is a type of <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.founded_item"><b>founded_item</b></a>
+       and represents a location by specifying an index of the knot array of the identified 
+       <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_curve"><b>b_spline_curve</b></a>. 
+       This entity is used to represent the location where the extreme value was measured.
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_curve"><b>b_spline_curve</b></a> and knot array are defined in 
+            <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema"><b>geometry_schema</b></a> of ISO 10303-42.
+            </small></p>
+            
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY b_spline_curve_knot_locator<br>
+            &nbsp;&nbsp;SUBTYPE OF (founded_item);<br>
+            
+            
+            &nbsp;&nbsp;basis_curve : b_spline_curve;<br>
+            
+            
+            &nbsp;&nbsp;knot_index : INTEGER;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(
+            using_representations(SELF.basis_curve) *
+            relating_shape_representations_of_extreme_values(SELF))&gt;0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_curve_knot_locator.basis_curve">basis_curve:
+               </a></b>
+         a <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_curve"><b>b_spline_curve</b></a> on which the measurement was performed.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_curve_knot_locator.knot_index">knot_index:
+               </a></b>
+         the start index of the segment in the knot array of the 
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_curve_knot_locator.basis_curve"><b>basis_curve</b></a> 
+         where the extreme value was measured.
+         
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_curve_knot_locator.wr:wr1">WR1:
+               </a></b>
+         The <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> 
+         that uses the <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_curve"><b>b_spline_curve</b></a> specified in 
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_curve_knot_locator.basis_curve"><b>basis_curve</b></a> 
+         shall be the <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> of the <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> that is related to 
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a> 
+         that has <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances"><b>instance_report_item_with_extreme_instances</b></a> containing an instance of this entity as its location of extreme value.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.b_spline_curve_segment">8.4.2 b_spline_curve_segment</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg4.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>b_spline_curve_segment</b> 
+       is a type of <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.founded_item"><b>founded_item</b></a>
+       and represents 
+       a location by specifying a knot span of the identified <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_curve"><b>b_spline_curve</b></a> 
+       where parameter is larger than or equal to 
+       (<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_curve_segment.start_knot_index"><b>start_knot_index</b></a>)th knot 
+       and less or equal to 
+       (<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_curve_segment.start_knot_index"><b>start_knot_index</b></a>+1)th knot. This entity is used to represent the location where the extreme value was measured.
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_curve"><b>b_spline_curve</b></a> and knot array are defined in 
+            <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema"><b>geometry_schema</b></a> of ISO 10303-42.
+            </small></p>
+            
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY b_spline_curve_segment<br>
+            &nbsp;&nbsp;SUBTYPE OF (founded_item);<br>
+            
+            
+            &nbsp;&nbsp;basis_curve : b_spline_curve;<br>
+            
+            
+            &nbsp;&nbsp;start_knot_index : INTEGER;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(
+            using_representations(SELF.basis_curve) *
+            relating_shape_representations_of_extreme_values(SELF))&gt;0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_curve_segment.basis_curve">basis_curve:
+               </a></b>
+         a <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_curve"><b>b_spline_curve</b></a> on which the measurement was performed.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_curve_segment.start_knot_index">start_knot_index:
+               </a></b>
+         the start index of the knot array of the <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_curve_segment.basis_curve"><b>basis_curve</b></a> where the extreme value was measured. If the <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_curve_segment.start_knot_index"><b>start_knot_index</b></a> is <i>i</i>, then it shall be understood that portion of the curve is represented where parameter is larger than <i>i</i>-th knot and smaller than <i>i</i>+1-th knot of the <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_curve_segment.basis_curve"><b>basis_curve</b></a>.
+         
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_curve_segment.wr:wr1">WR1:
+               </a></b>
+         The <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> that uses the <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_curve"><b>b_spline_curve</b></a> specified in <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_curve_segment.basis_curve"><b>basis_curve</b></a> shall be the <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> of the <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> that is related to <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a> that has <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances"><b>instance_report_item_with_extreme_instances</b></a> containing an instance of this entity as its location of extreme value.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.b_spline_surface_knot_locator">8.4.3 b_spline_surface_knot_locator</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>b_spline_surface_knot_locator</b> 
+       is a type of <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.founded_item"><b>founded_item</b></a>
+       and represents 
+       a location by specifying an index of the knot array and a direction in the parametric space of the identified 
+       <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a>. 
+       This entity is used to represent the location where the extreme value was measured.
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a> and knot array are defined in 
+            <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema"><b>geometry_schema</b></a> of ISO 10303-42.
+            </small></p>
+            
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY b_spline_surface_knot_locator<br>
+            &nbsp;&nbsp;SUBTYPE OF (founded_item);<br>
+            
+            
+            &nbsp;&nbsp;basis_surface : b_spline_surface;<br>
+            
+            
+            &nbsp;&nbsp;knot_index : INTEGER;<br>
+            
+            
+            &nbsp;&nbsp;surface_parameter : <A HREF="#shape_data_quality_inspection_result_schema.u_or_v_parameter">u_or_v_parameter</A>;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(
+            using_representations(SELF.basis_surface) *
+            relating_shape_representations_of_extreme_values(SELF))&gt;0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_surface_knot_locator.basis_surface">basis_surface:
+               </a></b>
+         a <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a> on which the measurement was performed.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_surface_knot_locator.knot_index">knot_index:
+               </a></b>
+         an index of the knot array of the <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_knot_locator.basis_surface"><b>basis_surface</b></a> where the extreme value was measured.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_surface_knot_locator.surface_parameter">surface_parameter:
+               </a></b>
+         a <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.u_or_v_parameter"><b>u_or_v_parameter</b></a> 
+         where the <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_knot_locator.knot_index"><b>knot_index</b></a> 
+         corresponds.
+         
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_surface_knot_locator.wr:wr1">WR1:
+               </a></b>
+         The <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> that uses the <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a> specified in <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_knot_locator.basis_surface"><b>basis_surface</b></a> shall be the <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> of the <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> that is related to <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a> that has <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances"><b>instance_report_item_with_extreme_instances</b></a> containing an instance of this entity as its location of extreme value.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.b_spline_surface_patch">8.4.4 b_spline_surface_patch</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>b_spline_surface_patch</b> 
+       is a type of <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.founded_item"><b>founded_item</b></a>
+       and represents 
+       a location by specifying a patch with <i>u</i>, <i>v</i> knot indices on the identified 
+       <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a>. 
+       This entity is used to represent where the extreme value was measured.
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a> and knot array are 
+            defined in <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema"><b>geometry_schema</b></a> of ISO 10303-42.
+            </small></p>
+            
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY b_spline_surface_patch<br>
+            &nbsp;&nbsp;SUBTYPE OF (founded_item);<br>
+            
+            
+            &nbsp;&nbsp;basis_surface : b_spline_surface;<br>
+            
+            
+            &nbsp;&nbsp;u_start_knot_index : INTEGER;<br>
+            
+            
+            &nbsp;&nbsp;v_start_knot_index : INTEGER;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(
+            using_representations(SELF.basis_surface) *
+            relating_shape_representations_of_extreme_values(SELF))&gt;0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_surface_patch.basis_surface">basis_surface:
+               </a></b>
+         a <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a> on which the measurement was performed.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_surface_patch.u_start_knot_index">u_start_knot_index:
+               </a></b>
+         the start index of the surface patch in the knot array in <i>u</i> parameter of <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_patch.basis_surface"><b>basis_surface</b></a> where the extreme value was measured.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_surface_patch.v_start_knot_index">v_start_knot_index:
+               </a></b>
+         the start index of the surface patch in the knot array in <i>v</i> parameter of <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_patch.basis_surface"><b>basis_surface</b></a> where the extreme value was measured.
+         
+      </p>
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            If the <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_patch.u_start_knot_index"><b>u_start_knot_index</b></a> is 
+            <i>i</i> and the <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_patch.v_start_knot_index"><b>v_start_knot_index</b></a> is <i>j</i>, then it shall be understood that the portion of the surface is represented where <i>u</i> parameter is larger than or equal to <i>i</i>-th knot and is smaller than or equal to <i>i</i>+1-th knot, and <i>v</i> parameter is larger than or equal to <i>j</i>-th knot and is smaller than or equal to <i>j</i>+1-th knot.
+            </small></p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_surface_patch.wr:wr1">WR1:
+               </a></b>
+         The <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> that uses the <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a> specified in <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_patch.basis_surface"><b>basis_surface</b></a> shall be the <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> of the <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> that is related to <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a> that has <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances"><b>instance_report_item_with_extreme_instances</b></a> containing an instance of this entity as its location of extreme value.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.b_spline_surface_strip">8.4.5 b_spline_surface_strip</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>b_spline_surface_strip</b> 
+       is a type of <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.founded_item"><b>founded_item</b></a>
+       and represents 
+       a location by specifying a surface strip of the identified <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a>. 
+       This entity is used to represent the location where the extreme value was measured.
+            
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY b_spline_surface_strip<br>
+            &nbsp;&nbsp;SUBTYPE OF (founded_item);<br>
+            
+            
+            &nbsp;&nbsp;basis_surface : b_spline_surface;<br>
+            
+            
+            &nbsp;&nbsp;start_knot_index : INTEGER;<br>
+            
+            
+            &nbsp;&nbsp;surface_parameter : <A HREF="#shape_data_quality_inspection_result_schema.u_or_v_parameter">u_or_v_parameter</A>;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(
+            using_representations(SELF.basis_surface) *
+            relating_shape_representations_of_extreme_values(SELF))&gt;0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_surface_strip.basis_surface">basis_surface:
+               </a></b>
+         a <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a> on which the measurement was performed.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_surface_strip.start_knot_index">start_knot_index:
+               </a></b>
+         the start index of the surface strip in the knot array in <i>u</i> or <i>v</i> parameter of <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_strip.basis_surface"><b>basis_surface</b></a> where the extreme value was measured. If the <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_strip.start_knot_index"><b>start_knot_index</b></a> is <i>i</i>, then it shall be understood that portion of the surface is represented where the <i>u</i> or <i>v</i> parameter specified by <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_strip.surface_parameter"><b>surface_parameter</b></a> is larger than <i>i</i>-th knot and smaller than <i>i</i>+1-th knot of the <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_strip.basis_surface"><b>basis_surface</b></a>.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_surface_strip.surface_parameter">surface_parameter:
+               </a></b>
+         a <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.u_or_v_parameter"><b>u_or_v_parameter</b></a> where the <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_strip.start_knot_index"><b>start_knot_index</b></a> corresponds.
+         
+      </p>
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a> and knot array are 
+            defined in <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema"><b>geometry_schema</b></a> of ISO 10303-42.
+            </small></p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.b_spline_surface_strip.wr:wr1">WR1:
+               </a></b>
+         The <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> that uses the <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a> specified in <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_strip.basis_surface"><b>basis_surface</b></a> shall be the <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> of the <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> that is related to <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a> that has <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances"><b>instance_report_item_with_extreme_instances</b></a> containing an instance of this entity as its location of extreme value.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.boundary_curve_of_b_spline_or_rectangular_composite_surface">8.4.6 boundary_curve_of_b_spline_or_rectangular_composite_surface</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+       A <b>boundary_curve_of_b_spline_or_rectangular_composite_surface</b>  
+       is a type of <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.founded_item"><b>founded_item</b></a>
+       and represents 
+        a location by specifying a boundary of the parametric space of the identified surface.
+         The entity is used to represent the location where the extreme value is measured.
+            
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY boundary_curve_of_b_spline_or_rectangular_composite_surface<br>
+            &nbsp;&nbsp;SUBTYPE OF (founded_item);<br>
+            
+            
+            &nbsp;&nbsp;basis_surface : <A HREF="#shape_data_quality_inspection_result_schema.b_spline_or_rectangular_composite_surface_select">b_spline_or_rectangular_composite_surface_select</A>;<br>
+            
+            
+            &nbsp;&nbsp;boundary_type : <A HREF="#shape_data_quality_inspection_result_schema.surface_boundary_type">surface_boundary_type</A>;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(
+            using_representations(SELF.basis_surface) *
+            relating_shape_representations_of_extreme_values(SELF))&gt;0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.boundary_curve_of_b_spline_or_rectangular_composite_surface.basis_surface">basis_surface:
+               </a></b>
+         a <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a> or 
+         a <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.rectangular_composite_surface"><b>rectangular_composite_surface</b></a>
+         
+         on which the measurement was performed.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.boundary_curve_of_b_spline_or_rectangular_composite_surface.boundary_type">boundary_type:
+               </a></b>
+         a type of the boundary of the parametric space of 
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.boundary_curve_of_b_spline_or_rectangular_composite_surface.basis_surface"><b>basis_surface</b></a> where the extreme value was measured.
+         
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.boundary_curve_of_b_spline_or_rectangular_composite_surface.wr:wr1">WR1:
+               </a></b>
+         The <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> that uses the <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.b_spline_surface"><b>b_spline_surface</b></a> or 
+         <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.rectangular_composite_surface"><b>rectangular_composite_surface</b></a>
+         
+         specified in <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.boundary_curve_of_b_spline_or_rectangular_composite_surface.basis_surface"><b>basis_surface</b></a> shall be the <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> of the <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> that is related to <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a> that has <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances"><b>instance_report_item_with_extreme_instances</b></a> containing an instance of this entity as its location of extreme value.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.composite_curve_transition_locator">8.4.7 composite_curve_transition_locator</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg4.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>composite_curve_transition_locator</b> 
+       is a type of <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.founded_item"><b>founded_item</b></a>
+       and represents 
+       a location by specifying an index of connecting point between two segments in the identified 
+       <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.composite_curve"><b>composite_curve</b></a>. 
+       This entity is used to represent the location where the extreme value was measured.
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.composite_curve"><b>composite_curve</b></a> is defined in <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema"><b>geometry_schema</b></a> of ISO 10303-42.
+            </small></p>
+            
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY composite_curve_transition_locator<br>
+            &nbsp;&nbsp;SUBTYPE OF (founded_item);<br>
+            
+            
+            &nbsp;&nbsp;basis_curve : composite_curve;<br>
+            
+            
+            &nbsp;&nbsp;transition_index : INTEGER;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(
+            using_representations(SELF.basis_curve) *
+            relating_shape_representations_of_extreme_values(SELF))&gt;0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.composite_curve_transition_locator.basis_curve">basis_curve:
+               </a></b>
+         a <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.composite_curve"><b>composite_curve</b></a> on which the measurement was performed.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.composite_curve_transition_locator.transition_index">transition_index:
+               </a></b>
+         an index of the connecting point of <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.composite_curve_transition_locator.basis_curve"><b>basis_curve</b></a> where the extreme value was measured. 
+         If <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.composite_curve_transition_locator.transition_index"><b>transition_index</b></a> is <i>j</i>, then it shall be understood that the connecting point between <i>j</i>-th segment and <i>j</i>+1-th segment is represented.
+         
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.composite_curve_transition_locator.wr:wr1">WR1:
+               </a></b>
+         The <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> that uses the <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.composite_curve"><b>composite_curve</b></a> specified in <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.composite_curve_transition_locator.basis_curve"><b>basis_curve</b></a> shall be the <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> of the <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> that is related to <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a> that has <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances"><b>instance_report_item_with_extreme_instances</b></a> containing an instance of this entity as its location of extreme value.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.extreme_instance">8.4.8 extreme_instance</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+       An <b>extreme_instance</b> is the representation of a pair of extreme measured value and related location information where it was detected.
+           
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY extreme_instance;<br>
+            
+            
+            &nbsp;&nbsp;locations_of_extreme_value : SET[1:?] OF <A HREF="#shape_data_quality_inspection_result_schema.location_of_extreme_value_select">location_of_extreme_value_select</A>;<br>
+            
+            
+            &nbsp;&nbsp;measured_value : <A HREF="#shape_data_quality_inspection_result_schema.measured_value_select">measured_value_select</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.extreme_instance.locations_of_extreme_value">locations_of_extreme_value:
+               </a></b>
+         one or more <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.location_of_extreme_value_select"><b>location_of_extreme_value_select</b></a> that represents the location where the extreme value was detected.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.extreme_instance.measured_value">measured_value:
+               </a></b>
+         a <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.measured_value_select"><b>measured_value_select</b></a> that represents the extreme value obtained by the measurement.
+         
+      </p>
+      <p class="example"><small><a name="example_">EXAMPLE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            When a gap between edge and base surface is measured, <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.extreme_instance.locations_of_extreme_value"><b>locations_of_extreme_value</b></a> includes two points, one is a point on the edge and the other is a point on the base surface. The extreme value represented
+            by the <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.extreme_instance.measured_value"><b>measured_value</b></a> is the distance between these two points.
+            </small></p>
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            Each <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_criterion"><b>shape_data_quality_criterion</b></a> 
+            entity defined in 
+            <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema"><b>
+                  shape_data_quality_criteria_schema</b></a> has a rule to specify what type of 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.extreme_instance.locations_of_extreme_value"><b>locations_of_extreme_value</b></a> to require.
+            </small></p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances">8.4.9 instance_report_item_with_extreme_instances</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      An <b>instance_report_item_with_extreme_instances</b> is a type of <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report_item"><b>shape_data_quality_inspection_instance_report_item</b></a> and has the information on pairs of extreme value and its location.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY instance_report_item_with_extreme_instances<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report_item">shape_data_quality_inspection_instance_report_item</A>);<br>
+            
+            
+            &nbsp;&nbsp;extreme_instances : LIST[1:?] OF <A HREF="#shape_data_quality_inspection_result_schema.extreme_instance">extreme_instance</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances.extreme_instances">extreme_instances:
+               </a></b>
+         a list of <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.extreme_instance"><b>extreme_instance</b></a>s that is a pair of extreme value and its location detected by the measurement. The extreme value is the measured value that
+         causes quality defect, namely satisfaction of the criterion concerned, or the measured value that is close to the threshold
+         though the criterion is not satisfied.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.plane_angle_and_length_pair">8.4.10 plane_angle_and_length_pair</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+       A <b>plane_angle_and_length_pair</b> 
+       is a type of <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.founded_item"><b>founded_item</b></a>
+       and represents 
+        the measured value that consists of a <a href="../../../resources/measure_schema/measure_schema.htm#measure_schema.plane_angle_measure"><b>plane_angle_measure</b></a> and a distance. 
+        This entity is used to represent the difference of two <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.placement"><b>placement</b></a>s.
+            
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY plane_angle_and_length_pair<br>
+            &nbsp;&nbsp;SUBTYPE OF (founded_item);<br>
+            
+            
+            &nbsp;&nbsp;plane_angle_value : plane_angle_measure;<br>
+            
+            
+            &nbsp;&nbsp;length_value : length_measure;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.plane_angle_and_length_pair.plane_angle_value">plane_angle_value:
+               </a></b>
+         a <a href="../../../resources/measure_schema/measure_schema.htm#measure_schema.plane_angle_measure"><b>plane_angle_measure</b></a>. 
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.plane_angle_and_length_pair.length_value">length_value:
+               </a></b>
+         a <a href="../../../resources/measure_schema/measure_schema.htm#measure_schema.length_measure"><b>length_measure</b></a>. 
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.plane_angle_and_ratio_pair">8.4.11 plane_angle_and_ratio_pair</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>plane_angle_and_ratio_pair</b> 
+       is a type of <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.founded_item"><b>founded_item</b></a>
+       and represents 
+       the measured value that consists of a <a href="../../../resources/measure_schema/measure_schema.htm#measure_schema.plane_angle_measure"><b>plane_angle_measure</b></a> 
+       and a ratio of curvature radius change. 
+       This entity is used to represent the difference of curvature which requires the difference between directions of principal
+      vector
+        as well as the difference of curvature radius values. Let <i>r</i><sub>1</sub> and <i>r</i><sub>2</sub> be curvature
+        radii to be compared, ratio of curvature radius change is given by 
+        (2|<i>r</i><sub>1</sub>-<i>r</i><sub>2</sub>|)/(|<i>r</i><sub>1</sub>|+|<i>r</i><sub>2</sub>|).
+            
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY plane_angle_and_ratio_pair<br>
+            &nbsp;&nbsp;SUBTYPE OF (founded_item);<br>
+            
+            
+            &nbsp;&nbsp;plane_angle_value : plane_angle_measure;<br>
+            
+            
+            &nbsp;&nbsp;ratio_value : ratio_measure;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.plane_angle_and_ratio_pair.plane_angle_value">plane_angle_value:
+               </a></b>
+         a <a href="../../../resources/measure_schema/measure_schema.htm#measure_schema.plane_angle_measure"><b>plane_angle_measure</b></a>.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.plane_angle_and_ratio_pair.ratio_value">ratio_value:
+               </a></b>
+         a <a href="../../../resources/measure_schema/measure_schema.htm#measure_schema.ratio_measure"><b>ratio_measure</b></a>,
+         
+         ratio of curvature radius change.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.point_on_edge_curve">8.4.12 point_on_edge_curve</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg4.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>point_on_edge_curve</b> is a type of <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.point_on_curve"><b>point_on_curve</b></a> 
+       as defined in ISO 10303-42  and 
+      represents the location on the identified <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.edge_curve"><b>edge_curve</b></a> where the extreme value was measured.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY point_on_edge_curve<br>
+            &nbsp;&nbsp;SUBTYPE OF (point_on_curve);<br>
+            
+            
+            &nbsp;&nbsp;basis_edge_curve : edge_curve;<br>DERIVE<br>
+            &nbsp;&nbsp;SELF\point_on_curve.basis_curve : curve := SELF.basis_edge_curve.edge_geometry;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(
+            using_representations(SELF.basis_edge_curve) *
+            relating_shape_representations_of_extreme_values(SELF))&gt;0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.point_on_edge_curve.basis_edge_curve">basis_edge_curve:
+               </a></b>
+         an <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.edge_curve"><b>edge_curve</b></a> on which the measurement was performed.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.point_on_edge_curve.basis_curve">basis_curve:
+               </a></b>
+         a <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.curve"><b>curve</b></a> that is the basis curve to which the parameter value of the location relates. This is derived from the <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.edge_curve.edge_geometry"><b>edge_geometry</b></a> of <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.point_on_edge_curve.basis_edge_curve"><b>basis_edge_curve</b></a>.
+         
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.point_on_edge_curve.wr:wr1">WR1:
+               </a></b>
+         The <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> that uses the <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.edge_curve"><b>edge_curve</b></a> specified in <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.point_on_edge_curve.basis_edge_curve"><b>basis_edge_curve</b></a> of this entity shall be the <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> of the <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> that is related to <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a> that has <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances"><b>instance_report_item_with_extreme_instances</b></a> containing an instance of this entity as its location of extreme value.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.point_on_face_surface">8.4.13 point_on_face_surface</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg4.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>point_on_face_surface</b> is a type of <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.point_on_surface"><b>point_on_surface</b></a> 
+      as defined in ISO 10303-42 and represents the location on the identified 
+      <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.face_surface"><b>face_surface</b></a> where the extreme value was measured.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY point_on_face_surface<br>
+            &nbsp;&nbsp;SUBTYPE OF (point_on_surface);<br>
+            
+            
+            &nbsp;&nbsp;basis_face_surface : face_surface;<br>DERIVE<br>
+            &nbsp;&nbsp;SELF\point_on_surface.basis_surface : surface := SELF.basis_face_surface.face_geometry;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(
+            using_representations(SELF.basis_face_surface) *
+            relating_shape_representations_of_extreme_values(SELF))&gt;0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.point_on_face_surface.basis_face_surface">basis_face_surface:
+               </a></b>
+         a <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.face_surface"><b>face_surface</b></a> on which the measurement was performed.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.point_on_face_surface.basis_surface">basis_surface:
+               </a></b>
+         a <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.surface"><b>surface</b></a> that is the basis surface to 
+         which the parameter value of the location relates. 
+         This is derived from the <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.face_surface.face_geometry"><b>face_geometry</b></a> of 
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.point_on_face_surface.basis_face_surface"><b>basis_face_surface</b></a>.
+         
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.point_on_face_surface.wr:wr1">WR1:
+               </a></b>
+         The <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> that uses the <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.face_surface"><b>face_surface</b></a> specified in <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.point_on_face_surface.basis_face_surface"><b>basis_face_surface</b></a> shall be the <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> of the <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> that is related to <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a> that has <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances"><b>instance_report_item_with_extreme_instances</b></a> containing an instance of this entity as its location of extreme value.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator">8.4.14 rectangular_composite_surface_transition_locator</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>rectangular_composite_surface_transition_locator</b> 
+       is a type of <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.founded_item"><b>founded_item</b></a>
+       and represents 
+       a location by specifying an index of connecting segments between two patches in the identified 
+       <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.rectangular_composite_surface"><b>rectangular_composite_surface</b></a>.
+      
+       This entity is used to represent the location where the extreme value was measured.
+      
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The 
+            <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.rectangular_composite_surface"><b>rectangular_composite_surface</b></a>
+             is defined in <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema"><b>geometry_schema</b></a> of ISO 10303-42.
+            </small></p>
+      
+            
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY rectangular_composite_surface_transition_locator<br>
+            &nbsp;&nbsp;SUBTYPE OF (founded_item);<br>
+            
+            
+            &nbsp;&nbsp;basis_surface : rectangular_composite_surface;<br>
+            
+            
+            &nbsp;&nbsp;surface_parameter : <A HREF="#shape_data_quality_inspection_result_schema.u_or_v_parameter">u_or_v_parameter</A>;<br>
+            
+            
+            &nbsp;&nbsp;u_transition_index : INTEGER;<br>
+            
+            
+            &nbsp;&nbsp;v_transition_index : INTEGER;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(
+            using_representations(SELF.basis_surface) *
+            relating_shape_representations_of_extreme_values(SELF))&gt;0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator.basis_surface">basis_surface:
+               </a></b>
+         a <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.rectangular_composite_surface"><b>rectangular_composite_surface</b></a>
+          on which the measurement was performed.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator.surface_parameter">surface_parameter:
+               </a></b>
+         a <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.u_or_v_parameter"><b>u_or_v_parameter</b></a> that indicates the boundary segment of the specified patch.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator.u_transition_index">u_transition_index:
+               </a></b>
+         an index of the patches in <i>u</i>-direction of 
+         <b>basis_surface</b>
+         
+          where the extreme value was measured.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator.v_transition_index">v_transition_index:
+               </a></b>
+         an index of the patches in <i>v</i>-direction of 
+         <b>basis_surface</b>
+         
+         where the extreme value was measured.
+         
+      </p>
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            If the 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator.u_transition_index"><b>u_transition_index</b></a>
+             is <i>i</i> and the 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator.v_transition_index"><b>v_transition_index</b></a>
+             is <i>j</i> and the 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator.surface_parameter"><b>surface_parameter</b></a> 
+             is
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.u_or_v_parameter.u_parameter"><b>u_parameter</b></a>,
+            then it shall be understood that the transition between 
+            <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.rectangular_composite_surface.segments"><b>segments</b></a>[<i>i</i>][<i>j</i>]
+            
+             and 
+            <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.rectangular_composite_surface.segments"><b>segments</b></a>[<i>i</i>+1][<i>j</i>]
+            
+             is represented. 
+            If the 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator.u_transition_index"><b>u_transition_index</b></a>
+             is <i>i</i> and the 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator.v_transition_index"><b>v_transition_index</b></a>
+             is <i>j</i> and the 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator.surface_parameter"><b>surface_parameter</b></a>
+            is 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.u_or_v_parameter.v_parameter"><b>v_parameter</b></a>, 
+            then it shall be understood that the transition between 
+            <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.rectangular_composite_surface.segments"><b>segments</b></a>[<i>i</i>][<i>j</i>] and
+            <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.rectangular_composite_surface.segments"><b>segments</b></a>[<i>i</i>][<i>j</i>+1]
+            
+            is represented.
+            
+            </small></p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator.wr:wr1">WR1:
+               </a></b>
+         The <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> that uses the 
+         <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.rectangular_composite_surface"><b>rectangular_composite_surface</b></a>
+          specified in <b>basis_surface</b>
+         
+           shall be the <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> of the <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> that is related to <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a> that has <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances"><b>instance_report_item_with_extreme_instances</b></a> containing an instance of this entity as its location of extreme value.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.shape_data_quality_inspected_shape_and_result_relationship">8.4.15 shape_data_quality_inspected_shape_and_result_relationship</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>shape_data_quality_inspected_shape_and_result_relationship</b> is a type of 
+      <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation_relationship"><b>shape_representation_relationship</b></a>
+      
+       as defined in ISO 10303-41 and it represents the relationship between 
+       <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a>
+        representing the inspection results and 
+       <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> representing the inspection target product shape data.
+            
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY shape_data_quality_inspected_shape_and_result_relationship<br>
+            &nbsp;&nbsp;SUBTYPE OF (shape_representation_relationship);<br>
+            
+            
+            &nbsp;&nbsp;SELF\representation_relationship.rep_1 : shape_representation;<br>
+            
+            
+            &nbsp;&nbsp;SELF\representation_relationship.rep_2 : <A HREF="#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation">shape_data_quality_inspection_result_representation</A>;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(
+            using_product_definition_of_shape_representation(SELF.rep_1)
+            *
+            bag_to_set(inspected_product_definition(SELF.rep_2))
+            ) &gt; 0;<br> 
+            &nbsp;&nbsp;WR2: SELF.rep_1\representation.context_of_items :=: 
+            SELF.rep_2\representation.context_of_items;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_data_quality_inspected_shape_and_result_relationship.rep_1">rep_1:
+               </a></b>
+         a <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> representing the product shape data inspected.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_data_quality_inspected_shape_and_result_relationship.rep_2">rep_2:
+               </a></b>
+         a <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a> representing the result of data quality inspection for the product shape data represented by <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspected_shape_and_result_relationship.rep_1"><b>rep_1</b></a> attribute.
+         
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_data_quality_inspected_shape_and_result_relationship.wr:wr1">WR1:
+               </a></b>
+         
+         There shall be at least one common <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> 
+         among those retrieved starting from the attribute 
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspected_shape_and_result_relationship.rep_2"><b>rep_2</b></a> 
+         and those where the 
+         <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> specified by the attribute <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspected_shape_and_result_relationship.rep_1"><b>rep_1</b></a> belongs.
+         
+      </p>
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The relationship between 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a>
+             and inspected 
+            <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> 
+            is captured by the two relationship entities defined in 
+            <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema"><b>product_data_quality_definition_schema</b></a>, 
+            namely, 
+            <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema.product_data_and_data_quality_relationship"><b>product_data_and_data_quality_relationship</b></a> 
+            which relates <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a> 
+            and 
+            <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema.data_quality_definition"><b>data_quality_definition</b></a> 
+            and 
+            <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema.data_quality_definition_representation_relationship"><b>data_quality_definition_representation_relationship</b></a> 
+            which relates <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema.data_quality_definition"><b>data_quality_definition</b></a>
+             and <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a>. 
+            
+             </small></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_data_quality_inspected_shape_and_result_relationship.wr:wr2">WR2:
+               </a></b>
+         The context of <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a> specified by the attribute <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspected_shape_and_result_relationship.rep_1"><b>rep_1</b></a> and the context of <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a> specified by the attribute <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspected_shape_and_result_relationship.rep_2"><b>rep_2</b></a> shall be identical.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.shape_data_quality_inspection_criterion_report">8.4.16 shape_data_quality_inspection_criterion_report</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>shape_data_quality_inspection_criterion_report</b> is a type of
+      <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report"><b>data_quality_inspection_criterion_report</b></a> and represents summarized information on the result of inspection for a specific shape data quality criterion.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY shape_data_quality_inspection_criterion_report<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report">data_quality_inspection_criterion_report</A>);<br>
+            
+            
+            &nbsp;&nbsp;representative_measured_value : <A HREF="#shape_data_quality_inspection_result_schema.measured_value_select">measured_value_select</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_data_quality_inspection_criterion_report.representative_measured_value">representative_measured_value:
+               </a></b>
+         a <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.measured_value_select"><b>measured_value_select</b></a> for selecting a representative extreme value from among the measured values for the criterion.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report">8.4.17 shape_data_quality_inspection_instance_report</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>shape_data_quality_inspection_instance_report</b> is a type of <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report"><b>data_quality_inspection_instance_report</b></a> and represents detailed inspection report of the product shape data for a specific criterion. It contains a list of <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report_item"><b>shape_data_quality_inspection_instance_report_item</b></a>s, each representing inspection result of an inspected shape element or a pair of shape elements.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY shape_data_quality_inspection_instance_report<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report">data_quality_inspection_instance_report</A>);<br>
+            
+            
+            &nbsp;&nbsp;SELF\<A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report">data_quality_inspection_instance_report</A>.inspected_instances : LIST[1:?] OF <A HREF="#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report_item">shape_data_quality_inspection_instance_report_item</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report.inspected_instances">inspected_instances:
+               </a></b>
+         a list of <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report_item"><b>shape_data_quality_inspection_instance_report_item</b></a>s.
+         
+      </p>
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            Expected quantity and order of <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report_item"><b>shape_data_quality_inspection_instance_report_item</b></a>s 
+            in the list of this attribute can be controlled by 
+            <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_report_request"><b>data_quality_report_request</b></a>
+             as defined in 
+            <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema"><b>product_data_quality_criteria_schema</b></a>.
+            </small></p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report_item">8.4.18 shape_data_quality_inspection_instance_report_item</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>shape_data_quality_inspection_instance_report_item</b> is a type of 
+      <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item"><b>data_quality_inspection_instance_report_item</b></a> 
+      and represents the detailed information obtained for each inspected element or a pair of elements of product shape data.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY shape_data_quality_inspection_instance_report_item<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item">data_quality_inspection_instance_report_item</A>);<br>
+            
+            
+            &nbsp;&nbsp;SELF\<A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item">data_quality_inspection_instance_report_item</A>.inspected_elements : SET[1:?] OF <A HREF="#shape_data_quality_inspection_result_schema.inspected_shape_element_select">inspected_shape_element_select</A>;<br>
+            
+            
+            &nbsp;&nbsp;measured_value : <A HREF="#shape_data_quality_inspection_result_schema.measured_value_select">measured_value_select</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report_item.inspected_elements">inspected_elements:
+               </a></b>
+         one or more <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.inspected_shape_element_select"><b>inspected_shape_element_select</b></a> that represent data types of the shape elements inspected.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report_item.measured_value">measured_value:
+               </a></b>
+         a <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.measured_value_select"><b>measured_value_select</b></a> that represents the measured value obtained by the inspection.
+         
+      </p>
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The types of 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report_item.measured_value"><b>measured_value</b></a> 
+            and <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report_item.inspected_elements"><b>inspected_elements</b></a>
+             are specified in each 
+             <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_criterion"><b>shape_data_quality_criterion</b></a> 
+            entity defined in 
+            <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema"><b>shape_data_quality_criteria_schema</b></a>.
+            </small></p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result">8.4.19 shape_data_quality_inspection_result</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>shape_data_quality_inspection_result</b> is a type of
+      <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result"><b>data_quality_inspection_result</b></a> 
+      defined in 
+      <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema"><b>product_data_quality_inspection_result_schema</b></a> 
+      and represents the inspection result for a specific criterion on shape data quality.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY shape_data_quality_inspection_result<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result">data_quality_inspection_result</A>);<br>
+            
+            
+            &nbsp;&nbsp;SELF\<A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result">data_quality_inspection_result</A>.criterion_inspected : <A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/7_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_criterion">shape_data_quality_criterion</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result.criterion_inspected">criterion_inspected:
+               </a></b>
+         a <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_criterion"><b>shape_data_quality_criterion</b></a>
+          for which the inspection was performed. 
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation">8.4.20 shape_data_quality_inspection_result_representation</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>shape_data_quality_inspection_result_representation</b> is a type of 
+      <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result_representation"><b>data_quality_inspection_result_representation</b></a> 
+      defined in 
+      <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema"><b>product_data_quality_inspection_result_schema</b></a>, 
+      and represents all the inspection results for an inspected product data against a set of shape data quality criteria.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY shape_data_quality_inspection_result_representation<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result_representation">data_quality_inspection_result_representation</A>);<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF( QUERY( q &lt;* SELF\representation.items|
+            'SHAPE_DATA_QUALITY_INSPECTION_RESULT_SCHEMA.' +
+            'SHAPE_DATA_QUALITY_INSPECTION_RESULT' IN TYPEOF(q))) &gt; 0;<br> 
+            &nbsp;&nbsp;WR2: 'GEOMETRY_SCHEMA.GEOMETRIC_REPRESENTATION_CONTEXT' IN
+            TYPEOF(SELF\representation.context_of_items);<br> 
+            &nbsp;&nbsp;WR3: SIZEOF(USEDIN(SELF,
+            'SHAPE_DATA_QUALITY_INSPECTION_RESULT_SCHEMA.'+
+            'SHAPE_DATA_QUALITY_INSPECTED_SHAPE_AND_RESULT_RELATIONSHIP.'+
+            'REP_2'))&gt;0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation.wr:wr1">WR1:
+               </a></b>
+         At least one instance of 
+         <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation_item"><b>representation_item</b></a> 
+         that belongs to a 
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a>
+          shall be of type 
+          <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result"><b>shape_data_quality_inspection_result</b></a>.
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation.wr:wr2">WR2:
+               </a></b>
+         The context of this entity shall be of type 
+         <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema.geometric_representation_context"><b>geometric_representation_context</b></a>
+          as defined in 
+         <a href="../../../resources/geometry_schema/geometry_schema.htm#geometry_schema"><b>geometry_schema</b></a> of ISO 10303-42.
+         
+         
+      </p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation.wr:wr3">WR3:
+               </a></b>
+         At least one instance of <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspected_shape_and_result_relationship"><b>shape_data_quality_inspected_shape_and_result_relationship</b></a> associated with this entity shall exist.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.shape_inspection_result_accuracy_association">8.4.21 shape_inspection_result_accuracy_association</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>shape_inspection_result_accuracy_association</b> is the representation of the relationship between <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result"><b>shape_data_quality_inspection_result</b></a> and the accuracy applied by the inspection.
+            
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY shape_inspection_result_accuracy_association;<br>
+            
+            
+            &nbsp;&nbsp;applied_specific_accuracy : <A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/7_schema.htm#shape_data_quality_criteria_schema.shape_measurement_accuracy">shape_measurement_accuracy</A>;<br>
+            
+            
+            &nbsp;&nbsp;shape_data_quality_result : <A HREF="#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result">shape_data_quality_inspection_result</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_inspection_result_accuracy_association.applied_specific_accuracy">applied_specific_accuracy:
+               </a></b>
+         a <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.shape_measurement_accuracy"><b>shape_measurement_accuracy</b></a> applied by the inspection specifically for the criterion.
+         
+      </p>
+      <p class="note"><small><a name="note_1">NOTE&nbsp;1</a>&nbsp;&nbsp;
+            
+            
+            Applied accuracy that is not specific to the criterion but common to all the criteria inspected is provided by the attribute
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_inspection_result_representation_with_accuracy.applied_general_accuracy"><b>applied_general_accuracy</b></a> of the entity <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_inspection_result_representation_with_accuracy"><b>shape_inspection_result_representation_with_accuracy</b></a>.
+            </small></p>
+      <p class="note"><small><a name="note_2">NOTE&nbsp;2</a>&nbsp;&nbsp;
+            
+            
+            If <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_inspection_result_representation_with_accuracy.applied_general_accuracy"><b>applied_general_accuracy</b></a> is specified by the entity <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_inspection_result_representation_with_accuracy"><b>shape_inspection_result_representation_with_accuracy</b></a> and <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_inspection_result_accuracy_association.applied_specific_accuracy"><b>applied_specific_accuracy</b></a> is also specified by the instantiation of this entity, then the latter supersedes the former for the criterion.
+            </small></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_inspection_result_accuracy_association.shape_data_quality_result">shape_data_quality_result:
+               </a></b>
+         a <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result"><b>shape_data_quality_inspection_result</b></a> that represents the result of inspection for the criterion.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.shape_inspection_result_representation_with_accuracy">8.4.22 shape_inspection_result_representation_with_accuracy</A>
+         &nbsp;&nbsp;<a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>shape_inspection_result_representation_with_accuracy</b> is a type of <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation"><b>shape_data_quality_inspection_result_representation</b></a> and has the information of common accuracy applied to all the measurements.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY shape_inspection_result_representation_with_accuracy<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation">shape_data_quality_inspection_result_representation</A>);<br>
+            
+            
+            &nbsp;&nbsp;applied_general_accuracy : SET[1:?] OF <A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/7_schema.htm#shape_data_quality_criteria_schema.shape_measurement_accuracy">shape_measurement_accuracy</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.shape_inspection_result_representation_with_accuracy.applied_general_accuracy">applied_general_accuracy:
+               </a></b>
+         common accuracy applied to all the measurements for inspecting specified product data against specified set of criteria.
+         
+      </p>
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            For representing the accuracy applied to the measurement against a particular criterion, the attribute <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_inspection_result_accuracy_association.applied_specific_accuracy"><b>applied_specific_accuracy</b></a> associated by <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.shape_inspection_result_accuracy_association"><b>shape_inspection_result_accuracy_association</b></a> is provided and it supersedes the accuracy defined by this entity if present.
+            </small></p>
+      <h2><a name="functions">8.5 shape_data_quality_inspection_result_schema function definitions</a></h2>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.relating_shape_representations_of_extreme_values">8.5.1 relating_shape_representations_of_extreme_values</A></h2>
+      The function <b>relating_shape_representations_of_extreme_values</b> finds all 
+      <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a>s
+       on which inspection was performed and 
+       <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances"><b>instance_report_item_with_extreme_instances</b></a>
+        was created. 
+       An instance of 
+       <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.location_of_extreme_value_select"><b>location_of_extreme_value_select</b></a>
+      is given as an input argument of this function.
+      
+      <p><u>EXPRESS specification:</u></p><code>
+         *)<br>
+         FUNCTION relating_shape_representations_of_extreme_values&nbsp;(item : <A HREF="#shape_data_quality_inspection_result_schema.location_of_extreme_value_select">location_of_extreme_value_select</A>) : SET[0:?] OF shape_representation;
+         </code><pre>LOCAL
+   results   : SET OF shape_representation:=[];
+   exti      : SET OF extreme_instance:=[];
+   ii_ei     : SET OF 
+        instance_report_item_with_extreme_instances:=[];
+   sdiir        : SET OF 
+        shape_data_quality_inspection_instance_report:=[];
+   sdqr      : SET OF 
+        shape_data_quality_inspection_result_representation:=[];
+   sdisr     : SET OF 
+        shape_data_quality_inspected_shape_and_result_relationship:=[];
+ END_LOCAL;
+ -- find extreme_instances 
+ exti := exti + 
+    bag_to_set( USEDIN(item,
+      'SHAPE_DATA_QUALITY_INSPECTION_RESULT_SCHEMA.' +
+      'EXTREME_INSTANCE.'+
+      'LOCATIONS_OF_EXTREME_VALUE')); 
+
+ -- find instance_report_item_with_extreme_instances 
+ REPEAT i := 1 TO HIINDEX (exti);
+   ii_ei := ii_ei + 
+     bag_to_set( USEDIN(exti[i],
+       'SHAPE_DATA_QUALITY_INSPECTION_RESULT_SCHEMA.' +
+       'INSTANCE_REPORT_ITEM_WITH_EXTREME_INSTANCES.'+
+       'EXTREME_INSTANCES')); 
+ END_REPEAT;
+
+ -- find shape_data_quality_inspection_instance_report
+ REPEAT i := 1 TO HIINDEX (ii_ei);
+   sdiir := sdiir + 
+     bag_to_set( USEDIN(ii_ei[i],
+       'SHAPE_DATA_QUALITY_INSPECTION_RESULT_SCHEMA.' +
+       'SHAPE_DATA_QUALITY_INSPECTION_INSTANCE_REPORT.'+
+       'INSPECTED_INSTANCES')); 
+ END_REPEAT;
+
+ -- find shape_data_quality_inspection_result_representation
+ REPEAT i := 1 TO HIINDEX (sdiir);
+  sdqr := sdqr + 
+    QUERY(i1&lt;* bag_to_set( USEDIN(sdiir[i].inspection_result,
+      'REPRESENTATION_SCHEMA.REPRESENTATION.ITEMS'))|
+    'SHAPE_DATA_QUALITY_INSPECTION_RESULT_SCHEMA.' +
+    'SHAPE_DATA_QUALITY_INSPECTION_RESULT_REPRESENTATION' 
+     IN TYPEOF(i1)); 
+ END_REPEAT;
+
+ -- find shape_data_quality_inspected_shape_and_result_relationship
+ REPEAT i := 1 TO HIINDEX (sdqr);
+   sdisr := sdisr +  bag_to_set(USEDIN(sdqr[i],
+      'SHAPE_DATA_QUALITY_INSPECTION_RESULT_SCHEMA.' +
+      'SHAPE_DATA_QUALITY_INSPECTED_SHAPE_AND_RESULT_RELATIONSHIP.'+
+      'REP_2')); 
+ END_REPEAT;
+
+ -- find shape_representation
+ REPEAT i := 1 TO HIINDEX (sdisr);
+   results := results + sdisr[i].rep_1;
+ END_REPEAT;
+
+ RETURN (results);</pre><code>
+         END_FUNCTION;
+         <br>(*
+         </code><p><u>Argument definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.relating_shape_representations_of_extreme_values.item">item:
+               </a></b>
+         an instance of 
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.location_of_extreme_value_select"><b>location_of_extreme_value_select</b></a>
+         for which related 
+         <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a>s to be found.
+         
+      </p>
+      <h2><A NAME="shape_data_quality_inspection_result_schema.using_product_definition_of_shape_representation">8.5.2 using_product_definition_of_shape_representation</A></h2>
+      The function <b>using_product_definition_of_shape_representation</b> finds all the 
+      <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a>
+      instances that use a specified 
+      <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a>
+      instance.
+      
+      <p><u>EXPRESS specification:</u></p><code>
+         *)<br>
+         FUNCTION using_product_definition_of_shape_representation&nbsp;(item : shape_representation) : SET[0:?] OF product_definition;
+         </code><pre>LOCAL
+   local_s_d_r: SET OF shape_definition_representation := [];
+   local_p_d: SET OF product_definition := [];
+   i : INTEGER;
+ END_LOCAL;
+
+ -- find shape_definition_representations 
+   local_s_d_r  := QUERY(i1&lt;* bag_to_set (USEDIN (item, 
+  'PRODUCT_PROPERTY_REPRESENTATION_SCHEMA.' +
+  'PROPERTY_DEFINITION_REPRESENTATION.USED_REPRESENTATION'))|
+  'PRODUCT_PROPERTY_REPRESENTATION_SCHEMA.'+
+  'SHAPE_DEFINITION_REPRESENTATION'
+  IN TYPEOF(i1)); 
+
+ -- find product_definition_shape &amp; product_definitions
+ REPEAT i := 1 TO HIINDEX (local_s_d_r);
+    IF ('PRODUCT_PROPERTY_DEFINITION_SCHEMA.PROPERTY_DEFINITION' IN 
+      TYPEOF (local_s_d_r[i]\property_definition_representation.definition))
+    THEN
+      IF('PRODUCT_DEFINITION_SCHEMA.PRODUCT_DEFINITION' IN TYPEOF
+        (local_s_d_r[i]\property_definition_representation.definition\property_definition.definition))
+      THEN
+       local_p_d := local_p_d + local_s_d_r[i]\property_definition_representation.definition\property_definition.definition;
+      END_IF;
+    END_IF;
+ END_REPEAT;
+ RETURN (local_p_d);</pre><code>
+         END_FUNCTION;
+         <br>(*
+         </code><p><u>Argument definitions:</u></p>
+      <p class="expressdescription"><b><a name="shape_data_quality_inspection_result_schema.using_product_definition_of_shape_representation.item">item:
+               </a></b>
+         an instance of 
+         <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a>
+         whose corresponding 
+         <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a>
+          instances are to be sought.
+         
+      </p><code><br><br>
+         *)<br>
+         END_SCHEMA;&nbsp;&nbsp;--&nbsp;shape_data_quality_inspection_result_schema<br>(*
+         </code><br><br><p>&copy; ISO 2014 &#8212; All rights reserved</p>
+   </BODY>
+</HTML>

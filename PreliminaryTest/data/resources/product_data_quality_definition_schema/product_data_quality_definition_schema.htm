@@ -1,0 +1,56 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <TITLE>Integrated Resource: product_data_quality_definition_schema</TITLE>
+   </HEAD>
+   <body>
+      <h2>Schema: product_data_quality_definition_schema</h2>
+      <p><i>Source : ISO 10303-59</i></p><code><br><br><a name="product_data_quality_definition_schema">SCHEMA <b>product_data_quality_definition_schema</b>;</a><br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema">product_data_quality_criteria_schema</A>&nbsp;&nbsp;&nbsp;-- ISO 10303-59<br>&nbsp;&nbsp;(<A HREF="../../../data/resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_criteria_representation">data_quality_criteria_representation</A>);
+         <br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema">product_data_quality_inspection_result_schema</A>&nbsp;&nbsp;&nbsp;-- ISO 10303-59<br>&nbsp;&nbsp;(<A HREF="../../../data/resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result_representation">data_quality_inspection_result_representation</A>);
+         <br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema">product_definition_schema</A>&nbsp;&nbsp;&nbsp;-- ISO 10303-41<br>&nbsp;&nbsp;(<A HREF="../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition">product_definition</A>);
+         <br><br></code><code>
+         REFERENCE FROM 
+         <A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema">support_resource_schema</A>&nbsp;&nbsp;&nbsp;-- ISO 10303-41<br>&nbsp;&nbsp;(<A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>);
+         <br><br></code><code><br><A NAME="product_data_quality_definition_schema.used_quality_representation_select">TYPE </A><b>used_quality_representation_select</b> =
+         
+         
+         SELECT<br>
+         &nbsp;&nbsp;&nbsp;(<A HREF="../../../data/resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_criteria_representation">data_quality_criteria_representation</A>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="../../../data/resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result_representation">data_quality_inspection_result_representation</A>);<br>
+         END_TYPE; 
+         <br></code><code><br><A NAME="product_data_quality_definition_schema.data_quality_definition">ENTITY <b>data_quality_definition</b></A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.data_quality_definition.description">description : </A><A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_quality_definition_schema.data_quality_definition_relationship">ENTITY <b>data_quality_definition_relationship</b></A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.data_quality_definition_relationship.description">description : </A><A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.data_quality_definition_relationship.relating_data_quality_definition">relating_data_quality_definition : </A><A HREF="#product_data_quality_definition_schema.data_quality_definition">data_quality_definition</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.data_quality_definition_relationship.related_data_quality_definition">related_data_quality_definition : </A><A HREF="#product_data_quality_definition_schema.data_quality_definition">data_quality_definition</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_quality_definition_schema.data_quality_definition_representation_relationship">ENTITY <b>data_quality_definition_representation_relationship</b></A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.data_quality_definition_representation_relationship.description">description : </A><A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.data_quality_definition_representation_relationship.definition">definition : </A><A HREF="#product_data_quality_definition_schema.data_quality_definition">data_quality_definition</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.data_quality_definition_representation_relationship.used_representation">used_representation : </A><A HREF="#product_data_quality_definition_schema.used_quality_representation_select">used_quality_representation_select</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_quality_definition_schema.product_data_and_data_quality_relationship">ENTITY <b>product_data_and_data_quality_relationship</b></A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.product_data_and_data_quality_relationship.description">description : </A><A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.product_data_and_data_quality_relationship.product_data">product_data : </A><A HREF="../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition">product_definition</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.product_data_and_data_quality_relationship.data_quality">data_quality : </A><A HREF="#product_data_quality_definition_schema.data_quality_definition">data_quality_definition</A>;<br>
+         
+         END_ENTITY;<br></code><code><br><A NAME="product_data_quality_definition_schema.software_for_data_quality_check">ENTITY <b>software_for_data_quality_check</b></A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.software_for_data_quality_check.description">description : </A><A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.software_for_data_quality_check.software_name">software_name : </A><A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.software_for_data_quality_check.software_version">software_version : </A><A HREF="../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema.text">text</A>;<br>
+         &nbsp;&nbsp;<A NAME="product_data_quality_definition_schema.software_for_data_quality_check.data_quality">data_quality : </A><A HREF="#product_data_quality_definition_schema.data_quality_definition_representation_relationship">data_quality_definition_representation_relationship</A>;<br>
+         
+         END_ENTITY;<br></code><code><br>
+         END_SCHEMA;&nbsp;&nbsp;--&nbsp;product_data_quality_definition_schema<br></code></body>
+</HTML>

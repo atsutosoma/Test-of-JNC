@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet 
+  type="text/xsl" 
+  href="../../../xsl/descriptions.xsl"?>
+<!DOCTYPE ext_descriptions SYSTEM "../../../dtd/description.dtd">
+<ext_descriptions module_directory="annotated_model_3d_equivalence_criteria_schema" schema_file="annotated_model_3d_equivalence_criteria_schema.xml" describe.selects="YES" describe.subtype_constraints="YES" rcs.date="$Date: 2004/11/16 07:30:26 $" rcs.revision="$Revision: 1.13 $">
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Schema: annotated_model_3d_equivalence_criteria_schema
+   <express_ref linkend="annotated_model_3d_equivalence_criteria_schema:ir_express:annotated_model_3d_equivalence_criteria_schema"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<ext_description linkend="annotated_model_3d_equivalence_criteria_schema">
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: annotated_model_3d_equivalence_criteria_schema  Entity: annotated_model_3d_equivalence_criteria_representation  
+   <express_ref linkend="annotated_model_3d_equivalence_criteria_schema:ir_express:annotated_model_3d_equivalence_criteria_schema.annotated_model_3d_equivalence_criteria_representation"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="annotated_model_3d_equivalence_criteria_schema.annotated_model_3d_equivalence_criteria_representation">
+        An <b>annotated_model_3d_equivalence_criteria_representation</b> represents requirements on annotated model 3d equivalence for one couple of product data. It is a collection of one or more criteria on annotated model 3d equivalence represented by <express_ref linkend="annotated_model_3d_equivalence_criteria_schema:ir_express:annotated_model_3d_equivalence_criteria_schema.annotated_model_3d_equivalence_criterion"/>	
+. An instance of this entity may be used independently to represent equivalence requirement before particular product data is converted, or may be used together with <express_ref linkend="annotated_model_3d_equivalence_inspection_result_schema:ir_express:annotated_model_3d_equivalence_inspection_result_schema.annotated_model_3d_equivalence_inspection_result_representation"/>	
+, that represents inspection results, to represent what requirement is satisfied or not to what degree by the particular couple of product data.
+</ext_description>
+</ext_descriptions>

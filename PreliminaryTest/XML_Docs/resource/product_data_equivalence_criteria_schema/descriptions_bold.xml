@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<?xml-stylesheet 
+  type="text/xsl" 
+  href="../../../xsl/descriptions.xsl"?>
+<!DOCTYPE ext_descriptions SYSTEM "../../../dtd/description.dtd">
+<ext_descriptions module_directory="product_data_equivalence_criteria_schema" schema_file="product_data_equivalence_criteria_schema.xml" describe.selects="YES" describe.subtype_constraints="YES" rcs.date="$Date: 2004/11/16 07:30:26 $" rcs.revision="$Revision: 1.13 $">
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Schema: product_data_equivalence_criteria_schema
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<ext_description linkend="product_data_equivalence_criteria_schema">
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_assessment_inspection_association  
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_assessment_inspection_association"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_assessment_inspection_association">
+        A <b>data_equivalence_assessment_inspection_association</b> represents a relationship between an inspection requirement and its corresponding assessment specification. 
+<note>This entity will be used for specifying which assessment specification shall be used for an inspection requirement when multiple inspection requirements or multiple assessment specifications are specified for a criterion,.</note>
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_assessment_inspection_association  Attribute: assessment_specification 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_assessment_inspection_association.assessment_specification"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_assessment_inspection_association.assessment_specification">
+the relationship in which the assessment specification concerned participates.
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_assessment_inspection_association  Attribute: measurement_requirement 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_assessment_inspection_association.measurement_requirement"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_assessment_inspection_association.measurement_requirement">
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_assessment_specification  
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_assessment_specification"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_assessment_specification">
+        A <b>data_equivalence_assessment_specification</b> represents a specification to be applied to evaluate inspection results for each criterion. 
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_assessment_specification  Attribute: description 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_assessment_specification.description"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_assessment_specification.description">
+        A textual description that characterizes the <b>data_equivalence_assessment_specification</b>.
+      </ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_criteria_representation  
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_criteria_representation"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_criteria_representation">
+        A <b>data_equivalence_criteria_representation</b> represents a selected set of criteria on data equivalence. An instance of this entity may be used independently to represent only equivalence requirement or may be used together with <b>data_equivalence_inspection_result_representation</b> as defined in clause 6 that represents results of inspection against particular product data.
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_criterion  
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_criterion"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_criterion">
+        A <b>data_equivalence_criterion</b> represents a criterion that is an aspect of the requirement on product data equivalence.
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_criterion_assessment_association  
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_criterion_assessment_association"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_criterion_assessment_association">
+        A <b>data_equivalence_criterion_assessment_association</b> represents a relationship between a criterion and an assessment specification. 
+<note>For a criterion that does not require pertaining assessment specification, this entity will not be instantiated. For a criterion that requires pertaining two or more assessment specifications, multiple instances of this entity will be created to represent relationship to each assessment specification. This entity may also be used for relating an assessment specification to two or more criteria sharing that assessment specification.</note>
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_criterion_assessment_association  Attribute: criterion 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_criterion_assessment_association.criterion"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_criterion_assessment_association.criterion">
+the criterion that requires <b>assessment_specification</b> as its assessment specification.
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_criterion_assessment_association  Attribute: assessment_specification 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_criterion_assessment_association.assessment_specification"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_criterion_assessment_association.assessment_specification">
+the assessment specification used for the <b>criterion</b>.
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_criterion_inspection_association  
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_criterion_inspection_association"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_criterion_inspection_association">
+        A <b>data_equivalence_criterion_inspection_association</b> represents a relationship between a criterion and its pertaining inspection requirement. 
+<note>For a criterion that does not require pertaining inspection requirement, this entity will not be instantiated. For a criterion that requires pertaining two or more inspection requirements, multiple instances of this entity will be created to represent relationship to each inspection requirement. This entity may also be used for relating an inspection requirement to two or more criteria sharing that inspection requirement.</note>
+i
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_criterion_inspection_association  Attribute: relating_representation_item 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_criterion_inspection_association.relating_representation_item"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_criterion_inspection_association.relating_representation_item">
+the criterion that requires associated inspection requirement.
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_criterion_inspection_association  Attribute: related_representation_item 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_criterion_inspection_association.related_representation_item"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_criterion_inspection_association.related_representation_item">
+the inspection requirement 
+used for the <b>criterion</b>.
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_inspection_requirement  
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_inspection_requirement"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_inspection_requirement">
+        A <b>data_equivalence_inspection_requirement</b> represents requirements on acceptable inspection method for inspecting whether pertaining criterion on data equivalence is satisfied (non-equivalent defect is existing) or not.
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_report_request  
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_report_request"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_report_request">
+        A <b>data_equivalence_report_request</b> represents the specification of a report to be generated as a result of inspection for a <b>data_equivalence_criterion</b>. It is either a <b>summary_equivalence_report_request</b> requiring a summarized report or a <b>detailed_equivalence_report_request</b> requiring a report on the details of the inspection result.
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_report_request  Attribute: description 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_report_request.description"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_report_request.description">
+        A textual description characterizing the <b>data_equivalence_report_request</b>.
+      </ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: data_equivalence_report_request  Attribute: criterion_of_report_request 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_report_request.criterion_of_report_request"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.data_equivalence_report_request.criterion_of_report_request">
+A <b>data_equivalence_criterion</b> concerned.
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: detailed_equivalence_report_request  
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.detailed_equivalence_report_request"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.detailed_equivalence_report_request">
+        A <b>detailed_equivalence_report_request</b> requests a detailed inspection report on the criterion concerned. In order to control the volume of the report and report sequence, two attributes are provided.
+EXAMPLE What entity instance caused non-equivalent defect and what is the inspected value calculated will be a typical detailed report that may be used for improving the product model concerned.
+<note><b>data_equivalence_inspection_instance_report</b> defined in <b>product_data_equivalence_inspection_result_schema</b> shall be instantiated as the detailed report corresponding to the specification defined in this entity.</note>
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: detailed_equivalence_report_request  Attribute: detailed_report_request_type 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.detailed_equivalence_report_request.detailed_report_request_type"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.detailed_equivalence_report_request.detailed_report_request_type">
+<b>detailed_report_request_type</b> to select either <b>INSPECTED_ELEMENT</b> or <b>NON-EQUIVALENT_ELEMENT</b>.
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: detailed_equivalence_report_request  Attribute: report_sequence 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.detailed_equivalence_report_request.report_sequence"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.detailed_equivalence_report_request.report_sequence">
+<b>preferred_ordering</b> to select either <b>EXTREMITY_ORDER</b> or <b>DETECTED_ORDER</b>.
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: detailed_equivalence_report_request_with_number_of_data  
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.detailed_equivalence_report_request_with_number_of_data"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.detailed_equivalence_report_request_with_number_of_data">
+        A <b>detailed_equivalence_report_request_with_number_of_data</b> is a type of <b>detailed_report_request</b> that controls maximum number of report.
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: detailed_equivalence_report_request_with_number_of_data  Attribute: number_of_data 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.detailed_equivalence_report_request_with_number_of_data.number_of_data"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.detailed_equivalence_report_request_with_number_of_data.number_of_data">
+An INTEGER value to control maximum number of report
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: detailed_equivalence_report_request_with_number_of_data  Attribute: detailed_report_request_type 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.detailed_equivalence_report_request_with_number_of_data.detailed_report_request_type"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.detailed_equivalence_report_request_with_number_of_data.detailed_report_request_type">
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: summary_equivalence_report_request  
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.summary_equivalence_report_request"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.summary_equivalence_report_request">
+        A <b>summary_equivalence_report_request</b> requests a summarized inspection report on the criterion concerned. An entity <b>data_equivalence_inspection_criterion_report</b> as defined in <b>product_data_equivalence_inspection_result_schema</b> shall be instantiated as a summarized report.
+</ext_description>
+<!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_criteria_schema  Entity: summary_equivalence_report_request  Attribute: summary_report_request_type 
+   <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.summary_equivalence_report_request.summary_report_request_type"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="product_data_equivalence_criteria_schema.summary_equivalence_report_request.summary_report_request_type">
+<b>summary_report_report_type</b> to select one of <b>UNSPECIFIED, CONCLUSION_ONLY, NUMBER_OF_NON-EQUIVALENT_DEFECTS, NUMBER_OF_INSPECTIONS_AND_CONCLUSION</b> and <b>FULL_STATISTICS</b>.
+</ext_description>
+</ext_descriptions>

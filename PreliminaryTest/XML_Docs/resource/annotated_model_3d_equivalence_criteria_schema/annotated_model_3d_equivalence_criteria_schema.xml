@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../../../xsl/express.xsl"?><!DOCTYPE express SYSTEM "../../../dtd/express.dtd">
+<express description.file="descriptions.xml" language_version="2" rcs.date="$Date$" rcs.revision="$Revision$" reference="">
+   <application name="JSDAI" owner="LKSoft" source="annotated_model_3d_equivalence_criteria_schema schema_instance" url="www.lksoft.com" version="4.0 beta"/>
+   <schema name="annotated_model_3d_equivalence_criteria_schema">
+      <interface kind="reference" schema="product_data_equivalence_criteria_schema">
+         <interfaced.item name="data_equivalence_criteria_representation"/>
+      </interface>
+      <entity name="annotated_model_3d_equivalence_criteria_representation" supertypes="data_equivalence_criteria_representation"/>
+   </schema>
+</express>

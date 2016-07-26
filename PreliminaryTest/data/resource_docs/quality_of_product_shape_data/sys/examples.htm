@@ -1,0 +1,915 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="schema.DC" href="http://www.dublincore.org/documents/2003/02/04/dces/">
+      <META name="DC.Title" content="&#xA;&#xA;  Integrated generic resource">
+      <META name="DC.Dates" content="2014/06/28 15:53:12">
+      <META name="DC.Published" content="2014-05-01">
+      <META name="DC.Contributor" content="Ohtaka, Akihiko">
+      <META name="DC.Creator" content="Hiraoka, Hiroyuki">
+      <META name="DC.Description" content="The integrated resource quality_of_product_shape_data">
+      <META name="DC.Subject" content="STEP, ISO 10303, integrated resource, Product data quality, Product shape data quality, Criteria representation, Measurement requirement, Threshold, Accuracy , Inspection result representation">
+      <META name="DC.Identifier" content="ISO/TC 184/SC 4/WG 12&nbsp;N8313">
+      <META name="DC.Replaces" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.version" content="2">
+      <META name="SC4.checklist.internal_review" content="ISO/TC 184/SC4/WG12 N">
+      <META name="SC4.checklist.project_leader" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.checklist.convener" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="STEPMOD.resource.rcs.date" content="Date: 2014/06/28 15:53:12 ">
+      <META name="STEPMOD.resource.rcs.revision" content="Revision: 1.10 ">
+      <TITLE>ISO 10303-59:2014(E) </TITLE>
+   </HEAD>
+   <BODY>
+      <TABLE cellspacing="0" border="0" width="100%">
+         <TR>
+            <TD><small><a href="../sys/isocover.htm">ISO cover</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../repository_index.htm">Modules Index</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../ballots/index.htm">Ballot home</a></small></TD>
+         </TR>
+         <TR>
+            <TD valign="MIDDLE"><B>
+                  
+                  	  Integrated generic resource: Quality of product shape data</B></TD>
+            <TD valign="MIDDLE" align="RIGHT"><b>ISO 10303-59:2014(E) <br>
+                  &copy; ISO
+                  </b></TD>
+         </TR>
+      </TABLE>
+      <TABLE border="1" cellspacing="1" width="100%">
+         <TR>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/cover.htm">Cover page</A><BR><A HREF="../sys/contents.htm">Table of contents</A><BR><A HREF="../sys/cover.htm#copyright">Copyright</A><BR><A HREF="../sys/foreword.htm">Foreword</A><BR><A HREF="../sys/introduction.htm">Introduction</A><BR><A HREF="../sys/1_scope.htm">1 Scope</A><BR><A HREF="../sys/2_refs.htm">2 Normative references</A><BR><A HREF="../sys/3_defs.htm">
+                     3 Terms, definitions and abbreviated terms
+                     </A><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#termsdefns">3.1 Terms and definitions</a><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#abbrv">3.2 Abbreviated terms</a><br><A HREF="../sys/4_schema.htm">4 Product data quality definition</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#gen">4.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#funcon">4.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#types">4.3 Product data quality definition type definition</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#entities">4.4 Product data quality definition entity definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/5_schema.htm">5 Product data quality criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#gen">5.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#funcon">5.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#types">5.3 Product data quality criteria type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#entities">5.4 Product data quality criteria entity definitions</A><BR></small><A HREF="../sys/6_schema.htm">6 Product data quality inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#gen">6.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#funcon">6.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#types">6.3 Product data quality inspection result type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#entities">6.4 Product data quality inspection result entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#functions">6.5 Product data quality inspection result function definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/7_schema.htm">7 Shape data quality criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#gen">7.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#funcon">7.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#types">7.3 Shape data quality criteria type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#entities">7.4 Shape data quality criteria entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#functions">7.5 Shape data quality criteria function definitions</A><BR></small><A HREF="../sys/8_schema.htm">8 Shape data quality inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#gen">8.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#funcon">8.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#types">8.3 Shape data quality inspection result type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#entities">8.4 Shape data quality inspection result entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#functions">8.5 Shape data quality inspection result function definitions</A><BR></small><A HREF="../sys/a_short_names.htm">A Short names of entities</A><BR><A HREF="../sys/b_obj_reg.htm">B Information object
+                     registration</A><BR><A HREF="../sys/c_exp.htm">C Computer interpretable listings</A><BR><A HREF="../sys/d_expg.htm">
+                     D EXPRESS-G diagrams
+                     </A><BR><A HREF="../sys/tech_discussion.htm#tech_discssion">E Technical discussion</A><BR><A HREF="../sys/examples.htm">F  Examples</A><BR><A HREF="../sys/g_change.htm">G Change history</A><BR><A HREF="../sys/biblio.htm#bibliography">Bibliography</A><BR><A HREF="../sys/resdocindex.htm">Index</A><BR></p>
+            </TD>
+         </TR>
+      </TABLE>
+      <div align="center">
+         <h2><A NAME="examples">Annex F</A><br>
+            
+            (informative)<br><br>Examples
+         </h2>
+      </div>
+      
+      <p>
+          This annex provides some example instantiations of ISO 10303-59. 
+          First, a graphical notation for the presentation of instances is explained that is a customization of 
+          EXPRESS-G for ease of understanding. 
+          Two practically important criteria,
+           <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.short_length_edge"><b>short_length_edge</b></a>
+           and 
+           <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.gap_between_edge_and_base_surface"><b>gap_between_edge_and_base_surface</b></a>,
+           are selected as examples. 
+          Example instances are generated for the three scenarios described in Annex E.7, i.e., 
+          requirements/declaration of data quality, assurance of data quality and data quality information 
+          for use in quality improvement.
+         
+      </p>
+       <b><i>F.1  Graphical notation of instances</i></b>
+      
+      
+      <p>
+         The graphical notation for the presentation of instances 
+         used in this clause includes some extensions to conventional EXPRESS-G: 
+         
+      </p>
+      
+      <ul>
+         
+         <li> Multiple instances can be presented for a model entity.</li>
+         
+         <li> Actual values can be presented using call-outs.</li>
+         
+         <li> An instance for a group of entities with inheritance relationships is shown by circumscribed broken lines. </li>
+         
+      </ul>
+      
+      <p>
+         Figure F.1 illustrates an example usage of the notation. 
+         Three instances created for the EXPRESS-G model on the left, are shown on the right. 
+         The diagram shows three instances of person, namely John, Mary and their son Mike.
+          
+      </p>
+      
+       <br><br><a name="figure_F.1"></a><div align="center"><IMG src="../fig-f.1.gif" border="0" alt="Figure F.1&nbsp;&#8212;&nbsp;&nbsp; Example usage of the notation"></div><br><div align="center"><b>Figure F.1&nbsp;&#8212;&nbsp;&nbsp; Example usage of the notation</b></div><br>
+      
+       <b><i>F.2  Instances for short_length_edge</i></b>
+      
+      <p>
+         As described in Annex E.7, ISO 10303-59 assumes the following scenarios. 
+         Examples are expanded to each of these scenarios.
+         
+      </p>
+      <ol type="1">
+         
+         <li>Representation of requirements of data quality</li>
+         
+         <li>Representation of declaration of data quality</li>
+         
+         <li>Representation of assurance of data quality</li>
+         
+         <li>Representation of data quality information for use in quality improvement</li>
+         
+      </ol>
+      
+      <p>
+         Since the same data are required for scenario 1 and 2, three kinds of examples are shown below.
+         
+      </p>
+      <p>
+         The first example criterion is 
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.short_length_edge"><b>short_length_edge</b></a>. 
+         If this criterion is assigned as a concern, the PDQ checking system shall inspect the target shape model 
+         and shall detect any edge whose length is shorter than the given threshold. 
+         The definition of the entity 
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.short_length_edge"><b>short_length_edge</b></a>
+         is shown in 7.4.88. 
+          A typical example of short length edge is shown in Figure F.2.
+         
+      </p>
+       <br><br><a name="figure_F.2"></a><div align="center"><IMG src="../fig-f.2.gif" border="0" alt="Figure F.2&nbsp;&#8212;&nbsp;&nbsp;A typical example of short length edge"></div><br><div align="center"><b>Figure F.2&nbsp;&#8212;&nbsp;&nbsp;A typical example of short length edge</b></div><br>
+      
+      
+      <p>
+         (1) Requirement/declaration of quality for 
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.short_length_edge"><b>short_length_edge</b></a>.
+         
+      </p>
+      <p>
+         The first two scenarios are requirement of data quality and declaration of data quality. 
+         As described in Annex E.7, if you are in a position of ordering a design job to some other company, 
+         you can use this type of quality information to require the company receiving the order to create a 
+         product data that satisfies your prescribed quality requirements. 
+         If you are a creator of a product data, you can use this type of quality information for explicitly 
+         declaring the quality level satisfied by your model. 
+         To create this type of quality information by the use of ISO 10303-59, you can select a set of criteria that 
+         composes your requirements. 
+         Provide the value of threshold for each criterion and the accuracy of the corresponding measurement if necessary. 
+         No reference is made to individual product data in 'requirement' case, 
+         though you may or may not attach the product data you created in 'declaration' case. 
+         You can assign at most two 
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_report_request"><b>data_quality_report_request</b></a>s
+          to represent the kind of report you need. 
+         See Figure E.3 in EXPRESS-G for entities required for these two scenarios.
+         
+      </p>
+      <p>
+         As an example of quality information for this scenario, 
+         the following data is assumed for the criterion 
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.short_length_edge"><b>short_length_edge</b></a>.
+         
+      </p>
+      
+      <ul>
+         
+         <li>The threshold for the detection of 
+            <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.short_length_edge"><b>short_length_edge</b></a>
+            is smaller than or equal to 0.01mm. 
+         </li>
+         
+         <li>Two types of report is required; 
+            summary report that shows number of inspected instances and number of instances detected as having 
+            quality defect as well as the report on the edge instances that are shorter than the given threshold.
+         </li>
+         
+      </ul>
+      The instances to be created for this scenario are shown in Figures F.3 and F.4. 13 instances are created. 
+      
+      <p class="note"><small><a name="note_1">NOTE&nbsp;1</a>&nbsp;&nbsp;
+            
+            
+            Instances whose name is shown in italics differ depending upon the criterion. 
+            In this case, criterion 
+            <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.short_length_edge"><b>short_length_edge</b></a>
+             requires 
+            <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_assessment_by_numerical_test"><b>shape_data_quality_assessment_by_numerical_test</b></a>
+             as its assessment requirement, 
+             which in turn requires 
+             <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_upper_value_limit"><b>shape_data_quality_upper_value_limit</b></a>
+              as the threshold.
+            </small></p>
+      <p class="note"><small><a name="note_2">NOTE&nbsp;2</a>&nbsp;&nbsp;
+            
+            
+            4 instances shown in Figure F.4 depict units used in general. 
+            If no other unit is specified for specific criterion or measurement requirement, these units are applied.
+            </small></p>
+      <p class="note"><small><a name="note_3">NOTE&nbsp;3</a>&nbsp;&nbsp;
+            
+            
+             Management information such as creator of the criterion and the creation date and time can be attached to 
+             <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema.data_quality_definition"><b>data_quality_definition</b></a>.
+             Since representation of this kind of management information depends on each application protocol using ISO 10303-59, 
+             these instances are not shown in this example.
+            </small></p>
+       
+       
+       <br><br><a name="figure_F.3"></a><div align="center"><IMG src="../fig-f.3.gif" border="0" alt="Figure F.3&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in requirement/declaration of short_length_edge without the accuracy specification (1 of 2)"></div><br><div align="center"><b>Figure F.3&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in requirement/declaration of short_length_edge without the
+            accuracy specification (1 of 2)</b></div><br>
+       <br><br><a name="figure_F.4"></a><div align="center"><IMG src="../fig-f.4.gif" border="0" alt="Figure F.4&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in requirement/declaration of short_length_edge without the accuracy specification (2 of 2)"></div><br><div align="center"><b>Figure F.4&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in requirement/declaration of short_length_edge without the
+            accuracy specification (2 of 2)</b></div><br>
+      
+      
+      <p>
+         The data for this example described with the format defined in ISO 10303-21 [1] is as follows.
+         
+      </p>
+      <pre>
+DATA;
+#1= DATA_QUALITY_DEFINITION('No short edge is required.');
+#2= DATA_QUALITY_DEFINITION_REPRESENTATION_RELATIONSHIP('',#1,#3);
+#3= SHAPE_DATA_QUALITY_CRITERIA_REPRESENTATION('sdqc-check1',(#12,#16),#8);
+#4= ID_ATTRIBUTE('',#3);
+#5= DESCRIPTION_ATTRIBUTE('',#3);
+#6= (LENGTH_UNIT()NAMED_UNIT(*)SI_UNIT(.MILLI.,.METRE.));
+#7= (NAMED_UNIT(*)PLANE_ANGLE_UNIT()SI_UNIT($,.RADIAN.));
+#8= (GEOMETRIC_REPRESENTATION_CONTEXT(3)
+      GLOBAL_UNIT_ASSIGNED_CONTEXT((#6,#7))REPRESENTATION_CONTEXT('',''));
+#12= SHORT_LENGTH_EDGE('',#15);
+#13= SHAPE_SUMMARY_REQUEST_WITH_REPRESENTATIVE_VALUE('',#12,
+      .FULL_STATISTICS.);
+#14= DETAILED_REPORT_REQUEST_WITH_NUMBER_OF_DATA('',#12,.MEASURED_ELEMENT.,
+      .EXTREMITY_ORDER.,30);
+#15= SHAPE_DATA_QUALITY_ASSESSMENT_BY_NUMERICAL_TEST('threshold:0.01mm',
+      #16);
+#16= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+       MEASURE_WITH_UNIT(LENGTH_MEASURE(0.01),#6)
+       QUALIFIED_REPRESENTATION_ITEM((#17))REPRESENTATION_ITEM('upper limit')
+       SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+       SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#17= TYPE_QUALIFIER('maximum');
+ENDSEC;
+</pre>
+      <p>
+         Additionally if you need to specify accuracy for measurement, instances for that purpose should be created as 
+         shown in Figures F.5, F.6 and F.7. 
+         In this example, the accuracy in general is 0.001mm and the accuracy specific to this criterion is 10-5mm. 
+         
+      </p>
+       
+       <br><br><a name="figure_F.5"></a><div align="center"><IMG src="../fig-f.5.gif" border="0" alt="Figure F.5&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in requirement/declaration of short_length_edge with the accuracy specification (1 of 3)"></div><br><div align="center"><b>Figure F.5&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in requirement/declaration of short_length_edge with the accuracy
+            specification (1 of 3)</b></div><br>
+       <br><br><a name="figure_F.6"></a><div align="center"><IMG src="../fig-f.6.gif" border="0" alt="Figure F.6&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in requirement/declaration of short_length_edge with the accuracy specification (2 of 3)"></div><br><div align="center"><b>Figure F.6&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in requirement/declaration of short_length_edge with the accuracy
+            specification (2 of 3)</b></div><br>
+       <br><br><a name="figure_F.7"></a><div align="center"><IMG src="../fig-f.7.gif" border="0" alt="Figure F.7&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in requirement/declaration of short_length_edge with the accuracy specification (3 of 3)"></div><br><div align="center"><b>Figure F.7&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in requirement/declaration of short_length_edge with the accuracy
+            specification (3 of 3)</b></div><br>
+      
+      
+      <p>
+         The data for this example described with the format defined in ISO 10303-21 is as follows.
+         
+      </p><pre>
+DATA;
+#1= DATA_QUALITY_DEFINITION(
+'No short edge is required with the accuracy 0.00001.');
+#2= DATA_QUALITY_DEFINITION_REPRESENTATION_RELATIONSHIP('',#1,#3);
+#3= SHAPE_CRITERIA_REPRESENTATION_WITH_ACCURACY('sdqc-check1',
+    (#12,#16,#21,#26),#8,(#19));
+#4= ID_ATTRIBUTE('',#3);
+#5= DESCRIPTION_ATTRIBUTE('',#3);
+#6= (LENGTH_UNIT()NAMED_UNIT(*)SI_UNIT(.MILLI.,.METRE.));
+#7= (NAMED_UNIT(*)PLANE_ANGLE_UNIT()SI_UNIT($,.RADIAN.));
+#8= (GEOMETRIC_REPRESENTATION_CONTEXT(3)
+      GLOBAL_UNIT_ASSIGNED_CONTEXT((#6,#7))REPRESENTATION_CONTEXT('',''));
+#12= SHORT_LENGTH_EDGE('',#15);
+#13= SHAPE_SUMMARY_REQUEST_WITH_REPRESENTATIVE_VALUE('',#12,
+      .FULL_STATISTICS.);
+#14= DETAILED_REPORT_REQUEST_WITH_NUMBER_OF_DATA('',#12,
+      .MEASURED_ELEMENT.,.EXTREMITY_ORDER.,30);
+#15= SHAPE_DATA_QUALITY_ASSESSMENT_BY_NUMERICAL_TEST('threshold:0.01mm',
+      #16);
+#16= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+       MEASURE_WITH_UNIT(LENGTH_MEASURE(0.01),#6)
+       QUALIFIED_REPRESENTATION_ITEM((#17))REPRESENTATION_ITEM('upper limit')
+       SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+       SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#17= TYPE_QUALIFIER('maximum');
+#19= SHAPE_MEASUREMENT_ACCURACY('general length accuracy 0.001mm',#21);
+#21= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+       MEASURE_WITH_UNIT(LENGTH_MEASURE(0.001),#6)
+       QUALIFIED_REPRESENTATION_ITEM((#22))REPRESENTATION_ITEM('upper limit')
+       SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+       SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#22= TYPE_QUALIFIER('maximum');
+#24= SHAPE_DATA_QUALITY_CRITERION_AND_ACCURACY_ASSOCIATION(#25,#12);
+#25= SHAPE_MEASUREMENT_ACCURACY('specific length accuracy 0.00001mm',#26);
+#26= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+       MEASURE_WITH_UNIT(LENGTH_MEASURE(1.0000000E-5),#6)
+       QUALIFIED_REPRESENTATION_ITEM((#27))REPRESENTATION_ITEM('upper limit')
+       SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+       SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#27= TYPE_QUALIFIER('maximum');
+ENDSEC;
+</pre> 
+      (2) Assurance of quality for 
+      <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.short_length_edge"><b>short_length_edge</b></a>.
+      
+      <p>
+         The second scenario is assurance of data quality. 
+         When you are responsible for quality assurance, you may use this type of quality information for representing 
+         the results of quality inspection against particular product model data. 
+         To create this type of quality information by the use of ISO 10303-59, 
+         you should create inspection results with references to both requirements and inspected product data. 
+         Inspection results shall be created so that each inspection result corresponds to exactly one particular 
+         criterion specified. 
+         You shall create each inspection result with the type of report specified by 
+          <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_report_request"><b>data_quality_report_request</b></a>.
+         The entities related to this scenario are as shown in Figure E.3 of Annex E.7.
+         
+      </p>
+      <p>
+         An example for this scenario presented below is based on the following assumptions; 
+         
+      </p>
+      <ul>
+         
+         <li>The requirement is to detect edges shorter than or equal to 0. 01mm with the accuracy of 10-5mm and 
+            to output summary report of the inspection.
+         </li>
+         
+         <li>The inspection is performed against the shape data of a product model. 
+            The ID of the product model is P#319 and the ID of the shape representation is P#304.
+         </li>
+         
+         <li>As the result of inspection, 24 edges are inspected and 2 edges are found to be within the given threshold. 
+            The length of the shortest edge detected is 0.009mm. 
+            The accuracy actually applied to this inspection is 10-5mm for this criterion. 
+            The general accuracy applied is 10-3mm.
+            
+         </li>
+         
+      </ul>
+      
+      <p>
+         The instances to be created for this scenario are as shown in Figures F.8, F.9, F.10, F.11, F.12 and F.13. 
+         
+      </p>
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            Instances without circumscribed broken lines are not created with entities from this part of ISO 10303: 
+            examples are 
+            <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a>
+            and 
+            <a href="../../../resources/product_property_representation_schema/product_property_representation_schema.htm#product_property_representation_schema.shape_representation"><b>shape_representation</b></a>
+            of inspected product in Figure F.11. 
+            Identifiers for these instances are shown with prefix 'P' such as 'product_definition P#319'.
+            </small></p>
+       <br><br><a name="figure_F.8"></a><div align="center"><IMG src="../fig-f.8.gif" border="0" alt="Figure F.8&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in assurance of short_length_edge (1 of 6)"></div><br><div align="center"><b>Figure F.8&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in assurance of short_length_edge (1 of 6)</b></div><br>
+       <br><br><a name="figure_F.9"></a><div align="center"><IMG src="../fig-f.9.gif" border="0" alt="Figure F.9&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in assurance of short_length_edge (2 of 6)"></div><br><div align="center"><b>Figure F.9&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in assurance of short_length_edge (2 of 6)</b></div><br>
+       <br><br><a name="figure_F.10"></a><div align="center"><IMG src="../fig-f.10.gif" border="0" alt="Figure F.10&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in assurance of short_length_edge (3 of 6)"></div><br><div align="center"><b>Figure F.10&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in assurance of short_length_edge (3 of 6)</b></div><br>
+       <br><br><a name="figure_F.11"></a><div align="center"><IMG src="../fig-f.11.gif" border="0" alt="Figure F.11&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in assurance of short_length_edge (4 of 6)"></div><br><div align="center"><b>Figure F.11&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in assurance of short_length_edge (4 of 6)</b></div><br>
+       <br><br><a name="figure_F.12"></a><div align="center"><IMG src="../fig-f.12.gif" border="0" alt="Figure F.12&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in assurance of short_length_edge (5 of 6)"></div><br><div align="center"><b>Figure F.12&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in assurance of short_length_edge (5 of 6)</b></div><br>
+       <br><br><a name="figure_F.13"></a><div align="center"><IMG src="../fig-f.13.gif" border="0" alt="Figure F.13&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in assurance of short_length_edge (6 of 6)"></div><br><div align="center"><b>Figure F.13&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in assurance of short_length_edge (6 of 6)</b></div><br>
+      
+      <p>
+         The data for this example described with the format defined in ISO 10303-21 is as follows.
+         
+      </p><pre>
+DATA;
+#1= PRODUCT_DEFINITION('target product data',$,#3,#11);
+#2= NAME_ATTRIBUTE('P#319',#1);
+#3= PRODUCT_DEFINITION_FORMATION('target data1',$,#4);
+#4= PRODUCT('','',$,(#6));
+#6= PRODUCT_CONTEXT('',#7,'mechanical');
+#7= APPLICATION_CONTEXT(
+     'configuration controlled 3D designs of mechanical parts and assemblies');
+#9= ID_ATTRIBUTE('',#7);
+#10= DESCRIPTION_ATTRIBUTE('',#7);
+#11= PRODUCT_DEFINITION_CONTEXT('',#7,'design');
+#12= SHAPE_REPRESENTATION('target shape_representation',(#86,#88),#17);
+#13= ID_ATTRIBUTE('P#304',#12);
+#14= DESCRIPTION_ATTRIBUTE('',#12);
+#15= (LENGTH_UNIT()NAMED_UNIT(*)SI_UNIT(.MILLI.,.METRE.));
+#16= (NAMED_UNIT(*)PLANE_ANGLE_UNIT()SI_UNIT($,.RADIAN.));
+#17= (GEOMETRIC_REPRESENTATION_CONTEXT(3)
+       GLOBAL_UNIT_ASSIGNED_CONTEXT((#15,#16))
+       REPRESENTATION_CONTEXT('',''));
+#20= PRODUCT_DEFINITION_SHAPE('','',#1);
+#21= ID_ATTRIBUTE('',#20);
+#22= SHAPE_DEFINITION_REPRESENTATION(#20,#12);
+#23= DESCRIPTION_ATTRIBUTE('',#22);
+#24= NAME_ATTRIBUTE('',#22);
+#30= CURVE('');
+#31= CURVE('');
+#86= EDGE_CURVE('P#86',#30,.T.);
+#88= EDGE_CURVE('P#88',#31,.T.);
+#101= DATA_QUALITY_DEFINITION(
+       'Short edge is detected with the accuracy 0.00001.');
+#102= PRODUCT_DATA_AND_DATA_QUALITY_RELATIONSHIP('',#1,#101);
+#103= DATA_QUALITY_DEFINITION_REPRESENTATION_RELATIONSHIP('',#101,#107);
+#104= (LENGTH_UNIT()NAMED_UNIT(*)SI_UNIT(.MILLI.,.METRE.));
+#105= (NAMED_UNIT(*)PLANE_ANGLE_UNIT()SI_UNIT($,.RADIAN.));
+#106= ID_ATTRIBUTE('',#107);
+#107= SHAPE_CRITERIA_REPRESENTATION_WITH_ACCURACY('',(#114,#117,#122,#127),
+       #109,(#120));
+#108= DESCRIPTION_ATTRIBUTE('',#107);
+#109= (GEOMETRIC_REPRESENTATION_CONTEXT(3)
+        GLOBAL_UNIT_ASSIGNED_CONTEXT((#104,#105))
+        REPRESENTATION_CONTEXT('',''));
+#114= SHORT_LENGTH_EDGE('',#116);
+#115= SHAPE_SUMMARY_REQUEST_WITH_REPRESENTATIVE_VALUE('',#114,
+       .FULL_STATISTICS.);
+#116= SHAPE_DATA_QUALITY_ASSESSMENT_BY_NUMERICAL_TEST('threshold:0.01mm',
+       #117);
+#117= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+        MEASURE_WITH_UNIT(LENGTH_MEASURE(0.01),#104)
+        QUALIFIED_REPRESENTATION_ITEM((#118))
+        REPRESENTATION_ITEM('upper limit')
+        SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+        SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#118= TYPE_QUALIFIER('maximum');
+#120= SHAPE_MEASUREMENT_ACCURACY('General length accuracy 0.001mm',#122);
+#122= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+        MEASURE_WITH_UNIT(LENGTH_MEASURE(0.001),#104)
+        QUALIFIED_REPRESENTATION_ITEM((#123))
+        REPRESENTATION_ITEM('upper limit')
+        SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+        SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#123= TYPE_QUALIFIER('maximum');
+#125= SHAPE_DATA_QUALITY_CRITERION_AND_ACCURACY_ASSOCIATION(#126,#114);
+#126= SHAPE_MEASUREMENT_ACCURACY('Specific length accuracy 0.00001mm',#127);
+#127= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+        MEASURE_WITH_UNIT(LENGTH_MEASURE(1.0000000E-5),#104)
+        QUALIFIED_REPRESENTATION_ITEM((#128))
+        REPRESENTATION_ITEM('upper limit')
+        SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+        SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#128= TYPE_QUALIFIER('maximum');
+#130= SHAPE_INSPECTION_RESULT_REPRESENTATION_WITH_ACCURACY('sdqir-check1',
+         (#135,#137,#144,#149),#17,#107,(#142));
+#131= DATA_QUALITY_DEFINITION_REPRESENTATION_RELATIONSHIP('',#101,#130);
+#132= SHAPE_DATA_QUALITY_INSPECTED_SHAPE_AND_RESULT_RELATIONSHIP('','',#12,
+         #130);
+#133= ID_ATTRIBUTE('',#130);
+#134= DESCRIPTION_ATTRIBUTE('',#130);
+#135= (DATA_QUALITY_INSPECTION_RESULT(#114)
+           DATA_QUALITY_INSPECTION_RESULT_WITH_JUDGEMENT(.T.)
+           REPRESENTATION_ITEM('')SHAPE_DATA_QUALITY_INSPECTION_RESULT());
+#137= SHAPE_DATA_QUALITY_INSPECTION_CRITERION_REPORT('',#135,(#139,#140),
+         LENGTH_MEASURE(0.009));
+#139= DATA_QUALITY_INSPECTION_CRITERION_REPORT_ITEM('',24,
+         .NUMBER_OF_INSPECTED_INSTANCES.);
+#140= DATA_QUALITY_INSPECTION_CRITERION_REPORT_ITEM('',2,
+         .NUMBER_OF_QUALITY_DEFECTS_DETECTED.);
+#141= DATA_QUALITY_REPORT_MEASUREMENT_ASSOCIATION('','',#114,#137);
+#142= SHAPE_MEASUREMENT_ACCURACY('General length accuracy 0.001mm',#144);
+#144= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+           MEASURE_WITH_UNIT(LENGTH_MEASURE(0.001),#15)
+           QUALIFIED_REPRESENTATION_ITEM((#145))
+           REPRESENTATION_ITEM('upper limit')
+           SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+           SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#145= TYPE_QUALIFIER('maximum');
+#147= SHAPE_INSPECTION_RESULT_ACCURACY_ASSOCIATION(#148,#135);
+#148= SHAPE_MEASUREMENT_ACCURACY('Specific length accuracy 0.00001mm',#149);
+#149= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+           MEASURE_WITH_UNIT(LENGTH_MEASURE(1.0000000E-5),#15)
+           QUALIFIED_REPRESENTATION_ITEM((#150))
+           REPRESENTATION_ITEM('upper limit')
+           SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+           SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#150= TYPE_QUALIFIER('maximum');
+ENDSEC;
+</pre>
+      (3) Quality information for use in the improvement of quality for 
+      <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.short_length_edge"><b>short_length_edge</b></a>.
+      
+      <p>
+         The last scenario is data quality information to be used in quality improvement. 
+         This scenario assumes that the detailed information obtained for detecting 
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.short_length_edge"><b>short_length_edge</b></a>.
+         by a PDQ checking system will be used in the later stage for healing problem data by the use of some 
+         PDQ healing system, or by manual work. 
+         PDQ checking system is required to generate the information on what quality defect is detected to 
+         what extent and provide it as a detailed inspection result report at the geometric entity instance level. 
+         Inspection result shall be created for each measurement identifying quality defects detected. 
+         
+      </p>
+      An example for this scenario presented below is based on the following assumptions;
+      
+      <ul>
+         
+         <li>The requirement is to detect edges shorter than or equal to 0.01mm with the accuracy of 10-5mm. </li>
+         
+         <li>For the purpose of this scenario, it is necessary to generate the report showing the edges that 
+            are shorter in length than or equal to 0.01mm and their measured length. 
+            The reports should be created in extremity order.
+         </li>
+         
+         <li>The summary report is the same as the example in (2). </li>
+         
+         <li>The detailed information on the two edges that are detected as short_length_edge is as follows.</li>
+         
+         <li>edge_curve #86 has the length 0.009mm.</li>
+         
+         <li>edge_curve #88 has the length 0.009mm.</li>
+         
+      </ul>
+      
+      <p>
+         The instances to be created for this scenario are shown in Figures F.14, F.15, F.16, F.17, F.18, F.19  and F.20. 
+         
+      </p>
+      
+       <br><br><a name="figure_F.14"></a><div align="center"><IMG src="../fig-f.14.gif" border="0" alt="Figure F.14&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (1 of 7)"></div><br><div align="center"><b>Figure F.14&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (1 of 7)</b></div><br>
+       <br><br><a name="figure_F.15"></a><div align="center"><IMG src="../fig-f.15.gif" border="0" alt="Figure F.15&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (2 of 7)"></div><br><div align="center"><b>Figure F.15&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (2 of 7)</b></div><br>
+       <br><br><a name="figure_F.16"></a><div align="center"><IMG src="../fig-f.16.gif" border="0" alt="Figure F.16&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (3 of 7)"></div><br><div align="center"><b>Figure F.16&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (3 of 7)</b></div><br>
+       <br><br><a name="figure_F.17"></a><div align="center"><IMG src="../fig-f.17.gif" border="0" alt="Figure F.17&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (4 of 7)"></div><br><div align="center"><b>Figure F.17&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (4 of 7)</b></div><br>
+       <br><br><a name="figure_F.18"></a><div align="center"><IMG src="../fig-f.18.gif" border="0" alt="Figure F.18&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (5 of 7)"></div><br><div align="center"><b>Figure F.18&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (5 of 7)</b></div><br>
+       <br><br><a name="figure_F.19"></a><div align="center"><IMG src="../fig-f.19.gif" border="0" alt="Figure F.19&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (6 of 7)"></div><br><div align="center"><b>Figure F.19&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (6 of 7)</b></div><br>
+       <br><br><a name="figure_F.20"></a><div align="center"><IMG src="../fig-f.20.gif" border="0" alt="Figure F.20&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (7 of 7)"></div><br><div align="center"><b>Figure F.20&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality short_length_edge (7 of 7)</b></div><br>
+      
+      <p> 
+         The data for this example described with the format defined in ISO 10303-21 is as follows.
+         
+      </p><pre>
+DATA;
+#1= PRODUCT_DEFINITION('target product data',$,#3,#11);
+#2= NAME_ATTRIBUTE('P#319',#1);
+#3= PRODUCT_DEFINITION_FORMATION('target data1',$,#4);
+#4= PRODUCT('','',$,(#6));
+#6= PRODUCT_CONTEXT('',#7,'mechanical');
+#7= APPLICATION_CONTEXT(
+      'configuration controlled 3D designs of mechanical parts and assemblies');
+#9= ID_ATTRIBUTE('',#7);
+#10= DESCRIPTION_ATTRIBUTE('',#7);
+#11= PRODUCT_DEFINITION_CONTEXT('',#7,'design');
+#12= SHAPE_REPRESENTATION('target shape_representation',(#86,#88),#17);
+#13= ID_ATTRIBUTE('P#304',#12);
+#14= DESCRIPTION_ATTRIBUTE('',#12);
+#15= (LENGTH_UNIT()NAMED_UNIT(*)SI_UNIT(.MILLI.,.METRE.));
+#16= (NAMED_UNIT(*)PLANE_ANGLE_UNIT()SI_UNIT($,.RADIAN.));
+#17= (GEOMETRIC_REPRESENTATION_CONTEXT(3)
+         GLOBAL_UNIT_ASSIGNED_CONTEXT((#15,#16))
+         REPRESENTATION_CONTEXT('',''));
+#20= PRODUCT_DEFINITION_SHAPE('',$,#1);
+#21= ID_ATTRIBUTE('',#20);
+#22= SHAPE_DEFINITION_REPRESENTATION(#20,#12);
+#23= DESCRIPTION_ATTRIBUTE('',#22);
+#24= NAME_ATTRIBUTE('',#22);
+#30= CURVE('');
+#31= CURVE('');
+#86= EDGE_CURVE('P#86',#30,.T.);
+#88= EDGE_CURVE('P#88',#31,.T.);
+#101= DATA_QUALITY_DEFINITION(
+         'Short edge is detected with the accuracy 0.00001.');
+#102= PRODUCT_DATA_AND_DATA_QUALITY_RELATIONSHIP('',#1,#101);
+#103= DATA_QUALITY_DEFINITION_REPRESENTATION_RELATIONSHIP('',#101,#108);
+#104= (LENGTH_UNIT()NAMED_UNIT(*)SI_UNIT(.MILLI.,.METRE.));
+#105= (NAMED_UNIT(*)PLANE_ANGLE_UNIT()SI_UNIT($,.RADIAN.));
+#107= ID_ATTRIBUTE('',#108);
+#108= SHAPE_CRITERIA_REPRESENTATION_WITH_ACCURACY('',(#114,#118,#123,#128),
+         #110,(#121));
+#109= DESCRIPTION_ATTRIBUTE('',#108);
+#110= (GEOMETRIC_REPRESENTATION_CONTEXT(3)
+          GLOBAL_UNIT_ASSIGNED_CONTEXT((#104,#105))
+          REPRESENTATION_CONTEXT('',''));
+#114= SHORT_LENGTH_EDGE('',#117);
+#115= SHAPE_SUMMARY_REQUEST_WITH_REPRESENTATIVE_VALUE('',#114,
+         .FULL_STATISTICS.);
+#116= DETAILED_REPORT_REQUEST('',#114,.INFERIOR_QUALITY_ELEMENT.,
+         .EXTREMITY_ORDER.);
+#117= SHAPE_DATA_QUALITY_ASSESSMENT_BY_NUMERICAL_TEST('threshold:0.01mm',
+         #118);
+#118= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+           MEASURE_WITH_UNIT(LENGTH_MEASURE(0.01),#104)
+           QUALIFIED_REPRESENTATION_ITEM((#119))
+           REPRESENTATION_ITEM('upper limit')
+           SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+           SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#119= TYPE_QUALIFIER('maximum');
+#121= SHAPE_MEASUREMENT_ACCURACY('General length accuracy 0.001mm',#123);
+#123= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+           MEASURE_WITH_UNIT(LENGTH_MEASURE(0.001),#104)
+           QUALIFIED_REPRESENTATION_ITEM((#124))
+           REPRESENTATION_ITEM('upper limit')
+           SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+           SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#124= TYPE_QUALIFIER('maximum');
+#126= SHAPE_DATA_QUALITY_CRITERION_AND_ACCURACY_ASSOCIATION(#127,#114);
+#127= SHAPE_MEASUREMENT_ACCURACY('Specific length accuracy 0.00001mm',#128);
+#128= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+           MEASURE_WITH_UNIT(LENGTH_MEASURE(1.0000000E-5),#104)
+           QUALIFIED_REPRESENTATION_ITEM((#129))
+           REPRESENTATION_ITEM('upper limit')
+           SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+           SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#129= TYPE_QUALIFIER('maximum');
+#131= SHAPE_INSPECTION_RESULT_REPRESENTATION_WITH_ACCURACY('sdqir-check1',
+         (#136,#138,#145,#150,#153),#17,#108,(#143));
+#132= DATA_QUALITY_DEFINITION_REPRESENTATION_RELATIONSHIP('',#101,#131);
+#133= SHAPE_DATA_QUALITY_INSPECTED_SHAPE_AND_RESULT_RELATIONSHIP('',$,#12,
+         #131);
+#134= ID_ATTRIBUTE('',#131);
+#135= DESCRIPTION_ATTRIBUTE('',#131);
+#136= (DATA_QUALITY_INSPECTION_RESULT(#114)
+          DATA_QUALITY_INSPECTION_RESULT_WITH_JUDGEMENT(.T.)
+          REPRESENTATION_ITEM('')SHAPE_DATA_QUALITY_INSPECTION_RESULT());
+#138= SHAPE_DATA_QUALITY_INSPECTION_CRITERION_REPORT('',#136,(#140,#141),
+         LENGTH_MEASURE(0.009));
+#140= DATA_QUALITY_INSPECTION_CRITERION_REPORT_ITEM('',24,
+         .NUMBER_OF_INSPECTED_INSTANCES.);
+#141= DATA_QUALITY_INSPECTION_CRITERION_REPORT_ITEM('',2,
+         .NUMBER_OF_QUALITY_DEFECTS_DETECTED.);
+#142= DATA_QUALITY_REPORT_MEASUREMENT_ASSOCIATION('','',#114,#138);
+#143= SHAPE_MEASUREMENT_ACCURACY('General length accuracy 0.001mm',#145);
+#145= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+           MEASURE_WITH_UNIT(LENGTH_MEASURE(0.001),#15)
+           QUALIFIED_REPRESENTATION_ITEM((#146))
+           REPRESENTATION_ITEM('upper limit')
+           SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+           SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#146= TYPE_QUALIFIER('maximum');
+#148= SHAPE_INSPECTION_RESULT_ACCURACY_ASSOCIATION(#149,#136);
+#149= SHAPE_MEASUREMENT_ACCURACY('Specific length accuracy 0.00001mm',#150);
+#150= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+           MEASURE_WITH_UNIT(LENGTH_MEASURE(1.0000000E-5),#15)
+           QUALIFIED_REPRESENTATION_ITEM((#151))
+           REPRESENTATION_ITEM('upper limit')
+           SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+           SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#151= TYPE_QUALIFIER('maximum');
+#153= SHAPE_DATA_QUALITY_INSPECTION_INSTANCE_REPORT('',#136,(#155,#158));
+#154= DATA_QUALITY_REPORT_MEASUREMENT_ASSOCIATION('',$,#114,#153);
+#155= SHAPE_DATA_QUALITY_INSPECTION_INSTANCE_REPORT_ITEM('',(#86),
+         LENGTH_MEASURE(0.009));
+#158= SHAPE_DATA_QUALITY_INSPECTION_INSTANCE_REPORT_ITEM('',(#88),
+         LENGTH_MEASURE(0.009));
+ENDSEC;
+</pre>
+      <b><i>F.3  Instances for 
+            <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.gap_between_edge_and_base_surface"><b>gap_between_edge_and_base_surface</b></a>
+            </i></b>
+      
+      <p>
+         The next example concerns with the 
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.gap_between_edge_and_base_surface"><b>gap_between_edge_and_base_surface</b></a>
+          criterion. 
+         If this criterion is assigned as a concern, PDQ checking system shall inspect every 
+         <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.edge_curve"><b>edge_curve</b></a>s
+         which bounds a 
+         <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.face_surface"><b>face_surface</b></a>
+         of the target shape model, calculate the maximum value of the minimum distance 
+         from any point on the 
+         <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.edge_curve"><b>edge_curve</b></a>s
+         under inspection to the underlying surface, and detect all the 
+         <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.edge_curve"><b>edge_curve</b></a>s
+         with the calculated value larger than the specified threshold. 
+         The definition of the entity 
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.gap_between_edge_and_base_surface"><b>gap_between_edge_and_base_surface</b></a>
+         is shown in 7.4.99.
+         
+      </p>
+      <p>
+         For requirement/declaration of quality and for assurance of quality, examples are omitted, 
+         as they are similar to the previous example for the criterion 
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schema.htm#shape_data_quality_criteria_schema.short_length_edge"><b>short_length_edge</b></a>.
+         Example instances are shown only for the scenario of data quality information to be used in quality improvement. 
+         
+      </p>
+      <p>
+         An example for this scenario presented below is based on the following assumptions;
+         
+      </p>
+      
+      <ul>
+         
+         <li> The requirement is to detect gaps larger than or equal to 0.01mm with the accuracy of 10-5mm. </li>
+         
+         <li>The requirement on report is: 1) to identify faces that has a gap larger than or equal to 0.01mm between its bounding edges
+            and the underlying surface, 2) to identify pairs of the point on the edge and the point on the base surface where distance
+            between them is within the given threshold, and 3) reports should be created in extremity order.
+         </li> 
+         
+         <li> The inspection is performed against the shape data of a product model. 
+            The ID of the product model is P#319 and the ID of the shape representation is P#304.
+         </li>
+         
+         <li>The summary report has the following contents as the result of inspection: 
+            66 
+            <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.face_surface"><b>face_surface</b></a>s
+            are inspected and one 
+            <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.face_surface"><b>face_surface</b></a>
+            is found to have a gap within the given threshold. The length of the gap is 0.013mm. 
+         </li>
+         
+         <li>The detailed information on the 
+            <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.face_surface"><b>face_surface</b></a>
+            that is detected to have a large gap between its bounding 
+            <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.edge_curve"><b>edge_curve</b></a>s is: 
+            The gap is detected on the 
+            <a href="../../../resources/topology_schema/topology_schema.htm#topology_schema.face_surface"><b>face_surface</b></a>
+            P#43 between 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.point_on_edge_curve"><b>point_on_edge_curve</b></a>
+            Q# 157 and 
+            <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schema.htm#shape_data_quality_inspection_result_schema.point_on_face_surface"><b>point_on_face_surface</b></a>
+            Q#155 and its value is 0.013mm.
+         </li>
+         
+      </ul>
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            Instances circumscribed with broken lines are created with this part of standard. 
+            ID for these instances is shown with prefix 'Q' such as 'point_on_face_surface Q#21'.
+            </small></p>
+      
+      <p>
+         The instances to be created for this scenario are shown in Figures F.21, F.22, F.23, F.24, F.25, F.26 and F.27. 
+         
+      </p>
+       
+       <br><br><a name="figure_F.21"></a><div align="center"><IMG src="../fig-f.21.gif" border="0" alt="Figure F.21&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface (1 of 7)"></div><br><div align="center"><b>Figure F.21&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface
+            (1 of 7)</b></div><br>
+       <br><br><a name="figure_F.22"></a><div align="center"><IMG src="../fig-f.22.gif" border="0" alt="Figure F.22&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface (2 of 7)"></div><br><div align="center"><b>Figure F.22&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface
+            (2 of 7)</b></div><br>
+       <br><br><a name="figure_F.23"></a><div align="center"><IMG src="../fig-f.23.gif" border="0" alt="Figure F.23&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface (3 of 7)"></div><br><div align="center"><b>Figure F.23&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface
+            (3 of 7)</b></div><br>
+       <br><br><a name="figure_F.24"></a><div align="center"><IMG src="../fig-f.24.gif" border="0" alt="Figure F.24&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface (4 of 7)"></div><br><div align="center"><b>Figure F.24&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface
+            (4 of 7)</b></div><br>
+       <br><br><a name="figure_F.25"></a><div align="center"><IMG src="../fig-f.25.gif" border="0" alt="Figure F.25&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface (5 of 7)"></div><br><div align="center"><b>Figure F.25&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface
+            (5 of 7)</b></div><br>
+       <br><br><a name="figure_F.26"></a><div align="center"><IMG src="../fig-f.26.gif" border="0" alt="Figure F.26&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface (6 of 7)"></div><br><div align="center"><b>Figure F.26&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface
+            (6 of 7)</b></div><br>
+       <br><br><a name="figure_F.27"></a><div align="center"><IMG src="../fig-f.27.gif" border="0" alt="Figure F.27&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface (7 of 7)"></div><br><div align="center"><b>Figure F.27&nbsp;&#8212;&nbsp;&nbsp;Example instances of quality information for use in the improvement of quality gap_between_edge_and_base_surface
+            (7 of 7)</b></div><br>
+      
+      <p>
+         The data for this example described with the format defined in ISO 10303-21 is as follows.
+         
+      </p>
+      <pre>
+DATA;
+#1= PRODUCT_DEFINITION('target product data',$,#3,#11);
+#2= NAME_ATTRIBUTE('P#319',#1);
+#3= PRODUCT_DEFINITION_FORMATION('target data1',$,#4);
+#4= PRODUCT('','',$,(#6));
+#6= PRODUCT_CONTEXT('',#7,'mechanical');
+#7= APPLICATION_CONTEXT(
+      'configuration controlled 3D designs of mechanical parts and assemblies');
+#9= ID_ATTRIBUTE('',#7);
+#10= DESCRIPTION_ATTRIBUTE('',#7);
+#11= PRODUCT_DEFINITION_CONTEXT('',#7,'design');
+#12= SHAPE_REPRESENTATION('target shape_representation',(#43,#63),#17);
+#13= ID_ATTRIBUTE('P#304',#12);
+#14= DESCRIPTION_ATTRIBUTE('',#12);
+#15= (LENGTH_UNIT()NAMED_UNIT(*)SI_UNIT(.MILLI.,.METRE.));
+#16= (NAMED_UNIT(*)PLANE_ANGLE_UNIT()SI_UNIT($,.RADIAN.));
+#17= (GEOMETRIC_REPRESENTATION_CONTEXT(3)
+         GLOBAL_UNIT_ASSIGNED_CONTEXT((#15,#16))
+         REPRESENTATION_CONTEXT('',''));
+#20= PRODUCT_DEFINITION_SHAPE('',$,#1);
+#21= ID_ATTRIBUTE('',#20);
+#22= SHAPE_DEFINITION_REPRESENTATION(#20,#12);
+#23= DESCRIPTION_ATTRIBUTE('',#22);
+#24= NAME_ATTRIBUTE('',#22);
+#41= SURFACE('P#41');
+#43= FACE_SURFACE('P#43',#41,.T.);
+#61= CURVE('P#61');
+#63= EDGE_CURVE('P#63',#61,.T.);
+#101= DATA_QUALITY_DEFINITION('');
+#102= PRODUCT_DATA_AND_DATA_QUALITY_RELATIONSHIP('',#1,#101);
+#103= DATA_QUALITY_DEFINITION_REPRESENTATION_RELATIONSHIP('',#101,#108);
+#104= (LENGTH_UNIT()NAMED_UNIT(*)SI_UNIT(.MILLI.,.METRE.));
+#105= (NAMED_UNIT(*)PLANE_ANGLE_UNIT()SI_UNIT($,.RADIAN.));
+#107= ID_ATTRIBUTE('',#108);
+#108= SHAPE_CRITERIA_REPRESENTATION_WITH_ACCURACY('sdqc-check1',
+         (#113,#118,#123,#128),#110,(#121));
+#109= DESCRIPTION_ATTRIBUTE('',#108);
+#110= (GEOMETRIC_REPRESENTATION_CONTEXT(3)
+           GLOBAL_UNIT_ASSIGNED_CONTEXT((#104,#105))
+           REPRESENTATION_CONTEXT('',''));
+#113= GAP_BETWEEN_EDGE_AND_BASE_SURFACE('',#117);
+#115= SUMMARY_REPORT_REQUEST('',#113,.FULL_STATISTICS.);
+#116= DETAILED_REPORT_REQUEST('',#113,.INFERIOR_QUALITY_ELEMENT.,
+         .EXTREMITY_ORDER.);
+#117= SHAPE_DATA_QUALITY_ASSESSMENT_BY_NUMERICAL_TEST('threshold:0.01mm',
+         #118);
+#118= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+           MEASURE_WITH_UNIT(LENGTH_MEASURE(0.01),#104)
+           QUALIFIED_REPRESENTATION_ITEM((#119))
+           REPRESENTATION_ITEM('lower limit')
+           SHAPE_DATA_QUALITY_LOWER_VALUE_LIMIT()
+           SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#119= TYPE_QUALIFIER('minimum');
+#121= SHAPE_MEASUREMENT_ACCURACY('General length accuracy 0.001mm',#123);
+#123= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+           MEASURE_WITH_UNIT(LENGTH_MEASURE(0.001),#104)
+           QUALIFIED_REPRESENTATION_ITEM((#124))
+           REPRESENTATION_ITEM('upper limit')
+           SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+           SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#124= TYPE_QUALIFIER('maximum');
+#126= SHAPE_DATA_QUALITY_CRITERION_AND_ACCURACY_ASSOCIATION(#127,#113);
+#127= SHAPE_MEASUREMENT_ACCURACY('Specific length accuracy 0.00001mm',#128);
+#128= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+           MEASURE_WITH_UNIT(LENGTH_MEASURE(1.0000000E-5),#104)
+           QUALIFIED_REPRESENTATION_ITEM((#129))
+           REPRESENTATION_ITEM('upper limit')
+           SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+           SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#129= TYPE_QUALIFIER('maximum');
+#131= SHAPE_INSPECTION_RESULT_REPRESENTATION_WITH_ACCURACY('sdqir-check1',
+         (#136,#138,#145,#150,#153,#160,#162),#17,#108,(#143));
+#132= DATA_QUALITY_DEFINITION_REPRESENTATION_RELATIONSHIP('',#101,#131);
+#133= SHAPE_DATA_QUALITY_INSPECTED_SHAPE_AND_RESULT_RELATIONSHIP('',$,#12,
+         #131);
+#134= ID_ATTRIBUTE('',#131);
+#135= DESCRIPTION_ATTRIBUTE('',#131);
+#136= (DATA_QUALITY_INSPECTION_RESULT(#113)
+           DATA_QUALITY_INSPECTION_RESULT_WITH_JUDGEMENT(.T.)
+           REPRESENTATION_ITEM('')SHAPE_DATA_QUALITY_INSPECTION_RESULT());
+#138= SHAPE_DATA_QUALITY_INSPECTION_CRITERION_REPORT('',#136,(#140,#141),
+         LENGTH_MEASURE(0.013));
+#140= DATA_QUALITY_INSPECTION_CRITERION_REPORT_ITEM('',66,
+         .NUMBER_OF_INSPECTED_INSTANCES.);
+#141= DATA_QUALITY_INSPECTION_CRITERION_REPORT_ITEM('',1,
+         .NUMBER_OF_QUALITY_DEFECTS_DETECTED.);
+#142= DATA_QUALITY_REPORT_MEASUREMENT_ASSOCIATION('',$,#113,#138);
+#143= SHAPE_MEASUREMENT_ACCURACY('General length accuracy 0.001mm',#145);
+#145= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+          MEASURE_WITH_UNIT(LENGTH_MEASURE(0.001),#15)
+          QUALIFIED_REPRESENTATION_ITEM((#146))
+          REPRESENTATION_ITEM('upper limit')
+          SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+          SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#146= TYPE_QUALIFIER('maximum');
+#148= SHAPE_INSPECTION_RESULT_ACCURACY_ASSOCIATION(#149,#136);
+#149= SHAPE_MEASUREMENT_ACCURACY('Specific length accuracy 0.00001mm',#150);
+#150= (LENGTH_MEASURE_WITH_UNIT()MEASURE_REPRESENTATION_ITEM()
+          MEASURE_WITH_UNIT(LENGTH_MEASURE(1.0000000E-5),#15)
+          QUALIFIED_REPRESENTATION_ITEM((#151))
+          REPRESENTATION_ITEM('upper limit')
+          SHAPE_DATA_QUALITY_UPPER_VALUE_LIMIT()
+          SHAPE_DATA_QUALITY_VALUE_LIMIT());
+#151= TYPE_QUALIFIER('maximum');
+#153= SHAPE_DATA_QUALITY_INSPECTION_INSTANCE_REPORT('',#136,(#155));
+#154= DATA_QUALITY_REPORT_MEASUREMENT_ASSOCIATION('',$,#113,#153);
+#155= INSTANCE_REPORT_ITEM_WITH_EXTREME_INSTANCES('',(#43),
+         LENGTH_MEASURE(0.013),(#158));
+#158= EXTREME_INSTANCE((#160,#162),LENGTH_MEASURE(0.013));
+#160= POINT_ON_FACE_SURFACE('Q#155',*,0.1,0.1,#43);
+#162= POINT_ON_EDGE_CURVE('Q#157',*,0.1,#63);
+ENDSEC;
+</pre>
+       <br><br><p>&copy; ISO 2014 &#8212; All rights reserved</p>
+   </BODY>
+</HTML>

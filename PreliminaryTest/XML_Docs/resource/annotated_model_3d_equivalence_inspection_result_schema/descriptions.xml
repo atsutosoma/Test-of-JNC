@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet 
+  type="text/xsl" 
+  href="../../../xsl/descriptions.xsl"?>
+<!DOCTYPE ext_descriptions SYSTEM "../../../dtd/description.dtd">
+<ext_descriptions module_directory="annotated_model_3d_equivalence_inspection_result_schema" schema_file="annotated_model_3d_equivalence_inspection_result_schema.xml" describe.selects="YES" describe.subtype_constraints="YES" rcs.date="$Date: 2004/11/16 07:30:26 $" rcs.revision="$Revision: 1.13 $">
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Schema: annotated_model_3d_equivalence_inspection_result_schema
+   <express_ref linkend="annotated_model_3d_equivalence_inspection_result_schema:ir_express:annotated_model_3d_equivalence_inspection_result_schema"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<ext_description linkend="annotated_model_3d_equivalence_inspection_result_schema">
+</ext_description><!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: annotated_model_3d_equivalence_inspection_result_schema  Entity: annotated_model_3d_inspection_result_representation  
+   <express_ref linkend="annotated_model_3d_equivalence_inspection_result_schema:ir_express:annotated_model_3d_equivalence_inspection_result_schema.annotated_model_3d_inspection_result_representation"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+<ext_description linkend="annotated_model_3d_equivalence_inspection_result_schema.annotated_model_3d_inspection_result_representation">
+An <b>annotated_model_3d_equivalnce_inspection_result_representation</b> is a type of <express_ref linkend="product_data_equivalence_inspection_result_schema:ir_express:product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_representation"/>	
+ defined in <express_ref linkend="product_data_equivalence_inspection_result_schema:ir_express:product_data_equivalence_inspection_result_schema">product_data_equivalence_inspection_result_schema</express_ref>	
+, and represents all the inspection results for an inspected product data against a set of annotated model 3d equivalence criteria.
+</ext_description>
+</ext_descriptions>

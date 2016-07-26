@@ -1,0 +1,1632 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="schema.DC" href="http://www.dublincore.org/documents/2003/02/04/dces/">
+      <META name="DC.Title" content="&#xA;&#xA;  Integrated generic resource">
+      <META name="DC.Dates" content="2014/06/28 15:53:12">
+      <META name="DC.Published" content="2014-05-01">
+      <META name="DC.Contributor" content="Ohtaka, Akihiko">
+      <META name="DC.Creator" content="Hiraoka, Hiroyuki">
+      <META name="DC.Description" content="The integrated resource quality_of_product_shape_data">
+      <META name="DC.Subject" content="STEP, ISO 10303, integrated resource, Product data quality, Product shape data quality, Criteria representation, Measurement requirement, Threshold, Accuracy , Inspection result representation">
+      <META name="DC.Identifier" content="ISO/TC 184/SC 4/WG 12&nbsp;N8313">
+      <META name="DC.Replaces" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.version" content="2">
+      <META name="SC4.checklist.internal_review" content="ISO/TC 184/SC4/WG12 N">
+      <META name="SC4.checklist.project_leader" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.checklist.convener" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="STEPMOD.resource.rcs.date" content="Date: 2014/06/28 15:53:12 ">
+      <META name="STEPMOD.resource.rcs.revision" content="Revision: 1.10 ">
+      <TITLE>ISO 10303-59:2014(E) </TITLE>
+   </HEAD>
+   <BODY>
+      <TABLE cellspacing="0" border="0" width="100%">
+         <TR>
+            <TD><small><a href="../sys/isocover.htm">ISO cover</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../repository_index.htm">Modules Index</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../ballots/index.htm">Ballot home</a></small></TD>
+         </TR>
+         <TR>
+            <TD valign="MIDDLE"><B>
+                  
+                  	  Integrated generic resource: Quality of product shape data</B></TD>
+            <TD valign="MIDDLE" align="RIGHT"><b>ISO 10303-59:2014(E) <br>
+                  &copy; ISO
+                  </b></TD>
+         </TR>
+      </TABLE>
+      <TABLE border="1" cellspacing="1" width="100%">
+         <TR>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/cover.htm">Cover page</A><BR><A HREF="../sys/contents.htm">Table of contents</A><BR><A HREF="../sys/cover.htm#copyright">Copyright</A><BR><A HREF="../sys/foreword.htm">Foreword</A><BR><A HREF="../sys/introduction.htm">Introduction</A><BR><A HREF="../sys/1_scope.htm">1 Scope</A><BR><A HREF="../sys/2_refs.htm">2 Normative references</A><BR><A HREF="../sys/3_defs.htm">
+                     3 Terms, definitions and abbreviated terms
+                     </A><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#termsdefns">3.1 Terms and definitions</a><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#abbrv">3.2 Abbreviated terms</a><br><A HREF="../sys/4_schema.htm">4 Product data quality definition</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#gen">4.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#funcon">4.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#types">4.3 Product data quality definition type definition</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#entities">4.4 Product data quality definition entity definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/5_schema.htm">5 Product data quality criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#gen">5.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#funcon">5.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#types">5.3 Product data quality criteria type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#entities">5.4 Product data quality criteria entity definitions</A><BR></small><A HREF="../sys/6_schema.htm">6 Product data quality inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#gen">6.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#funcon">6.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#types">6.3 Product data quality inspection result type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#entities">6.4 Product data quality inspection result entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#functions">6.5 Product data quality inspection result function definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/7_schema.htm">7 Shape data quality criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#gen">7.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#funcon">7.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#types">7.3 Shape data quality criteria type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#entities">7.4 Shape data quality criteria entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#functions">7.5 Shape data quality criteria function definitions</A><BR></small><A HREF="../sys/8_schema.htm">8 Shape data quality inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#gen">8.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#funcon">8.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#types">8.3 Shape data quality inspection result type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#entities">8.4 Shape data quality inspection result entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#functions">8.5 Shape data quality inspection result function definitions</A><BR></small><A HREF="../sys/a_short_names.htm">A Short names of entities</A><BR><A HREF="../sys/b_obj_reg.htm">B Information object
+                     registration</A><BR><A HREF="../sys/c_exp.htm">C Computer interpretable listings</A><BR><A HREF="../sys/d_expg.htm">
+                     D EXPRESS-G diagrams
+                     </A><BR><A HREF="../sys/tech_discussion.htm#tech_discssion">E Technical discussion</A><BR><A HREF="../sys/examples.htm">F  Examples</A><BR><A HREF="../sys/g_change.htm">G Change history</A><BR><A HREF="../sys/biblio.htm#bibliography">Bibliography</A><BR><A HREF="../sys/resdocindex.htm">Index</A><BR></p>
+            </TD>
+         </TR>
+      </TABLE>
+      <h2>
+         Index
+         
+      </h2>
+      <div>abrupt_change_of_surface_normal</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.abrupt_change_of_surface_normal">7.4.1</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>accuracy</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;term
+         <a href="3_defs.htm#term-accuracy">3.5.1</a></div>
+      <div>b_spline_curve_knot_locator</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.b_spline_curve_knot_locator">8.4.1</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg4.htm">D.19</a></div>
+      <div>b_spline_curve_segment</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.b_spline_curve_segment">8.4.2</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg4.htm">D.19</a></div>
+      <div>b_spline_or_composite_curve_select</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.b_spline_or_composite_curve_select">8.3.1</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm">D.18</a></div>
+      <div>b_spline_or_rectangular_composite_surface_select</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.b_spline_or_rectangular_composite_surface_select">8.3.2</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm">D.18</a></div>
+      <div>b_spline_surface_knot_locator</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_knot_locator">8.4.3</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm">D.20</a></div>
+      <div>b_spline_surface_patch</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_patch">8.4.4</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm">D.20</a></div>
+      <div>b_spline_surface_strip</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.b_spline_surface_strip">8.4.5</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm">D.20</a></div>
+      <div>boolean_value</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.boolean_value">8.3.3</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm">D.18</a></div>
+      <div>boundary_curve_of_b_spline_or_rectangular_composite_surface</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.boundary_curve_of_b_spline_or_rectangular_composite_surface">8.4.6</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm">D.20</a></div>
+      <div>closed_or_open_shell_select</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.closed_or_open_shell_select">8.3.4</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm">D.18</a></div>
+      <div>composite_curve_transition_locator</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.composite_curve_transition_locator">8.4.7</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg4.htm">D.19</a></div>
+      <div>curve_with_excessive_segments</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.curve_with_excessive_segments">7.4.2</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>curve_with_small_curvature_radius</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.curve_with_small_curvature_radius">7.4.3</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>data_quality_assessment_measurement_association</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.data_quality_assessment_measurement_association">5.4.1</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>data_quality_assessment_specification</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.data_quality_assessment_specification">5.4.2</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>data_quality_criteria_representation</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.data_quality_criteria_representation">5.4.3</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>data_quality_criterion</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.data_quality_criterion">5.4.4</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>data_quality_criterion_assessment_association</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.data_quality_criterion_assessment_association">5.4.5</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>data_quality_criterion_measurement_association</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.data_quality_criterion_measurement_association">5.4.6</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>data_quality_definition</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="4_schema.htm#product_data_quality_definition_schema.data_quality_definition">4.4.1</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schemaexpg2.htm">D.2</a></div>
+      <div>data_quality_definition_relationship</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="4_schema.htm#product_data_quality_definition_schema.data_quality_definition_relationship">4.4.2</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schemaexpg2.htm">D.2</a></div>
+      <div>data_quality_definition_representation_relationship</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="4_schema.htm#product_data_quality_definition_schema.data_quality_definition_representation_relationship">4.4.3</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schemaexpg2.htm">D.2</a></div>
+      <div>data_quality_inspection_criterion_report</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report">6.4.1</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm">D.6</a></div>
+      <div>data_quality_inspection_criterion_report_item</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item">6.4.2</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm">D.6</a></div>
+      <div>data_quality_inspection_instance_report</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report">6.4.3</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm">D.6</a></div>
+      <div>data_quality_inspection_instance_report_item</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item">6.4.4</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm">D.6</a></div>
+      <div>data_quality_inspection_report</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_report">6.4.5</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm">D.6</a></div>
+      <div>data_quality_inspection_result</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result">6.4.6</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm">D.6</a></div>
+      <div>data_quality_inspection_result_representation</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result_representation">6.4.7</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm">D.6</a></div>
+      <div>data_quality_inspection_result_with_judgement</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="6_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result_with_judgement">6.4.8</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm">D.6</a></div>
+      <div>data_quality_measurement_requirement</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.data_quality_measurement_requirement">5.4.7</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>data_quality_report_measurement_association</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="6_schema.htm#product_data_quality_inspection_result_schema.data_quality_report_measurement_association">6.4.9</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm">D.6</a></div>
+      <div>data_quality_report_request</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.data_quality_report_request">5.4.8</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>detailed_report_request</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.detailed_report_request">5.4.9</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>detailed_report_request_with_number_of_data</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.detailed_report_request_with_number_of_data">5.4.10</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>detailed_report_type</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.detailed_report_type">5.3.1</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>disconnected_face_set</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.disconnected_face_set">7.4.4</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg3.htm">D.9</a></div>
+      <div>discontinuous_geometry</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.discontinuous_geometry">7.4.5</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>edge_with_excessive_segments</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.edge_with_excessive_segments">7.4.6</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>entirely_narrow_face</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.entirely_narrow_face">7.4.7</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>entirely_narrow_solid</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.entirely_narrow_solid">7.4.8</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>entirely_narrow_surface</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.entirely_narrow_surface">7.4.9</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>erroneous_b_spline_curve_definition</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.erroneous_b_spline_curve_definition">7.4.10</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>erroneous_b_spline_surface_definition</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.erroneous_b_spline_surface_definition">7.4.11</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>erroneous_data</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.erroneous_data">7.4.12</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg3.htm">D.9</a></div>
+      <div>erroneous_geometry</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.erroneous_geometry">7.4.13</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>erroneous_manifold_solid_brep</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.erroneous_manifold_solid_brep">7.4.14</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>erroneous_topology</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.erroneous_topology">7.4.15</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg3.htm">D.9</a></div>
+      <div>erroneous_topology_and_geometry_relationship</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.erroneous_topology_and_geometry_relationship">7.4.16</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>excessively_high_degree_curve</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.excessively_high_degree_curve">7.4.17</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>excessively_high_degree_surface</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.excessively_high_degree_surface">7.4.18</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>extreme_instance</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.extreme_instance">8.4.8</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm">D.17</a></div>
+      <div>extreme_patch_width_variation</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.extreme_patch_width_variation">7.4.19</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>face_surface_with_excessive_patches_in_one_direction</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.face_surface_with_excessive_patches_in_one_direction">7.4.20</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>free_edge</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.free_edge">7.4.21</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg3.htm">D.9</a></div>
+      <div>g1_discontinuity_between_adjacent_faces</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.g1_discontinuity_between_adjacent_faces">7.4.22</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>g1_discontinuous_curve</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.g1_discontinuous_curve">7.4.23</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>g1_discontinuous_surface</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.g1_discontinuous_surface">7.4.24</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>g2_discontinuity_between_adjacent_faces</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.g2_discontinuity_between_adjacent_faces">7.4.25</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>g2_discontinuous_curve</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.g2_discontinuous_curve">7.4.26</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>g2_discontinuous_surface</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.g2_discontinuous_surface">7.4.27</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>gap_between_adjacent_edges_in_loop</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.gap_between_adjacent_edges_in_loop">7.4.28</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>gap_between_edge_and_base_surface</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.gap_between_edge_and_base_surface">7.4.29</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>gap_between_faces_related_to_an_edge</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.gap_between_faces_related_to_an_edge">7.4.30</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>gap_between_pcurves_related_to_an_edge</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.gap_between_pcurves_related_to_an_edge">7.4.31</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>gap_between_vertex_and_base_surface</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.gap_between_vertex_and_base_surface">7.4.32</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>gap_between_vertex_and_edge</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.gap_between_vertex_and_edge">7.4.33</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>geometric_gap_in_topology</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.geometric_gap_in_topology">7.4.34</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>geometric_model_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="7_schema.htm#interfaces">7.1</a></div>
+      <div>geometric_model_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="8_schema.htm#interfaces">8.1</a></div>
+      <div>geometry_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="7_schema.htm#interfaces">7.1</a></div>
+      <div>geometry_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="8_schema.htm#interfaces">8.1</a></div>
+      <div>geometry_with_local_irregularity</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.geometry_with_local_irregularity">7.4.35</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>geometry_with_local_near_degeneracy</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.geometry_with_local_near_degeneracy">7.4.36</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>Hausdorff distance</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;term
+         <a href="3_defs.htm#term-Hausdorff distance">3.5.2</a></div>
+      <div>high_degree_axi_symmetric_surface</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.high_degree_axi_symmetric_surface">7.4.37</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>high_degree_conic</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.high_degree_conic">7.4.38</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>high_degree_linear_curve</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.high_degree_linear_curve">7.4.39</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>high_degree_planar_surface</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.high_degree_planar_surface">7.4.40</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>inapt_data</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.inapt_data">7.4.41</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg3.htm">D.9</a></div>
+      <div>inapt_geometry</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.inapt_geometry">7.4.42</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>inapt_manifold_solid_brep</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.inapt_manifold_solid_brep">7.4.43</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>inapt_topology</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.inapt_topology">7.4.44</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg3.htm">D.9</a></div>
+      <div>inapt_topology_and_geometry_relationship</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.inapt_topology_and_geometry_relationship">7.4.45</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>inconsistent_adjacent_face_normals</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.inconsistent_adjacent_face_normals">7.4.46</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg3.htm">D.9</a></div>
+      <div>inconsistent_curve_transition_code</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.inconsistent_curve_transition_code">7.4.47</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>inconsistent_edge_and_curve_directions</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.inconsistent_edge_and_curve_directions">7.4.48</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>inconsistent_face_and_closed_shell_normals</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.inconsistent_face_and_closed_shell_normals">7.4.49</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>inconsistent_face_and_surface_normals</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.inconsistent_face_and_surface_normals">7.4.50</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>inconsistent_surface_transition_code</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.inconsistent_surface_transition_code">7.4.51</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>indistinct_curve_knots</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.indistinct_curve_knots">7.4.52</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>indistinct_surface_knots</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.indistinct_surface_knots">7.4.53</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>inspected_element_select</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="6_schema.htm#product_data_quality_inspection_result_schema.inspected_element_select">6.3.1</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm">D.6</a></div>
+      <div>inspected_product_definition</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="6_schema.htm#product_data_quality_inspection_result_schema.inspected_product_definition">6.5.1</a></div>
+      <div>inspected_shape_element_select</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.inspected_shape_element_select">8.3.5</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm">D.18</a></div>
+      <div>inspection result</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;term
+         <a href="3_defs.htm#term-inspection result">3.5.3</a></div>
+      <div>instance_report_item_with_extreme_instances</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.instance_report_item_with_extreme_instances">8.4.9</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm">D.17</a></div>
+      <div>intersecting_connected_face_sets</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.intersecting_connected_face_sets">7.4.54</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>intersecting_loops_in_face</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.intersecting_loops_in_face">7.4.55</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>intersecting_shells_in_solid</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.intersecting_shells_in_solid">7.4.56</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>location_of_extreme_value_select</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.location_of_extreme_value_select">8.3.6</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg4.htm">D.19</a></div>
+      <div>measure_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="7_schema.htm#interfaces">7.1</a></div>
+      <div>measure_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="8_schema.htm#interfaces">8.1</a></div>
+      <div>measured_value_select</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.measured_value_select">8.3.7</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm">D.18</a></div>
+      <div>measurement requirement</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;term
+         <a href="3_defs.htm#term-measurement requirement">3.5.4</a></div>
+      <div>multiply_defined_cartesian_points</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.multiply_defined_cartesian_points">7.4.57</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>multiply_defined_curves</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.multiply_defined_curves">7.4.58</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>multiply_defined_directions</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.multiply_defined_directions">7.4.59</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>multiply_defined_edges</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.multiply_defined_edges">7.4.60</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>multiply_defined_faces</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.multiply_defined_faces">7.4.61</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>multiply_defined_geometry</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.multiply_defined_geometry">7.4.62</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>multiply_defined_placements</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.multiply_defined_placements">7.4.63</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>multiply_defined_solids</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.multiply_defined_solids">7.4.64</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>multiply_defined_surfaces</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.multiply_defined_surfaces">7.4.65</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>multiply_defined_vertices</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.multiply_defined_vertices">7.4.66</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>narrow_surface_patch</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.narrow_surface_patch">7.4.67</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>nearly_degenerate_geometry</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.nearly_degenerate_geometry">7.4.68</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>nearly_degenerate_surface_boundary</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.nearly_degenerate_surface_boundary">7.4.69</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>nearly_degenerate_surface_patch</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.nearly_degenerate_surface_patch">7.4.70</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>non_manifold_at_edge</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.non_manifold_at_edge">7.4.71</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg3.htm">D.9</a></div>
+      <div>non_manifold_at_vertex</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.non_manifold_at_vertex">7.4.72</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg3.htm">D.9</a></div>
+      <div>non_smooth_geometry_transition_across_edge</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.non_smooth_geometry_transition_across_edge">7.4.73</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>open_closed_shell</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.open_closed_shell">7.4.74</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg3.htm">D.9</a></div>
+      <div>open_edge_loop</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.open_edge_loop">7.4.75</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg3.htm">D.9</a></div>
+      <div>over_used_vertex</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.over_used_vertex">7.4.76</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg3.htm">D.9</a></div>
+      <div>overcomplex_geometry</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.overcomplex_geometry">7.4.77</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>overcomplex_topology_and_geometry_relationship</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.overcomplex_topology_and_geometry_relationship">7.4.78</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>overlapping_geometry</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.overlapping_geometry">7.4.79</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>partly_overlapping_curves</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.partly_overlapping_curves">7.4.80</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>partly_overlapping_edges</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.partly_overlapping_edges">7.4.81</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>partly_overlapping_faces</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.partly_overlapping_faces">7.4.82</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>partly_overlapping_solids</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.partly_overlapping_solids">7.4.83</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>partly_overlapping_surfaces</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.partly_overlapping_surfaces">7.4.84</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>plane_angle_and_length_pair</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.plane_angle_and_length_pair">8.4.10</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm">D.18</a></div>
+      <div>plane_angle_and_ratio_pair</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.plane_angle_and_ratio_pair">8.4.11</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg3.htm">D.18</a></div>
+      <div>point_on_edge_curve</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.point_on_edge_curve">8.4.12</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg4.htm">D.19</a></div>
+      <div>point_on_face_surface</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.point_on_face_surface">8.4.13</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg4.htm">D.19</a></div>
+      <div>preferred_ordering</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.preferred_ordering">5.3.2</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>product data quality</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;term
+         <a href="3_defs.htm#term-product data quality">3.5.5</a></div>
+      <div>product data quality criterion</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;term
+         <a href="3_defs.htm#term-product data quality criterion">3.5.6</a></div>
+      <div>product shape data</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;term
+         <a href="3_defs.htm#term-product shape data">3.5.7</a></div>
+      <div>product_data_and_data_quality_relationship</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="4_schema.htm#product_data_quality_definition_schema.product_data_and_data_quality_relationship">4.4.4</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schemaexpg2.htm">D.2</a></div>
+      <div>product_data_quality_criteria_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="4_schema.htm#interfaces">4.1</a></div>
+      <div>product_data_quality_criteria_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="6_schema.htm#interfaces">6.1</a></div>
+      <div>product_data_quality_criteria_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="7_schema.htm#interfaces">7.1</a></div>
+      <div>product_data_quality_criteria_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="8_schema.htm#interfaces">8.1</a></div>
+      <div>product_data_quality_definition_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="6_schema.htm#interfaces">6.1</a></div>
+      <div>product_data_quality_inspection_result_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="4_schema.htm#interfaces">4.1</a></div>
+      <div>product_data_quality_inspection_result_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="5_schema.htm#interfaces">5.1</a></div>
+      <div>product_data_quality_inspection_result_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="7_schema.htm#interfaces">7.1</a></div>
+      <div>product_data_quality_inspection_result_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="8_schema.htm#interfaces">8.1</a></div>
+      <div>product_definition_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="4_schema.htm#interfaces">4.1</a></div>
+      <div>product_definition_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="6_schema.htm#interfaces">6.1</a></div>
+      <div>product_definition_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="8_schema.htm#interfaces">8.1</a></div>
+      <div>product_property_definition_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="8_schema.htm#interfaces">8.1</a></div>
+      <div>product_property_representation_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="8_schema.htm#interfaces">8.1</a></div>
+      <div>qualified_measure_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="7_schema.htm#interfaces">7.1</a></div>
+      <div>qualified_measure_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="8_schema.htm#interfaces">8.1</a></div>
+      <div>quality criterion</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;term
+         <a href="3_defs.htm#term-quality criterion">3.5.8</a></div>
+      <div>rectangular_composite_surface_transition_locator</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.rectangular_composite_surface_transition_locator">8.4.14</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm">D.20</a></div>
+      <div>relating_shape_representations_of_extreme_values</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.relating_shape_representations_of_extreme_values">8.5.1</a></div>
+      <div>representation_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="5_schema.htm#interfaces">5.1</a></div>
+      <div>representation_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="6_schema.htm#interfaces">6.1</a></div>
+      <div>representation_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="7_schema.htm#interfaces">7.1</a></div>
+      <div>representation_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="8_schema.htm#interfaces">8.1</a></div>
+      <div>self_intersecting_curve</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.self_intersecting_curve">7.4.85</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>self_intersecting_geometry</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.self_intersecting_geometry">7.4.86</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>self_intersecting_loop</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.self_intersecting_loop">7.4.87</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>self_intersecting_shell</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.self_intersecting_shell">7.4.88</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>self_intersecting_surface</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.self_intersecting_surface">7.4.89</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>shape_criteria_representation_with_accuracy</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_criteria_representation_with_accuracy">7.4.90</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg2.htm">D.8</a></div>
+      <div>shape_data_quality_assessment_by_logical_test</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_assessment_by_logical_test">7.4.91</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg2.htm">D.8</a></div>
+      <div>shape_data_quality_assessment_by_numerical_test</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_assessment_by_numerical_test">7.4.92</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg2.htm">D.8</a></div>
+      <div>shape_data_quality_assessment_specification_select</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_assessment_specification_select">7.3.1</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg2.htm">D.8</a></div>
+      <div>shape_data_quality_criteria_representation</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_criteria_representation">7.4.93</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg2.htm">D.8</a></div>
+      <div>shape_data_quality_criteria_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="8_schema.htm#interfaces">8.1</a></div>
+      <div>shape_data_quality_criterion</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_criterion">7.4.94</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg3.htm">D.9</a></div>
+      <div>shape_data_quality_criterion_and_accuracy_association</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_criterion_and_accuracy_association">7.4.95</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg2.htm">D.8</a></div>
+      <div>shape_data_quality_inspected_shape_and_result_relationship</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspected_shape_and_result_relationship">8.4.15</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm">D.17</a></div>
+      <div>shape_data_quality_inspection_criterion_report</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_criterion_report">8.4.16</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm">D.17</a></div>
+      <div>shape_data_quality_inspection_instance_report</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report">8.4.17</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm">D.17</a></div>
+      <div>shape_data_quality_inspection_instance_report_item</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_instance_report_item">8.4.18</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm">D.17</a></div>
+      <div>shape_data_quality_inspection_result</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result">8.4.19</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm">D.17</a></div>
+      <div>shape_data_quality_inspection_result_representation</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.shape_data_quality_inspection_result_representation">8.4.20</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm">D.17</a></div>
+      <div>shape_data_quality_inspection_result_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="7_schema.htm#interfaces">7.1</a></div>
+      <div>shape_data_quality_lower_value_limit</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_lower_value_limit">7.4.96</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg2.htm">D.8</a></div>
+      <div>shape_data_quality_upper_value_limit</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_upper_value_limit">7.4.97</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg2.htm">D.8</a></div>
+      <div>shape_data_quality_value_limit</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_value_limit">7.4.98</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg2.htm">D.8</a></div>
+      <div>shape_data_quality_value_limit_type_select</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_value_limit_type_select">7.3.2</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg2.htm">D.8</a></div>
+      <div>shape_data_quality_value_range</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_data_quality_value_range">7.4.99</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg2.htm">D.8</a></div>
+      <div>shape_inspection_result_accuracy_association</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.shape_inspection_result_accuracy_association">8.4.21</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm">D.17</a></div>
+      <div>shape_inspection_result_representation_with_accuracy</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.shape_inspection_result_representation_with_accuracy">8.4.22</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg2.htm">D.17</a></div>
+      <div>shape_measurement_accuracy</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_measurement_accuracy">7.4.100</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg2.htm">D.8</a></div>
+      <div>shape_summary_request_with_representative_value</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.shape_summary_request_with_representative_value">7.4.101</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg2.htm">D.8</a></div>
+      <div>short_length_curve</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.short_length_curve">7.4.102</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>short_length_curve_segment</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.short_length_curve_segment">7.4.103</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>short_length_edge</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.short_length_edge">7.4.104</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>small_area_face</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.small_area_face">7.4.105</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>small_area_surface</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.small_area_surface">7.4.106</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div>
+      <div>small_area_surface_patch</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.small_area_surface_patch">7.4.107</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>small_volume_solid</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.small_volume_solid">7.4.108</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>software_for_data_quality_check</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="4_schema.htm#product_data_quality_definition_schema.software_for_data_quality_check">4.4.5</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schemaexpg2.htm">D.2</a></div>
+      <div>solid_with_excessive_number_of_voids</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.solid_with_excessive_number_of_voids">7.4.109</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>solid_with_wrong_number_of_voids</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.solid_with_wrong_number_of_voids">7.4.110</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>statistical_value_type</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="6_schema.htm#product_data_quality_inspection_result_schema.statistical_value_type">6.3.2</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm">D.6</a></div>
+      <div>steep_angle_between_adjacent_edges</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.steep_angle_between_adjacent_edges">7.4.111</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>steep_angle_between_adjacent_faces</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.steep_angle_between_adjacent_faces">7.4.112</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>steep_geometry_transition_across_edge</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.steep_geometry_transition_across_edge">7.4.113</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>summary_report_request</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.summary_report_request">5.4.11</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>summary_report_type</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="5_schema.htm#product_data_quality_criteria_schema.summary_report_type">5.3.3</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schemaexpg2.htm">D.4</a></div>
+      <div>support_resource_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="4_schema.htm#interfaces">4.1</a></div>
+      <div>support_resource_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="5_schema.htm#interfaces">5.1</a></div>
+      <div>support_resource_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="6_schema.htm#interfaces">6.1</a></div>
+      <div>support_resource_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="7_schema.htm#interfaces">7.1</a></div>
+      <div>support_resource_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="8_schema.htm#interfaces">8.1</a></div>
+      <div>surface_boundary_type</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.surface_boundary_type">8.3.8</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm">D.20</a></div>
+      <div>surface_with_excessive_patches_in_one_direction</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.surface_with_excessive_patches_in_one_direction">7.4.114</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg7.htm">D.13</a></div>
+      <div>surface_with_small_curvature_radius</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.surface_with_small_curvature_radius">7.4.115</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg6.htm">D.12</a></div>
+      <div>threshold</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;term
+         <a href="3_defs.htm#term-threshold">3.5.9</a></div>
+      <div>topology_related_to_multiply_defined_geometry</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.topology_related_to_multiply_defined_geometry">7.4.116</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>topology_related_to_nearly_degenerate_geometry</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.topology_related_to_nearly_degenerate_geometry">7.4.117</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>topology_related_to_overlapping_geometry</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.topology_related_to_overlapping_geometry">7.4.118</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>topology_related_to_self_intersecting_geometry</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.topology_related_to_self_intersecting_geometry">7.4.119</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg9.htm">D.15</a></div>
+      <div>topology_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="7_schema.htm#interfaces">7.1</a></div>
+      <div>topology_schema</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Schema interface
+         <a href="8_schema.htm#interfaces">8.1</a></div>
+      <div>u_or_v_parameter</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.u_or_v_parameter">8.3.9</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_inspection_result_schema/shape_data_quality_inspection_result_schemaexpg5.htm">D.20</a></div>
+      <div>unused_patches</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.unused_patches">7.4.120</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg8.htm">D.14</a></div>
+      <div>used_quality_representation_select</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="4_schema.htm#product_data_quality_definition_schema.used_quality_representation_select">4.3.1</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schemaexpg2.htm">D.2</a></div>
+      <div>using_product_definition_of_shape_representation</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="8_schema.htm#shape_data_quality_inspection_result_schema.using_product_definition_of_shape_representation">8.5.2</a></div>
+      <div>validate_accuracy_types</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.validate_accuracy_types">7.5.1</a></div>
+      <div>validate_inspected_elements_type</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.validate_inspected_elements_type">7.5.2</a></div>
+      <div>validate_locations_of_extreme_value_type</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.validate_locations_of_extreme_value_type">7.5.3</a></div>
+      <div>validate_measured_data_type</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.validate_measured_data_type">7.5.4</a></div>
+      <div>value_limit_type</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.value_limit_type">7.5.5</a></div>
+      <div>wrongly_oriented_void</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.wrongly_oriented_void">7.4.121</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>wrongly_placed_loop</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.wrongly_placed_loop">7.4.122</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>wrongly_placed_void</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.wrongly_placed_void">7.4.123</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg4.htm">D.10</a></div>
+      <div>zero_surface_normal</div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object definition
+         <a href="7_schema.htm#shape_data_quality_criteria_schema.zero_surface_normal">7.4.124</a></div>
+      <div>
+         &nbsp;&nbsp;&nbsp;Object EXPRESS-G
+         <a href="../../../resources/shape_data_quality_criteria_schema/shape_data_quality_criteria_schemaexpg5.htm">D.11</a></div><br><br><p>&copy; ISO 2014 &#8212; All rights reserved</p>
+   </BODY>
+</HTML>

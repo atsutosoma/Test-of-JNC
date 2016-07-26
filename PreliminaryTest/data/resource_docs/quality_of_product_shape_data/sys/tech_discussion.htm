@@ -1,0 +1,435 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="schema.DC" href="http://www.dublincore.org/documents/2003/02/04/dces/">
+      <META name="DC.Title" content="&#xA;&#xA;  Integrated generic resource">
+      <META name="DC.Dates" content="2014/06/28 15:53:12">
+      <META name="DC.Published" content="2014-05-01">
+      <META name="DC.Contributor" content="Ohtaka, Akihiko">
+      <META name="DC.Creator" content="Hiraoka, Hiroyuki">
+      <META name="DC.Description" content="The integrated resource quality_of_product_shape_data">
+      <META name="DC.Subject" content="STEP, ISO 10303, integrated resource, Product data quality, Product shape data quality, Criteria representation, Measurement requirement, Threshold, Accuracy , Inspection result representation">
+      <META name="DC.Identifier" content="ISO/TC 184/SC 4/WG 12&nbsp;N8313">
+      <META name="DC.Replaces" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.version" content="2">
+      <META name="SC4.checklist.internal_review" content="ISO/TC 184/SC4/WG12 N">
+      <META name="SC4.checklist.project_leader" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.checklist.convener" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="STEPMOD.resource.rcs.date" content="Date: 2014/06/28 15:53:12 ">
+      <META name="STEPMOD.resource.rcs.revision" content="Revision: 1.10 ">
+      <TITLE>ISO 10303-59:2014(E) </TITLE>
+   </HEAD>
+   <BODY>
+      <TABLE cellspacing="0" border="0" width="100%">
+         <TR>
+            <TD><small><a href="../sys/isocover.htm">ISO cover</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../repository_index.htm">Modules Index</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../ballots/index.htm">Ballot home</a></small></TD>
+         </TR>
+         <TR>
+            <TD valign="MIDDLE"><B>
+                  
+                  	  Integrated generic resource: Quality of product shape data</B></TD>
+            <TD valign="MIDDLE" align="RIGHT"><b>ISO 10303-59:2014(E) <br>
+                  &copy; ISO
+                  </b></TD>
+         </TR>
+      </TABLE>
+      <TABLE border="1" cellspacing="1" width="100%">
+         <TR>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/cover.htm">Cover page</A><BR><A HREF="../sys/contents.htm">Table of contents</A><BR><A HREF="../sys/cover.htm#copyright">Copyright</A><BR><A HREF="../sys/foreword.htm">Foreword</A><BR><A HREF="../sys/introduction.htm">Introduction</A><BR><A HREF="../sys/1_scope.htm">1 Scope</A><BR><A HREF="../sys/2_refs.htm">2 Normative references</A><BR><A HREF="../sys/3_defs.htm">
+                     3 Terms, definitions and abbreviated terms
+                     </A><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#termsdefns">3.1 Terms and definitions</a><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#abbrv">3.2 Abbreviated terms</a><br><A HREF="../sys/4_schema.htm">4 Product data quality definition</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#gen">4.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#funcon">4.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#types">4.3 Product data quality definition type definition</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#entities">4.4 Product data quality definition entity definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/5_schema.htm">5 Product data quality criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#gen">5.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#funcon">5.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#types">5.3 Product data quality criteria type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#entities">5.4 Product data quality criteria entity definitions</A><BR></small><A HREF="../sys/6_schema.htm">6 Product data quality inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#gen">6.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#funcon">6.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#types">6.3 Product data quality inspection result type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#entities">6.4 Product data quality inspection result entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#functions">6.5 Product data quality inspection result function definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/7_schema.htm">7 Shape data quality criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#gen">7.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#funcon">7.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#types">7.3 Shape data quality criteria type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#entities">7.4 Shape data quality criteria entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#functions">7.5 Shape data quality criteria function definitions</A><BR></small><A HREF="../sys/8_schema.htm">8 Shape data quality inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#gen">8.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#funcon">8.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#types">8.3 Shape data quality inspection result type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#entities">8.4 Shape data quality inspection result entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#functions">8.5 Shape data quality inspection result function definitions</A><BR></small><A HREF="../sys/a_short_names.htm">A Short names of entities</A><BR><A HREF="../sys/b_obj_reg.htm">B Information object
+                     registration</A><BR><A HREF="../sys/c_exp.htm">C Computer interpretable listings</A><BR><A HREF="../sys/d_expg.htm">
+                     D EXPRESS-G diagrams
+                     </A><BR><A HREF="../sys/tech_discussion.htm#tech_discssion">E Technical discussion</A><BR><A HREF="../sys/examples.htm">F  Examples</A><BR><A HREF="../sys/g_change.htm">G Change history</A><BR><A HREF="../sys/biblio.htm#bibliography">Bibliography</A><BR><A HREF="../sys/resdocindex.htm">Index</A><BR></p>
+            </TD>
+         </TR>
+      </TABLE>
+      <div align="center">
+         <h2><A NAME="tech_discussion">Annex E</A><br>
+            
+            (informative)<br><br>Technical discussion
+         </h2>
+      </div>
+       <b><i>E.1  Background</i></b>
+      
+      <p>
+         Increase of the use of engineering systems (CAD/CAM/CAE/CG systems) in product development has 
+         revealed the significance of product data quality (PDQ) as a key issue for realizing successful 
+         collaborative product development based on product data.
+         
+      </p>
+      
+      <p>
+         A NIST report titled &#8220;Economic Impact Assessment of the International Standard for the Exchange of 
+         Product Model Data (STEP) in Transportation Industries&#8221;[6] estimates that one billion dollars per 
+         year saving will be realized by full use of STEP in US transportation industries (Aerospace, Automotive, 
+         Shipbuilding). 
+         Improvement of PDQ that eliminates rework could realize further cost savings.
+         
+      </p>
+      
+      <p>
+         Namely, establishment of widely acceptable methodology for guaranteeing appropriate quality of product 
+         model data is critically important for drastically raising effectiveness of the use of 3D engineering 
+         systems and for decreasing economic loss.
+         
+      </p>
+      
+      <p>
+         SASIG&#8217;s initiative to develop the automotive PDQ guidelines is a major response to this critical issue. 
+         However, PDQ issues are not specific to the automotive industry, but are common to all manufacturing industries. 
+         PDQ criteria and acceptable values may differ from one industry to another, and this part of ISO 10303 is 
+         intended to allow for such differences.
+         
+      </p>
+      
+      <p>
+         Additionally, standardization of PDQ methodology is expected to encourage IT vendors to develop better 
+         systems in view of product data quality.
+         
+      </p>
+      
+       <b><i>E.2  Definition of product data quality</i></b>
+      
+      <p>
+         Although importance of product data quality has been widely recognized, it is not yet clearly defined 
+         what &#8220;product data quality&#8221; is. 
+         In the discussion of &#8220;product data quality&#8221;, we have to distinguish quality of &#8220;product data&#8221; from that 
+         of &#8220;product&#8221; itself and &#8220;product model&#8221;, because these three types of qualities are often mixed up in 
+         conventional context.
+         
+      </p>
+      
+      <p>
+         &#8220;Product&#8221; is a manufactured physical body, and &#8220;product model&#8221; is a mathematical model to 
+         represent &#8220;product&#8221; on computers. 
+         &#8220;Product data&#8221; is numerical data that represent product information in accordance with &#8220;product model.&#8221;
+         
+      </p>
+      
+      <p>
+         &#8220;Product quality&#8221; is defined as the degree of satisfaction of users&#8217; requirements on its function, 
+         performance, appearance and so on. 
+         There are a number of existing researches and achievements on &#8220;product quality.&#8221; 
+         We also have the standard &#8220;ISO 9000&#8221; for the management of &#8220;product quality.&#8221;
+         
+      </p>
+      
+      <p>
+         On the other hand, we don&#8217;t even have a basic definition of &#8220;product model quality.&#8221;
+         
+      </p>
+      
+      <p>
+         Since &#8220;product data&#8221; is based on &#8220;product model&#8221;, it is difficult to give rigorous or theoretical 
+         definition of &#8220;product data quality&#8221; today.
+         
+      </p>
+      
+      <p>
+         This is the reason why we adopt in this standard a practical approach described below for modelling 
+         &#8220;product data quality.&#8221;
+         
+      </p>
+       <br><br><a name="figure_E.1"></a><div align="center"><IMG src="../fig-e.1.gif" border="0" alt="Figure E.1&nbsp;&#8212;&nbsp;&nbsp;Quality of product, product model and product data"></div><br><div align="center"><b>Figure E.1&nbsp;&#8212;&nbsp;&nbsp;Quality of product, product model and product data</b></div><br>
+      
+      <p>
+         Issues that hinder successful exchange or sharing of product data have been categorized as either erroneous data or inapt
+         data. Each of these classes has been further categorized into the subclasses of geometry-specific issues, topology-specific
+         issues, combined geometry and topology issues and geometric modelling issues. These are further discussed in clause E.4.
+         
+      </p>
+      
+       <b><i>E.3  Target data type of PDQ-S</i></b>
+      
+      <p>
+         Among variety of information consisting of product data, we concentrate on three dimensional shape data 
+         in this standard though schemas for allowing future extension to cope with non-shape data 
+         quality are also included. 
+         The reason why we concentrate on three dimensional shape data is that it is the core information and most 
+         repair work is done to improve shape data today. 
+         Reflecting our focus, this project is called &#8220;PDQ-S.&#8221; (Product Data Quality &#8211; Shape)
+         
+      </p>
+      
+      <p>
+         There are various ways to represent three dimensional product shape, B-rep, CSG and parametric 
+         feature based representation. 
+         Among them, we concentrate on parametric curves and surfaces, and B-rep data, because these data are 
+         majority of 3D shape data transferred and shared today.
+         
+      </p>
+      
+      <p>
+         Although use of parametrically represented 3D shape data in explicit form with geometric constraints, 
+         implicit form with construction history, or with their mixture are increasing especially in solid 
+         modelling environment, it will take some time to enable parametric data exchange since some of 
+         the related standards in ISO 10303 have reached to IS level very recently. 
+         Therefore, we will leave quality of shape data with parametric information as a future issue.
+         
+      </p>
+       <b><i>E.4  Quality criteria of three-dimensional shape data</i></b> 
+      
+      <p>
+         Quality criteria of three-dimensional shape data are classified into the following classes:
+         
+      </p>
+      
+      <ul>
+         
+         <li>Erroneous data;</li>
+         
+         <li>Inapt data;</li>
+         
+      </ul>
+      
+      <p>
+         Each of these classes is further categorized into the following sub-classes:
+         
+      </p>
+      <ul>
+         
+         <li>Geometry specific issue;</li>
+         
+         <li>Topology specific issue;</li>
+         
+         <li>Combined geometry and topology issue;</li>
+         
+         <li>Geometric model issues.</li>
+         
+      </ul>
+      
+      <p>
+         &#8216;Erroneous data&#8217; implies mathematically invalid product shape data. 
+         Amongst examples are erroneous b_spline surface definition, open edge loop and inconsistent face and 
+         underlying surface normals.
+         
+      </p>
+      
+      <p>
+         &#8216;Inapt data&#8217; implies data inappropriate for applications though it may not be mathematically incorrect. 
+         Amongst examples are self-intersecting curve, non-manifold at edge, narrow width surface patch and 
+         gap between bounding edge and underlying surface.
+         
+      </p>
+      
+      <p>
+         Even when shape data have acceptable quality in the senses described above, there exists a number of 
+         cases where engineers in downstream processes have to rework on the data.
+         
+      </p>
+      
+      <p>
+         For example, mould design engineers have to modify a product shape data if appropriate draft angle is not 
+         taken into account in the data. 
+         Just knowing the fact whether various manufacturing requirements are incorporated into the data or not 
+         may save the cost of rework. 
+         Therefore, these issues are within the scope of this project because they hinder circulation of product 
+         data from up stream to down stream.
+         
+      </p>
+      
+      <p>
+         Unfortunately we cannot focus on them in this initial version because the information to be incorporated 
+         is not yet well formalized. 
+         But it&#8217;s among one of the most important open issues for this project.
+         
+      </p>
+      
+       <b><i>E.5  Thresholds and Accuracies</i></b>
+      
+      <p>
+         For the assessment of shape data quality by numerical test, thresholds which are user definable from 
+         AP (Application Protocol) play a key role. 
+         An example of a typical threshold is a distance threshold for evaluating a gap between a base surface 
+         and bounding curves for trimming the effective portion of the surface. 
+         That distance threshold implies that maximum distance between the surface and the curves shall 
+         be smaller than the threshold. 
+         Appropriate thresholds depend on many factors such as size of a product, design requirements, 
+         robustness of engineering systems on numerical precision, etc. 
+         Therefore, what threshold value to use shall be carefully determined in each business situation based 
+         on agreement among business partners.
+         
+      </p>
+      
+      <p>
+         In most cases, especially when free form geometry is involved, the measurement algorithm calculates an 
+         approximate solution not an exact solution. 
+         In the above example, surface and curves consist of an infinite number of points. 
+         Since calculation on an infinite number of points is impossible, any algorithm tries to calculate 
+         the solution using a sufficient number of finite points. 
+         In order to require the difference of the approximate solution and the exact solution, even when 
+         it is unknown, smaller than the expected value, accuracy specification is provided. 
+         The accuracy shall be understood that an approximate solution is acceptable if the difference of the 
+         approximate solution and other approximate solution obtained by calculation with any other 
+         finer sampling points is smaller than the given accuracy. 
+         There are two types of accuracies, one is general accuracy applied to all the measurements and the 
+         other is specific accuracy applied only to specified measurement. 
+         
+      </p>
+      
+       <b><i>E.6  Assumptions on representation of product data</i></b>
+      
+      <p>
+         The following two assumptions are rather reluctantly adopted in this standard.
+         
+      </p>
+      
+      <ol type="1">
+         
+         <li>Inspection target product data is limited to those conformant with ISO 10303.</li>
+         
+         <li>Quality data is assumed to be stored in the same STEP file as the inspection target product data</li>
+         
+      </ol>
+      
+      
+      <p>
+         It is clearly understood that product data quality is a common issue for all the product data representations. 
+         The reason why assumption-1 is adopted is that consistency of PDQ data and inspection target product data , 
+         such as consistency of representation context, is only guaranteed if the inspection target product data 
+         is conformant with ISO 10303. 
+         If this consistency issue is resolved, then the usability of this standard will be easily extended to 
+         other product data representations.
+         
+      </p>
+      
+      <p>
+         As already described, it is understood that PDQ data is not a constituent of product data. 
+         It implies that PDQ data may or may not be stored together with the inspection target product data. 
+         The reason why assumption-2 is adopted is that no methodology currently exists within SC4 to refer to 
+         entity instance in externally defined product data file. 
+         If entity instance reference mechanism to external file is provided then this limitation will be 
+         immediately removed and PDQ data and the inspection target product data could become represented in 
+         separate files with necessary relationship on condition that the entity instance reference mechanism to 
+         external file does not require the change of quality model information structure.
+         
+      </p>
+      
+       <b><i>E.7  Scenarios for the use of this standard</i></b>
+      
+      <p>
+         The following subsections define data elements from
+          
+         to be instantiated for different usage scenarios involving quality information concerning product data. 
+         For each case, the associated figure in this annex is a modified version of Figure E.2 retaining only 
+         required data elements.
+         
+      </p>
+       <br><br><a name="figure_E.2"></a><div align="center"><IMG src="../IntroFigure1.gif" border="0" alt="Figure E.2&nbsp;&#8212;&nbsp;&nbsp;EXPRESS-G diagram of the overall model structure"></div><br><div align="center"><b>Figure E.2&nbsp;&#8212;&nbsp;&nbsp;EXPRESS-G diagram of the overall model structure</b></div><br>
+      
+       <b><i>E.7.1  Requirement and Declaration of data quality </i></b>
+      
+      <p>
+         Ordering company may require ordered company to create a product data so that it satisfies 
+         prescribed quality requirements. 
+         Examples are not to include infinitesimal geometry smaller than the given tolerance, 
+         exclusion of redundant geometry not contributing to the representation of product shape, etc. 
+         Very limited information, namely relevant criteria together with required thresholds from those in Figure E.2, 
+         is necessary in this scenario. 
+         The information may be transferred together with the ordering sheet.
+         
+      </p>
+      <p>
+         The creator of a product data may use quality information for explicitly declaring the quality level 
+         satisfied by his/her model. 
+         Depending on the design method and the CAD system used, the quality of the product data may be 
+         unambiguously declared without any inspection. 
+         Selective criteria and thresholds for which the model is judged to be quality defect free are required 
+         information in this scenario. 
+         The quality information may be transferred together with the corresponding product model data.
+         
+      </p>
+       <br><br><a name="figure_E.3"></a><div align="center"><IMG src="../fig-e.3.gif" border="0" alt="Figure E.3&nbsp;&#8212;&nbsp;&nbsp;Quality information for use in requirement/declaration of data quality"></div><br><div align="center"><b>Figure E.3&nbsp;&#8212;&nbsp;&nbsp;Quality information for use in requirement/declaration of data quality</b></div><br>
+      
+       <b><i>E.7.1.2  Assurance of data quality, and long term data archiving</i></b>
+      
+      <p>
+         A quality assurance organization may use quality information for representing the results of quality inspection 
+         for a particular product model data. 
+         This scenario will require inspected quality criteria together with thresholds used, 
+         measurement requirements deployed and inspection results obtained. The accuracies used may also be included. 
+         The information is transferred together with the corresponding product model data.
+         
+      </p>
+      <p>
+         It is desirable that a detailed record of product model data quality is archived with product data. The
+         data requirement for this purpose is similar to that needed for assurance of quality.
+         
+      </p>
+      
+       <br><br><a name="figure_E.4"></a><div align="center"><IMG src="../fig-e.4.gif" border="0" alt="Figure E.4&nbsp;&#8212;&nbsp;&nbsp;Quality information for use in assurance of data quality"></div><br><div align="center"><b>Figure E.4&nbsp;&#8212;&nbsp;&nbsp;Quality information for use in assurance of data quality</b></div><br>
+      
+       <b><i>E.7.1.3  Data quality information for use in quality improvement</i></b>
+      
+      <p>
+         If a quality defect is detected by quality inspection, necessary actions for improving critical data will be 
+         required. 
+         For that purpose, information on the nature and severity of any quality defects should be provided. 
+         Therefore, this scenario will require a detailed inspection result report at the geometric entity instance level. 
+         This information is transferred together with the corresponding product model data.
+         
+      </p>
+       
+       <br><br><a name="figure_E.5"></a><div align="center"><IMG src="../fig-e.5.gif" border="0" alt="Figure E.5&nbsp;&#8212;&nbsp;&nbsp;Quality information for use in quality improvement"></div><br><div align="center"><b>Figure E.5&nbsp;&#8212;&nbsp;&nbsp;Quality information for use in quality improvement</b></div><br>
+      
+      
+       <br><br><p>&copy; ISO 2014 &#8212; All rights reserved</p>
+   </BODY>
+</HTML>

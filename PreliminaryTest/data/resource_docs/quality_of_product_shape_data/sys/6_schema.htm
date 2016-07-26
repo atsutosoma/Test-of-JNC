@@ -1,0 +1,815 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="schema.DC" href="http://www.dublincore.org/documents/2003/02/04/dces/">
+      <META name="DC.Title" content="&#xA;&#xA;  Integrated generic resource">
+      <META name="DC.Dates" content="2014/06/28 15:53:12">
+      <META name="DC.Published" content="2014-05-01">
+      <META name="DC.Contributor" content="Ohtaka, Akihiko">
+      <META name="DC.Creator" content="Hiraoka, Hiroyuki">
+      <META name="DC.Description" content="The integrated resource quality_of_product_shape_data">
+      <META name="DC.Subject" content="STEP, ISO 10303, integrated resource, Product data quality, Product shape data quality, Criteria representation, Measurement requirement, Threshold, Accuracy , Inspection result representation">
+      <META name="DC.Identifier" content="ISO/TC 184/SC 4/WG 12&nbsp;N8313">
+      <META name="DC.Replaces" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.version" content="2">
+      <META name="SC4.checklist.internal_review" content="ISO/TC 184/SC4/WG12 N">
+      <META name="SC4.checklist.project_leader" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.checklist.convener" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="STEPMOD.resource.rcs.date" content="Date: 2014/06/28 15:53:12 ">
+      <META name="STEPMOD.resource.rcs.revision" content="Revision: 1.10 ">
+      <TITLE>ISO 10303-59:2014(E) </TITLE>
+   </HEAD>
+   <BODY>
+      <TABLE cellspacing="0" border="0" width="100%">
+         <TR>
+            <TD><small><a href="../sys/isocover.htm">ISO cover</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../repository_index.htm">Modules Index</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../ballots/index.htm">Ballot home</a></small></TD>
+         </TR>
+         <TR>
+            <TD valign="MIDDLE"><B>
+                  
+                  	  Integrated generic resource: Quality of product shape data</B></TD>
+            <TD valign="MIDDLE" align="RIGHT"><b>ISO 10303-59:2014(E) <br>
+                  &copy; ISO
+                  </b></TD>
+         </TR>
+      </TABLE>
+      <TABLE border="1" cellspacing="1" width="100%">
+         <TR>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/cover.htm">Cover page</A><BR><A HREF="../sys/contents.htm">Table of contents</A><BR><A HREF="../sys/cover.htm#copyright">Copyright</A><BR><A HREF="../sys/foreword.htm">Foreword</A><BR><A HREF="../sys/introduction.htm">Introduction</A><BR><A HREF="../sys/1_scope.htm">1 Scope</A><BR><A HREF="../sys/2_refs.htm">2 Normative references</A><BR><A HREF="../sys/3_defs.htm">
+                     3 Terms, definitions and abbreviated terms
+                     </A><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#termsdefns">3.1 Terms and definitions</a><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#abbrv">3.2 Abbreviated terms</a><br><A HREF="../sys/4_schema.htm">4 Product data quality definition</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#gen">4.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#funcon">4.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#types">4.3 Product data quality definition type definition</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#entities">4.4 Product data quality definition entity definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/5_schema.htm">5 Product data quality criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#gen">5.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#funcon">5.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#types">5.3 Product data quality criteria type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#entities">5.4 Product data quality criteria entity definitions</A><BR></small><A HREF="../sys/6_schema.htm">6 Product data quality inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#gen">6.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#funcon">6.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#types">6.3 Product data quality inspection result type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#entities">6.4 Product data quality inspection result entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#functions">6.5 Product data quality inspection result function definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/7_schema.htm">7 Shape data quality criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#gen">7.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#funcon">7.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#types">7.3 Shape data quality criteria type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#entities">7.4 Shape data quality criteria entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#functions">7.5 Shape data quality criteria function definitions</A><BR></small><A HREF="../sys/8_schema.htm">8 Shape data quality inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#gen">8.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#funcon">8.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#types">8.3 Shape data quality inspection result type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#entities">8.4 Shape data quality inspection result entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#functions">8.5 Shape data quality inspection result function definitions</A><BR></small><A HREF="../sys/a_short_names.htm">A Short names of entities</A><BR><A HREF="../sys/b_obj_reg.htm">B Information object
+                     registration</A><BR><A HREF="../sys/c_exp.htm">C Computer interpretable listings</A><BR><A HREF="../sys/d_expg.htm">
+                     D EXPRESS-G diagrams
+                     </A><BR><A HREF="../sys/tech_discussion.htm#tech_discssion">E Technical discussion</A><BR><A HREF="../sys/examples.htm">F  Examples</A><BR><A HREF="../sys/g_change.htm">G Change history</A><BR><A HREF="../sys/biblio.htm#bibliography">Bibliography</A><BR><A HREF="../sys/resdocindex.htm">Index</A><BR></p>
+            </TD>
+         </TR>
+      </TABLE>
+      <H2><A NAME="schema$schema_no+3">6 Product data quality inspection result schema</A></H2>
+      <H2><A NAME="gen">6.1 General</A></H2>
+      
+      <p>
+         This schema provides general specifications for the representation of the results of quality inspection of product data. 
+         Inspection results show the level of product data quality of particular product data instance with regard to specified quality
+         criteria.
+         Therefore, identification of the product data instance inspected and the relationship to corresponding quality criteria specified
+         are provided.
+         
+      </p>
+         This clause defines the information requirements to which implementations shall conform using the EXPRESS language as defined
+      in ISO 10303-11. The following EXPRESS declaration begins the <b>product_data_quality_inspection_result_schema</b>
+      and identifies the necessary external references.
+      	    
+      <p></p><u>EXPRESS specification: </u><code><br><br>
+         *)<br><a name="product_data_quality_inspection_result_schema">
+            	SCHEMA product_data_quality_inspection_result_schema;</a></code><a name="interfaces"></a><p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/5_schema.htm#product_data_quality_criteria_schema">product_data_quality_criteria_schema</A>;
+            &nbsp;&nbsp;&nbsp;--&nbsp;              
+            ISO 10303-59<br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/4_schema.htm#product_data_quality_definition_schema">product_data_quality_definition_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-59<br>&nbsp;&nbsp;(<A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/4_schema.htm#product_data_quality_definition_schema.data_quality_definition_representation_relationship">data_quality_definition_representation_relationship</A>,<br>
+            &nbsp;&nbsp;
+            <A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/4_schema.htm#product_data_quality_definition_schema.product_data_and_data_quality_relationship">product_data_and_data_quality_relationship</A>);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/product_definition_schema/product_definition_schema.htm#product_definition_schema">product_definition_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-41<br>&nbsp;&nbsp;(product_definition);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/representation_schema/representation_schema.htm#representation_schema">representation_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-43<br>&nbsp;&nbsp;(representation,<br>
+            &nbsp;&nbsp;
+            representation_item,<br>
+            &nbsp;&nbsp;
+            representation_item_relationship);
+            <br><br></code></p>
+      <p><code>
+            REFERENCE FROM 
+            <A HREF="../../../../data/resources/support_resource_schema/support_resource_schema.htm#support_resource_schema">support_resource_schema</A>
+            
+            &nbsp;&nbsp;&nbsp;--&nbsp;
+            ISO 10303-41<br>&nbsp;&nbsp;(bag_to_set);
+            <br>(*<br><br></code></p>
+      <p class="note"><small>
+            NOTE&nbsp;1&nbsp;&nbsp;
+            	
+            		        The schemas referenced above are specified in the following 
+            		        parts:
+            		</small></p>
+      <blockquote>
+         <table>
+            <tr>
+               <td width="266"><b><small>product_data_quality_criteria_schema</small></b></td>
+               <td width="127"><small>ISO 10303-59</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>product_data_quality_definition_schema</small></b></td>
+               <td width="127"><small>ISO 10303-59</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>product_definition_schema</small></b></td>
+               <td width="127"><small>ISO 10303-41</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>representation_schema</small></b></td>
+               <td width="127"><small>ISO 10303-43</small></td>
+            </tr>
+            <tr>
+               <td width="266"><b><small>support_resource_schema</small></b></td>
+               <td width="127"><small>ISO 10303-41</small></td>
+            </tr>
+         </table>
+      </blockquote>
+      <p class="note"><small>
+            NOTE&nbsp;2&nbsp;&nbsp;
+            
+            See Annex <a href="d_expg.htm">D</a>
+            for a graphical representation of this schema.
+            </small></p>
+      <H2><A NAME="funcon">6.2 Fundamental concepts and assumptions</A></H2>
+      
+      <p>
+         Concepts and assumptions necessary for understanding this schema follow.
+         
+      </p>
+      <p>
+         The requirement for inspection results depends upon the usage scenario of product data quality information.
+         When only quality requirements are transferred or declaration of satisfied quality is transferred, inspection results are
+         not required.
+         
+      </p>
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            See annex E for details on what kind of quality related information is required for each expected usage scenario.
+            </small></p>
+      
+      <p>
+         An instance of <b>data_quality_inspection_result</b> represents the inspection result corresponding to exactly one data quality criterion.
+         There are cases that judgement on whether to regard obtained inspection result as quality defect or not is application dependent.
+         
+         Therefore, two entities with and without judgement are provided.
+         
+      </p>
+      
+      <p>
+         To represent entire inspection result corresponding to a set of specified product data quality criteria, 
+         <b>data_quality_inspection_result_representation</b> is provided.
+         It is a collection of <b>data_quality_inspection_result</b>s. 
+         The relationship between the former and the latter is identical with that between <b>representation</b> and <b>representation_item</b>.
+         
+      </p>
+      
+      <p>
+         There are two types of inspection result report. 
+         One is a summary report that identifies the quality criterion checked and describes the inspection results
+          without giving detailed information about the extent of the defect and what entity instance was responsible. 
+          This information may be used to judge the overall quality level of the target product data with respect to one criterion.
+         
+          The other is a detailed report that represents the inspection result at entity instance level to show which particular 
+          entity instance caused what kind and degree of quality defect. 
+          This information may be used for improving the quality of the target product data instance.
+         
+      </p>
+      
+      <p>
+         Specifications in this schema are enough general so that they can be applied for the representation
+          of inspection result of any property of a product data. 
+         Specialization of this schema to three dimensional product shape data is given in clause 8. 
+         Specialization to inspection result of any property other than product shape will also be possible in the future as a specialization
+         of this schema.
+         
+      </p>
+       
+      <h2><A NAME="types">6.3 product_data_quality_inspection_result_schema type definitions</A></h2>
+      <h2><A NAME="product_data_quality_inspection_result_schema.inspected_element_select">6.3.1 inspected_element_select</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      
+      
+      The <b>inspected_element_select</b> type is an
+      extensible list of alternate data types. It provides a
+      mechanism to refer to instances of the data types included in
+      the types that extend the 
+      <b>inspected_element_select</b> type. 
+      
+      
+      <p class="note"><small>
+            NOTE&nbsp;&nbsp;This empty extensible select requires
+            extension in a further schema to ensure that entities that refer to it have
+            at least one valid instantiation.
+            </small></p>
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            TYPE 
+            inspected_element_select
+            =
+            
+            EXTENSIBLE
+            
+            GENERIC_ENTITY
+            
+            
+            SELECT;<br>
+            END_TYPE; <br>
+            (*
+            </code></p>
+      <h2><A NAME="product_data_quality_inspection_result_schema.statistical_value_type">6.3.2 statistical_value_type</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+      A <b>statistical_value_type</b> is a type to allow selection of the statistical value
+       for use in the entity 
+      <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item"><b>data_quality_inspection_criterion_report_item</b></a>.
+       It has two enumerated values, one 
+      <b>number_of_inspected_instances</b>, the other 
+      <b>number_of_quality_defects_detected</b>.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            TYPE 
+            statistical_value_type
+            =
+            
+            ENUMERATION
+            
+            OF
+            <br>
+            &nbsp;&nbsp; 
+            (number_of_inspected_instances,<br>&nbsp;&nbsp;&nbsp;&nbsp;number_of_quality_defects_detected);<br>
+            END_TYPE; <br>
+            (*
+            </code></p>
+      <p><u>Enumerated item definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.statistical_value_type.number_of_inspected_instances">number_of_inspected_instances:
+               </a></b>
+         the statistical value to be represented by 
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item"><b>data_quality_inspection_criterion_report_item</b></a>
+         is the number of entity instances inspected.
+         
+      </p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.statistical_value_type.number_of_quality_defects_detected">number_of_quality_defects_detected:
+               </a></b>
+         the statistical value to be represented by 
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item"><b>data_quality_inspection_criterion_report_item</b></a>
+         is the number of entity instances detected as having quality defect.
+         
+      </p>
+      <h2><A NAME="entities">6.4 product_data_quality_inspection_result_schema entity definitions</A></h2>
+      <h2><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report">6.4.1 data_quality_inspection_criterion_report</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+              A <b>data_quality_inspection_criterion_report</b> is a type of
+              <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_report"><b>data_quality_inspection_report</b></a>
+              that represents summary information of the inspection results for one specific
+              criterion. This entity may report how many instances were inspected and how 
+              many instances among them were found to have quality defects with regard to 
+              the criterion via 
+      <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item"><b>data_quality_inspection_criterion_report_item</b></a>.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_quality_inspection_criterion_report<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_report">data_quality_inspection_report</A>);<br>
+            
+            
+            &nbsp;&nbsp;statistical_values : SET[1:2] OF <A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item">data_quality_inspection_criterion_report_item</A>;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(QUERY(i1&lt;*bag_to_set(USEDIN(
+            SELF\data_quality_inspection_report.
+            inspection_result.criterion_inspected,
+            'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DATA_QUALITY_REPORT_REQUEST.CRITERION_OF_REPORT_REQUEST'))|
+            'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'SUMMARY_REPORT_REQUEST'
+            IN TYPEOF(i1)))&gt;0;<br> 
+            &nbsp;&nbsp;WR2: (SIZEOF(SELF.statistical_values) = 1 ) OR 
+            (SELF.statistical_values[1].value_type &lt;&gt;
+            SELF.statistical_values[2].value_type);<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report.statistical_values">statistical_values:
+               </a></b>
+         one or two 
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item"><b>data_quality_inspection_criterion_report_item</b></a>s
+         that shows the number of inspected instances and or the number of defects detected.
+         
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report.wr:wr1">WR1:
+               </a></b>
+         a
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_criterion"><b>data_quality_criterion</b></a>
+         associated with an instance of this entity shall be referenced by at least one 
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.summary_report_request"><b>summary_report_request</b></a>.
+         
+      </p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report.wr:wr2">WR2:
+               </a></b>
+         The size of 
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report.statistical_values"><b>statistical_values</b></a>
+          of this entity shall be one or two. 
+         If it is two, 
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item.value_type"><b>value_type</b></a> 
+         of two 
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report.statistical_values"><b>statistical_values</b></a>
+         shall not be identical.
+         
+      </p>
+      <h2><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item">6.4.2 data_quality_inspection_criterion_report_item</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+              A <b>data_quality_inspection_criterion_report_item</b> is a type of
+              <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation_item"><b>representation_item</b></a>
+              that represents an integer value that implies 
+              <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.statistical_value_type.number_of_inspected_instances"><b>number_of_inspected_instances</b></a>
+              or 
+              <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.statistical_value_type.number_of_quality_defects_detected"><b>number_of_quality_defects_detected</b></a>.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_quality_inspection_criterion_report_item<br>
+            &nbsp;&nbsp;SUBTYPE OF (representation_item);<br>
+            
+            
+            &nbsp;&nbsp;statistical_value : INTEGER;<br>
+            
+            
+            &nbsp;&nbsp;value_type : <A HREF="#product_data_quality_inspection_result_schema.statistical_value_type">statistical_value_type</A>;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(QUERY(q &lt;* bag_to_set( USEDIN(SELF,
+            'REPRESENTATION_SCHEMA.REPRESENTATION.ITEMS'))
+            |'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DATA_QUALITY_CRITERIA_REPRESENTATION'
+            IN TYPEOF(q)))=0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item.statistical_value">statistical_value:
+               </a></b>
+          an integer value.
+      </p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item.value_type">value_type:
+               </a></b>
+         a
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.statistical_value_type"><b>statistical_value_type</b></a>
+          that shows whether <b>statistical_value</b> relates to 
+                 <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.statistical_value_type.number_of_inspected_instances"><b>number_of_inspected_instances</b></a>
+                 or 
+                 <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.statistical_value_type.number_of_quality_defects_detected"><b>number_of_quality_defects_detected</b></a>.
+         
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report_item.wr:wr1">WR1:
+               </a></b>
+         An instance of this entity shall not be used as an 
+         <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation.items"><b>items</b></a>
+          of the 
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_criteria_representation"><b>data_quality_criteria_representation</b></a>.
+         
+      </p>
+      <h2><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_instance_report">6.4.3 data_quality_inspection_instance_report</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+              A <b>data_quality_inspection_instance_report</b> is a type of
+              <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_report"><b>data_quality_inspection_report</b></a>
+              that represents detailed information of inspection result in entity instance 
+              level for one specific criterion. Inspection is made against each instance 
+              element of the product data concerned. This entity contains a list of 
+              <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item"><b>data_quality_inspection_instance_report_item</b></a>s, 
+              each representing the inspection result for an instance or a pair of instances
+              of the inspected product data.
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            The order of 
+            <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item"><b>data_quality_inspection_instance_report_item</b></a>s 
+            in the list of <b>inspected_instances</b> attribute is specified by 
+            <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_report_request"><b>data_quality_report_request</b></a>
+            as defined in 
+            <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema"><b>product_data_quality_criteria_schema</b></a>.
+            </small></p>        
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_quality_inspection_instance_report<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_report">data_quality_inspection_report</A>);<br>
+            
+            
+            &nbsp;&nbsp;inspected_instances : LIST[1:?] OF <A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item">data_quality_inspection_instance_report_item</A>;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(QUERY(i1&lt;*bag_to_set(USEDIN(
+            SELF\data_quality_inspection_report.
+            inspection_result.criterion_inspected,
+            'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DATA_QUALITY_REPORT_REQUEST.CRITERION_OF_REPORT_REQUEST'))|
+            'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DETAILED_REPORT_REQUEST'
+            IN TYPEOF(i1)))&gt;0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_instance_report.inspected_instances">inspected_instances:
+               </a></b>
+         a list of 
+          <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item"><b>data_quality_inspection_instance_report_item</b></a>s, 
+          each representing the inspection result for an instance or a pair of instances of 
+          the inspected product data.
+          
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_instance_report.wr:wr1">WR1:
+               </a></b>
+         a
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_criterion"><b>data_quality_criterion</b></a>
+         associated with an instance of this entity shall be referenced by at least one 
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.detailed_report_request"><b>detailed_report_request</b></a>.
+         
+      </p>
+      <h2><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item">6.4.4 data_quality_inspection_instance_report_item</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+              A <b>data_quality_inspection_instance_report_item</b> is a type of
+              <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation_item"><b>representation_item</b></a>
+              that represents a detailed inspection result for an inspected element 
+              or a pair of inspected elements of the specified product data.
+      
+      <p class="note"><small><a name="note_">NOTE&nbsp;</a>&nbsp;&nbsp;
+            
+            
+            An instance of this entity may be created for each entity instance inspected. 
+            Usage of instances of this entity can be controlled by 
+            <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.detailed_report_request"><b>detailed_report_request</b></a>
+            defined in 
+            <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema"><b>product_data_quality_criteria_schema</b></a>.
+            that has attributes to require a report on all measured elements or only on 
+            elements with inferior quality, number of elements to be reported and 
+            expected report sequence.
+            </small></p>
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_quality_inspection_instance_report_item<br>
+            &nbsp;&nbsp;SUBTYPE OF (representation_item);<br>
+            
+            
+            &nbsp;&nbsp;inspected_elements : SET[1:?] OF <A HREF="#product_data_quality_inspection_result_schema.inspected_element_select">inspected_element_select</A>;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(QUERY(q &lt;* bag_to_set( USEDIN(SELF,
+            'REPRESENTATION_SCHEMA.REPRESENTATION.ITEMS'))
+            |'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DATA_QUALITY_CRITERIA_REPRESENTATION'
+            IN TYPEOF(q)))=0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item.inspected_elements">inspected_elements:
+               </a></b>
+         one or more 
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.inspected_element_select"><b>inspected_element_select</b></a>s
+         that represent data types of the elements inspected. 
+         
+          
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_instance_report_item.wr:wr1">WR1:
+               </a></b>
+         An instance of this entity shall not be used as an 
+         <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation.items"><b>items</b></a>
+          of the 
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_criteria_representation"><b>data_quality_criteria_representation</b></a>.
+         
+      </p>
+      <h2><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_report">6.4.5 data_quality_inspection_report</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+              A <b>data_quality_inspection_report</b> is a type of
+              <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation_item"><b>representation_item</b></a>
+              that represents an inspection report with respect to one specific criterion.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_quality_inspection_report<br>
+            &nbsp;&nbsp;SUPERTYPE OF&nbsp;(ONEOF&nbsp;(<A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_criterion_report">data_quality_inspection_criterion_report</A>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_instance_report">data_quality_inspection_instance_report</A>))<br>
+            &nbsp;&nbsp;SUBTYPE OF (representation_item);<br>
+            
+            
+            &nbsp;&nbsp;inspection_result : <A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_result">data_quality_inspection_result</A>;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(QUERY(q &lt;* bag_to_set( USEDIN(SELF,
+            'REPRESENTATION_SCHEMA.REPRESENTATION.ITEMS'))
+            |'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DATA_QUALITY_CRITERIA_REPRESENTATION'
+            IN TYPEOF(q)))=0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_report.inspection_result">inspection_result:
+               </a></b>
+         a
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result"><b>data_quality_inspection_result</b></a>
+         for which the inspection report is represented.
+         
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_report.wr:wr1">WR1:
+               </a></b>
+         An instance of this entity shall not be used as an 
+         <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation.items"><b>items</b></a>
+          of the 
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_criteria_representation"><b>data_quality_criteria_representation</b></a>.
+         
+      </p>
+      <h2><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_result">6.4.6 data_quality_inspection_result</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+              A <b>data_quality_inspection_result</b> is a type of
+              <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation_item"><b>representation_item</b></a>
+      	    that represents the result of inspection regarding a single specified criterion.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_quality_inspection_result<br>
+            &nbsp;&nbsp;SUBTYPE OF (representation_item);<br>
+            
+            
+            &nbsp;&nbsp;criterion_inspected : <A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/5_schema.htm#product_data_quality_criteria_schema.data_quality_criterion">data_quality_criterion</A>;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF(QUERY(q &lt;* bag_to_set( USEDIN(SELF,
+            'REPRESENTATION_SCHEMA.REPRESENTATION.ITEMS'))
+            |'PRODUCT_DATA_QUALITY_CRITERIA_SCHEMA.'+
+            'DATA_QUALITY_CRITERIA_REPRESENTATION'
+            IN TYPEOF(q)))=0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_result.criterion_inspected">criterion_inspected:
+               </a></b>
+         a
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_criterion"><b>data_quality_criterion</b></a>
+         for which the inspection was performed.
+         
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_result.wr:wr1">WR1:
+               </a></b>
+         An instance of this entity shall not be used as an 
+         <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation.items"><b>items</b></a>
+          of the 
+         <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_criteria_representation"><b>data_quality_criteria_representation</b></a>.
+         
+      </p>
+      <h2><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_result_representation">6.4.7 data_quality_inspection_result_representation</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+              A <b>data_quality_inspection_result_representation</b> is a type of
+              <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation"><b>representation</b></a>
+              that represents inspection results for the specified product data quality 
+              criteria against specific product data instance. It consists of one or more 
+              <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result"><b>data_quality_inspection_result</b></a>s, 
+              each corresponding to a specific criterion.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_quality_inspection_result_representation<br>
+            &nbsp;&nbsp;SUBTYPE OF (representation);<br>
+            
+            
+            &nbsp;&nbsp;criteria_inspected : <A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/5_schema.htm#product_data_quality_criteria_schema.data_quality_criteria_representation">data_quality_criteria_representation</A>;<br>WHERE<br> 
+            &nbsp;&nbsp;WR1: SIZEOF( QUERY( q &lt;* SELF\representation.items|
+            'PRODUCT_DATA_QUALITY_INSPECTION_RESULT_SCHEMA.' +
+            'DATA_QUALITY_INSPECTION_RESULT' IN TYPEOF(q))) &gt; 0;<br> 
+            &nbsp;&nbsp;WR2: SIZEOF(inspected_product_definition(SELF)) &gt; 0;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_result_representation.criteria_inspected">criteria_inspected:
+               </a></b>
+         the criteria for which the inspection was performed.
+         
+      </p>
+      <p><u>Formal propositions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_result_representation.wr:wr1">WR1:
+               </a></b>
+         At least one instance of 
+         <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation_item"><b>representation_item</b></a>
+         referenced from a <b>data_quality_inspection_result_representation</b> shall be of 
+         type <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result"><b>data_quality_inspection_result</b></a>.
+         
+      </p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_result_representation.wr:wr2">WR2:
+               </a></b>
+         An instance of this entity shall be referenced from at least one instance of 
+         <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a>
+         defined in 
+         <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema"><b>product_definition_schema</b></a>
+         via an instance of 
+         <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema.data_quality_definition"><b>data_quality_definition</b></a>
+         defined in <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema"><b>product_data_quality_definition_schema</b></a>.
+         
+      </p>
+      <h2><A NAME="product_data_quality_inspection_result_schema.data_quality_inspection_result_with_judgement">6.4.8 data_quality_inspection_result_with_judgement</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+              A <b>data_quality_inspection_result_with_judgement</b> is a type of
+              <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result"><b>data_quality_inspection_result</b></a>
+              that  contains information on whether the data inspected have passed or failed the test for the criterion.
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_quality_inspection_result_with_judgement<br>
+            &nbsp;&nbsp;SUBTYPE OF (<A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_result">data_quality_inspection_result</A>);<br>
+            
+            
+            &nbsp;&nbsp;judgement : BOOLEAN;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_inspection_result_with_judgement.judgement">judgement:
+               </a></b>
+         a boolean value representing the fact whether the result of inspection satisfies the 
+         data quality criterion specified by 
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result.criterion_inspected"><b>criterion_inspected</b></a>
+          or not. 
+         The value is &#8217;TRUE&#8217; when a quality concern represented by the criterion is detected and 
+         &#8217;FALSE&#8217; otherwise.
+         
+      </p>
+      <p class="note"><small><a name="note_1">NOTE&nbsp;1</a>&nbsp;&nbsp;
+            
+            
+            When the judgement is not required or is not available for some reasons such as 
+            incomplete inspection, an instance of 
+            <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result"><b>data_quality_inspection_result</b></a>
+            shall be used instead of this entity.
+            </small></p>
+      <p class="note"><small><a name="note_2">NOTE&nbsp;2</a>&nbsp;&nbsp;
+            
+            
+            Expression of judgement depends on each application. 
+            This attribute is provided as a default representation of judgement. 
+            Developers of Application Protocols using this standard may create their own judgement
+             representation based on the detailed information available from 
+             <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_report"><b>data_quality_inspection_report</b></a>.
+            </small></p>
+      <h2><A NAME="product_data_quality_inspection_result_schema.data_quality_report_measurement_association">6.4.9 data_quality_report_measurement_association</A>
+         &nbsp;&nbsp;<a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schemaexpg2.htm"><img align="middle" border="0" alt="EXPRESS-G" src="../../../../images/expg.gif"></a></h2>
+              A <b>data_quality_report_measurement_association</b> is a type of 
+              <a href="../../../resources/representation_schema/representation_schema.htm#representation_schema.representation_item_relationship"><b>representation_item_relationship</b></a>
+              that represents
+              
+              the correspondence between a 
+              <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_report"><b>data_quality_inspection_report</b></a>
+              and the 
+              <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_measurement_requirement"><b>data_quality_measurement_requirement</b></a>
+              used for the inspection. 
+      
+      <p></p>
+      <p><u>EXPRESS specification:</u></p>
+      <p><code>
+            *)<br>
+            ENTITY data_quality_report_measurement_association<br>
+            &nbsp;&nbsp;SUBTYPE OF (representation_item_relationship);<br>
+            
+            
+            &nbsp;&nbsp;SELF\representation_item_relationship.relating_representation_item : <A HREF="../../../../data/resource_docs/quality_of_product_shape_data/sys/5_schema.htm#product_data_quality_criteria_schema.data_quality_measurement_requirement">data_quality_measurement_requirement</A>;<br>
+            
+            
+            &nbsp;&nbsp;SELF\representation_item_relationship.related_representation_item : <A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_report">data_quality_inspection_report</A>;<br>
+            END_ENTITY;<br>(*
+            </code></p>
+      <p><u>Attribute definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_report_measurement_association.relating_representation_item">relating_representation_item:
+               </a></b>
+         relating <a href="../../../resources/product_data_quality_criteria_schema/product_data_quality_criteria_schema.htm#product_data_quality_criteria_schema.data_quality_measurement_requirement"><b>data_quality_measurement_requirement</b></a>.
+         
+      </p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.data_quality_report_measurement_association.related_representation_item">related_representation_item:
+               </a></b>
+         related <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_report"><b>data_quality_inspection_report</b></a>.
+         
+      </p>
+      <h2><a name="functions">6.5 product_data_quality_inspection_result_schema function definitions</a></h2>
+      <h2><A NAME="product_data_quality_inspection_result_schema.inspected_product_definition">6.5.1 inspected_product_definition</A></h2>
+      The <b>inspected_product_definition</b> function finds all 
+      <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a>s 
+      that are referenced from 
+      <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result_representation"><b>data_quality_inspection_result_representation</b></a>
+      given as an input argument of this function via 
+      <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema.data_quality_definition_representation_relationship"><b>data_quality_definition_representation_relationship</b></a>,
+      <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema.data_quality_definition"><b>data_quality_definition</b></a>
+      and
+      <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema.product_data_and_data_quality_relationship"><b>product_data_and_data_quality_relationship</b></a>
+       defined in 
+      <a href="../../../resources/product_data_quality_definition_schema/product_data_quality_definition_schema.htm#product_data_quality_definition_schema"><b>product_data_quality_definition_schema</b></a>.
+      
+      <p><u>EXPRESS specification:</u></p><code>
+         *)<br>
+         FUNCTION inspected_product_definition&nbsp;(dqir : <A HREF="#product_data_quality_inspection_result_schema.data_quality_inspection_result_representation">data_quality_inspection_result_representation</A>) : BAG[0:?] OF product_definition;
+         </code><pre>LOCAL
+      dqdr :BAG OF data_quality_definition_representation_relationship:= [];
+      pdqdr :BAG OF product_data_and_data_quality_relationship:= [];
+      pd   :BAG OF product_definition:= [];
+    END_LOCAL;
+    dqdr := USEDIN(dqir,'PRODUCT_DATA_QUALITY_DEFINITION_SCHEMA.'
+                       +'DATA_QUALITY_DEFINITION_REPRESENTATION_RELATIONSHIP.'
+                       +'USED_REPRESENTATION');
+    REPEAT i:= 1 TO SIZEOF(dqdr);
+      pdqdr := USEDIN(dqdr[i].definition,
+                      'PRODUCT_DATA_QUALITY_DEFINITION_SCHEMA.'
+                     +'PRODUCT_DATA_AND_DATA_QUALITY_RELATIONSHIP.'
+                     +'DATA_QUALITY');
+      REPEAT j:= 1 TO SIZEOF(pdqdr);
+        pd := pd + pdqdr[j].product_data; 
+      END_REPEAT;
+    END_REPEAT;
+    RETURN(pd);</pre><code>
+         END_FUNCTION;
+         <br>(*
+         </code><p><u>Argument definitions:</u></p>
+      <p class="expressdescription"><b><a name="product_data_quality_inspection_result_schema.inspected_product_definition.dqir">dqir:
+               </a></b>
+         	an instance of 
+         <a href="../../../resources/product_data_quality_inspection_result_schema/product_data_quality_inspection_result_schema.htm#product_data_quality_inspection_result_schema.data_quality_inspection_result_representation"><b>data_quality_inspection_result_representation</b></a>
+         	 of which corresponding 
+         <a href="../../../resources/product_definition_schema/product_definition_schema.htm#product_definition_schema.product_definition"><b>product_definition</b></a>s 
+         	 instances are to be sought.
+         
+      </p><code><br><br>
+         *)<br>
+         END_SCHEMA;&nbsp;&nbsp;--&nbsp;product_data_quality_inspection_result_schema<br>(*
+         </code><br><br><p>&copy; ISO 2014 &#8212; All rights reserved</p>
+   </BODY>
+</HTML>

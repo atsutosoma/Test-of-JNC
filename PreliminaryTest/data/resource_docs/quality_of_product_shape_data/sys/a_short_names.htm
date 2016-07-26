@@ -1,0 +1,820 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+   <HEAD>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="schema.DC" href="http://www.dublincore.org/documents/2003/02/04/dces/">
+      <META name="DC.Title" content="&#xA;&#xA;  Integrated generic resource">
+      <META name="DC.Dates" content="2014/06/28 15:53:12">
+      <META name="DC.Published" content="2014-05-01">
+      <META name="DC.Contributor" content="Ohtaka, Akihiko">
+      <META name="DC.Creator" content="Hiraoka, Hiroyuki">
+      <META name="DC.Description" content="The integrated resource quality_of_product_shape_data">
+      <META name="DC.Subject" content="STEP, ISO 10303, integrated resource, Product data quality, Product shape data quality, Criteria representation, Measurement requirement, Threshold, Accuracy , Inspection result representation">
+      <META name="DC.Identifier" content="ISO/TC 184/SC 4/WG 12&nbsp;N8313">
+      <META name="DC.Replaces" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.version" content="2">
+      <META name="SC4.checklist.internal_review" content="ISO/TC 184/SC4/WG12 N">
+      <META name="SC4.checklist.project_leader" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="SC4.checklist.convener" content="ISO/TC 184/SC 4/WG 12 N">
+      <META name="STEPMOD.resource.rcs.date" content="Date: 2014/06/28 15:53:12 ">
+      <META name="STEPMOD.resource.rcs.revision" content="Revision: 1.10 ">
+      <TITLE>ISO 10303-59:2014(E) </TITLE>
+   </HEAD>
+   <BODY>
+      <TABLE cellspacing="0" border="0" width="100%">
+         <TR>
+            <TD><small><a href="../sys/isocover.htm">ISO cover</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../repository_index.htm">Modules Index</a>
+                  
+                  &nbsp;|&nbsp;        
+                  
+                  <a href="../../../../ballots/index.htm">Ballot home</a></small></TD>
+         </TR>
+         <TR>
+            <TD valign="MIDDLE"><B>
+                  
+                  	  Integrated generic resource: Quality of product shape data</B></TD>
+            <TD valign="MIDDLE" align="RIGHT"><b>ISO 10303-59:2014(E) <br>
+                  &copy; ISO
+                  </b></TD>
+         </TR>
+      </TABLE>
+      <TABLE border="1" cellspacing="1" width="100%">
+         <TR>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/cover.htm">Cover page</A><BR><A HREF="../sys/contents.htm">Table of contents</A><BR><A HREF="../sys/cover.htm#copyright">Copyright</A><BR><A HREF="../sys/foreword.htm">Foreword</A><BR><A HREF="../sys/introduction.htm">Introduction</A><BR><A HREF="../sys/1_scope.htm">1 Scope</A><BR><A HREF="../sys/2_refs.htm">2 Normative references</A><BR><A HREF="../sys/3_defs.htm">
+                     3 Terms, definitions and abbreviated terms
+                     </A><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#termsdefns">3.1 Terms and definitions</a><br>
+                  &nbsp; &nbsp;
+                  <a href="../sys/3_defs.htm#abbrv">3.2 Abbreviated terms</a><br><A HREF="../sys/4_schema.htm">4 Product data quality definition</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#gen">4.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/4_schema.htm#funcon">4.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#types">4.3 Product data quality definition type definition</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/4_schema.htm#entities">4.4 Product data quality definition entity definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/5_schema.htm">5 Product data quality criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#gen">5.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/5_schema.htm#funcon">5.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#types">5.3 Product data quality criteria type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/5_schema.htm#entities">5.4 Product data quality criteria entity definitions</A><BR></small><A HREF="../sys/6_schema.htm">6 Product data quality inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#gen">6.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#funcon">6.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#types">6.3 Product data quality inspection result type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/6_schema.htm#entities">6.4 Product data quality inspection result entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/6_schema.htm#functions">6.5 Product data quality inspection result function definitions</A><BR></small></p>
+            </TD>
+            <TD valign="TOP">
+               <p class="toc"><A HREF="../sys/7_schema.htm">7 Shape data quality criteria</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#gen">7.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#funcon">7.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#types">7.3 Shape data quality criteria type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/7_schema.htm#entities">7.4 Shape data quality criteria entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/7_schema.htm#functions">7.5 Shape data quality criteria function definitions</A><BR></small><A HREF="../sys/8_schema.htm">8 Shape data quality inspection result</A><BR><small>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#gen">8.1 General</A><BR>
+                     
+                     
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#funcon">8.2 Fundamental concepts and assumptions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#types">8.3 Shape data quality inspection result type definitions</A><BR>
+                     				&nbsp; &nbsp;<A HREF="../sys/8_schema.htm#entities">8.4 Shape data quality inspection result entity definitions</A><BR>
+                     &nbsp; &nbsp;<A HREF="../sys/8_schema.htm#functions">8.5 Shape data quality inspection result function definitions</A><BR></small><A HREF="../sys/a_short_names.htm">A Short names of entities</A><BR><A HREF="../sys/b_obj_reg.htm">B Information object
+                     registration</A><BR><A HREF="../sys/c_exp.htm">C Computer interpretable listings</A><BR><A HREF="../sys/d_expg.htm">
+                     D EXPRESS-G diagrams
+                     </A><BR><A HREF="../sys/tech_discussion.htm#tech_discssion">E Technical discussion</A><BR><A HREF="../sys/examples.htm">F  Examples</A><BR><A HREF="../sys/g_change.htm">G Change history</A><BR><A HREF="../sys/biblio.htm#bibliography">Bibliography</A><BR><A HREF="../sys/resdocindex.htm">Index</A><BR></p>
+            </TD>
+         </TR>
+      </TABLE>
+      <div align="center">
+         <h2><A NAME="annexa">Annex A</A><br>
+            
+            (normative)<br><br>Short names of entities
+         </h2>
+      </div>
+      <p>
+         Table A.1 provides the short names for entities defined in the MIM of
+         this part of ISO 10303. Requirements on the use of the short names are
+         found in the implementation methods included in ISO 10303. 
+         
+      </p>
+      <p class="note"><small>
+            NOTE&nbsp;&nbsp;The EXPRESS entity names are available from
+            the following URL:
+            </small></p>
+      <p align="center"><small>
+            &lt;
+            <a href="http://standards.iso.org/iso/10303/tech/short_names/short-names.txt" target="_blank">http://standards.iso.org/iso/10303/tech/short_names/short-names.txt</a>
+            &gt;
+            </small></p>
+      <p align="center"><b>
+            Table A.1 - Short names of entities 
+            </b></p>
+      <div align="center">
+         <table border="1" cellspacing="0" cellpadding="7" width="537">
+            <tr>
+               <td><b>Entity data types names</b></td>
+               <td><b>Short names</b></td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">abrupt_change_of_surface_normal</td>
+               <td width="23%" align="left">ACOSN</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">b_spline_curve_knot_locator</td>
+               <td width="23%" align="left">BSCKL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">b_spline_curve_segment</td>
+               <td width="23%" align="left">BSCS</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">b_spline_surface_knot_locator</td>
+               <td width="23%" align="left">BSSKL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">b_spline_surface_patch</td>
+               <td width="23%" align="left">BSSP</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">b_spline_surface_strip</td>
+               <td width="23%" align="left">BSSS</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">boundary_curve_of_b_spline_or_rectangular_composite_surface</td>
+               <td width="23%" align="left">BCOBSO</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">composite_curve_transition_locator</td>
+               <td width="23%" align="left">CCTL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">curve_with_excessive_segments</td>
+               <td width="23%" align="left">CWES</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">curve_with_small_curvature_radius</td>
+               <td width="23%" align="left">CWSCR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_assessment_measurement_association</td>
+               <td width="23%" align="left">DQAMA</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_assessment_specification</td>
+               <td width="23%" align="left">DQAS</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_criteria_representation</td>
+               <td width="23%" align="left">DQCR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_criterion</td>
+               <td width="23%" align="left">DTQLCR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_criterion_assessment_association</td>
+               <td width="23%" align="left">DQCAA</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_criterion_measurement_association</td>
+               <td width="23%" align="left">DQCMA</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_definition</td>
+               <td width="23%" align="left">DTQLDF</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_definition_relationship</td>
+               <td width="23%" align="left">DQDR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_definition_representation_relationship</td>
+               <td width="23%" align="left">DQDRR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_inspection_criterion_report</td>
+               <td width="23%" align="left">DQICR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_inspection_criterion_report_item</td>
+               <td width="23%" align="left">DQICRI</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_inspection_instance_report</td>
+               <td width="23%" align="left">DQIIR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_inspection_instance_report_item</td>
+               <td width="23%" align="left">DQIIRI</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_inspection_report</td>
+               <td width="23%" align="left">DQI0</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_inspection_result</td>
+               <td width="23%" align="left">DQIR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_inspection_result_representation</td>
+               <td width="23%" align="left">DQIRR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_inspection_result_with_judgement</td>
+               <td width="23%" align="left">DQIRWJ</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_measurement_requirement</td>
+               <td width="23%" align="left">DQMR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_report_measurement_association</td>
+               <td width="23%" align="left">DQRMA</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">data_quality_report_request</td>
+               <td width="23%" align="left">DQRR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">detailed_report_request</td>
+               <td width="23%" align="left">DTRPRQ</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">detailed_report_request_with_number_of_data</td>
+               <td width="23%" align="left">DRRWNO</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">disconnected_face_set</td>
+               <td width="23%" align="left">DSFCST</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">discontinuous_geometry</td>
+               <td width="23%" align="left">DSCGMT</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">edge_with_excessive_segments</td>
+               <td width="23%" align="left">EWES</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">entirely_narrow_face</td>
+               <td width="23%" align="left">ENNRFC</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">entirely_narrow_solid</td>
+               <td width="23%" align="left">ENNRSL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">entirely_narrow_surface</td>
+               <td width="23%" align="left">ENNRSR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">erroneous_b_spline_curve_definition</td>
+               <td width="23%" align="left">EBSCD</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">erroneous_b_spline_surface_definition</td>
+               <td width="23%" align="left">EBSSD</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">erroneous_data</td>
+               <td width="23%" align="left">ERRDT</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">erroneous_geometry</td>
+               <td width="23%" align="left">ERRGMT</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">erroneous_manifold_solid_brep</td>
+               <td width="23%" align="left">EMSB</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">erroneous_topology</td>
+               <td width="23%" align="left">ERRTPL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">erroneous_topology_and_geometry_relationship</td>
+               <td width="23%" align="left">ETAGR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">excessively_high_degree_curve</td>
+               <td width="23%" align="left">EHDC</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">excessively_high_degree_surface</td>
+               <td width="23%" align="left">EHDS</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">extreme_instance</td>
+               <td width="23%" align="left">EXTINS</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">extreme_patch_width_variation</td>
+               <td width="23%" align="left">EPWV</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">face_surface_with_excessive_patches_in_one_direction</td>
+               <td width="23%" align="left">FSWEPI</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">free_edge</td>
+               <td width="23%" align="left">FREDG</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">g1_discontinuity_between_adjacent_faces</td>
+               <td width="23%" align="left">GDBAF</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">g1_discontinuous_curve</td>
+               <td width="23%" align="left">G1DSCR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">g1_discontinuous_surface</td>
+               <td width="23%" align="left">G1DSSR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">g2_discontinuity_between_adjacent_faces</td>
+               <td width="23%" align="left">GDB0</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">g2_discontinuous_curve</td>
+               <td width="23%" align="left">G2DSCR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">g2_discontinuous_surface</td>
+               <td width="23%" align="left">G2DSSR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">gap_between_adjacent_edges_in_loop</td>
+               <td width="23%" align="left">GBAEIL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">gap_between_edge_and_base_surface</td>
+               <td width="23%" align="left">GBEABS</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">gap_between_faces_related_to_an_edge</td>
+               <td width="23%" align="left">GBFRTA</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">gap_between_pcurves_related_to_an_edge</td>
+               <td width="23%" align="left">GBPRTA</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">gap_between_vertex_and_base_surface</td>
+               <td width="23%" align="left">GBVABS</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">gap_between_vertex_and_edge</td>
+               <td width="23%" align="left">GBVAE</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">geometric_gap_in_topology</td>
+               <td width="23%" align="left">GGIT</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">geometry_with_local_irregularity</td>
+               <td width="23%" align="left">GWLI</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">geometry_with_local_near_degeneracy</td>
+               <td width="23%" align="left">GWLND</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">high_degree_axi_symmetric_surface</td>
+               <td width="23%" align="left">HDASS</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">high_degree_conic</td>
+               <td width="23%" align="left">HGDGCN</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">high_degree_linear_curve</td>
+               <td width="23%" align="left">HDLC</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">high_degree_planar_surface</td>
+               <td width="23%" align="left">HDPS</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">inapt_data</td>
+               <td width="23%" align="left">INPDT</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">inapt_geometry</td>
+               <td width="23%" align="left">INPGMT</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">inapt_manifold_solid_brep</td>
+               <td width="23%" align="left">IMSB</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">inapt_topology</td>
+               <td width="23%" align="left">INPTPL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">inapt_topology_and_geometry_relationship</td>
+               <td width="23%" align="left">ITAGR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">inconsistent_adjacent_face_normals</td>
+               <td width="23%" align="left">IAFN</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">inconsistent_curve_transition_code</td>
+               <td width="23%" align="left">ICTC</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">inconsistent_edge_and_curve_directions</td>
+               <td width="23%" align="left">IEACD</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">inconsistent_face_and_closed_shell_normals</td>
+               <td width="23%" align="left">IFACSN</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">inconsistent_face_and_surface_normals</td>
+               <td width="23%" align="left">IFASN</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">inconsistent_surface_transition_code</td>
+               <td width="23%" align="left">ISTC</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">indistinct_curve_knots</td>
+               <td width="23%" align="left">INCRKN</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">indistinct_surface_knots</td>
+               <td width="23%" align="left">INSRKN</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">instance_report_item_with_extreme_instances</td>
+               <td width="23%" align="left">IRIWEI</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">intersecting_connected_face_sets</td>
+               <td width="23%" align="left">ICFS</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">intersecting_loops_in_face</td>
+               <td width="23%" align="left">ILIF</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">intersecting_shells_in_solid</td>
+               <td width="23%" align="left">ISIS</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">multiply_defined_cartesian_points</td>
+               <td width="23%" align="left">MDCP</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">multiply_defined_curves</td>
+               <td width="23%" align="left">MLDFCR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">multiply_defined_directions</td>
+               <td width="23%" align="left">MLDFDR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">multiply_defined_edges</td>
+               <td width="23%" align="left">MLDFED</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">multiply_defined_faces</td>
+               <td width="23%" align="left">MLDFFC</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">multiply_defined_geometry</td>
+               <td width="23%" align="left">MLDFGM</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">multiply_defined_placements</td>
+               <td width="23%" align="left">MLDFPL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">multiply_defined_solids</td>
+               <td width="23%" align="left">MLDFSL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">multiply_defined_surfaces</td>
+               <td width="23%" align="left">MLDFSR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">multiply_defined_vertices</td>
+               <td width="23%" align="left">MLDFVR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">narrow_surface_patch</td>
+               <td width="23%" align="left">NRSRPT</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">nearly_degenerate_geometry</td>
+               <td width="23%" align="left">NRDGGM</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">nearly_degenerate_surface_boundary</td>
+               <td width="23%" align="left">NDSB</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">nearly_degenerate_surface_patch</td>
+               <td width="23%" align="left">NDSP</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">non_manifold_at_edge</td>
+               <td width="23%" align="left">NMAE</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">non_manifold_at_vertex</td>
+               <td width="23%" align="left">NMAV</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">non_smooth_geometry_transition_across_edge</td>
+               <td width="23%" align="left">NSGTAE</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">open_closed_shell</td>
+               <td width="23%" align="left">OPCLSH</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">open_edge_loop</td>
+               <td width="23%" align="left">OPEDLP</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">over_used_vertex</td>
+               <td width="23%" align="left">OVUSVR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">overcomplex_geometry</td>
+               <td width="23%" align="left">OVR0</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">overcomplex_topology_and_geometry_relationship</td>
+               <td width="23%" align="left">OTAGR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">overlapping_geometry</td>
+               <td width="23%" align="left">OVRGMT</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">partly_overlapping_curves</td>
+               <td width="23%" align="left">PROVCR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">partly_overlapping_edges</td>
+               <td width="23%" align="left">PROVED</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">partly_overlapping_faces</td>
+               <td width="23%" align="left">PROVFC</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">partly_overlapping_solids</td>
+               <td width="23%" align="left">PROVSL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">partly_overlapping_surfaces</td>
+               <td width="23%" align="left">PROVSR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">plane_angle_and_length_pair</td>
+               <td width="23%" align="left">PAALP</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">plane_angle_and_ratio_pair</td>
+               <td width="23%" align="left">PAARP</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">point_on_edge_curve</td>
+               <td width="23%" align="left">POEC</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">point_on_face_surface</td>
+               <td width="23%" align="left">POFS</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">product_data_and_data_quality_relationship</td>
+               <td width="23%" align="left">PDADQR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">rectangular_composite_surface_transition_locator</td>
+               <td width="23%" align="left">RCSTL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">self_intersecting_curve</td>
+               <td width="23%" align="left">SLINCR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">self_intersecting_geometry</td>
+               <td width="23%" align="left">SLINGM</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">self_intersecting_loop</td>
+               <td width="23%" align="left">SLINLP</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">self_intersecting_shell</td>
+               <td width="23%" align="left">SLINSH</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">self_intersecting_surface</td>
+               <td width="23%" align="left">SLINSR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_criteria_representation_with_accuracy</td>
+               <td width="23%" align="left">SCRWA</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_assessment_by_logical_test</td>
+               <td width="23%" align="left">SDQABL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_assessment_by_numerical_test</td>
+               <td width="23%" align="left">SDQABN</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_criteria_representation</td>
+               <td width="23%" align="left">SDQCR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_criterion</td>
+               <td width="23%" align="left">SDQC</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_criterion_and_accuracy_association</td>
+               <td width="23%" align="left">SDQCAA</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_inspected_shape_and_result_relationship</td>
+               <td width="23%" align="left">SDQISA</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_inspection_criterion_report</td>
+               <td width="23%" align="left">SDQICR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_inspection_instance_report</td>
+               <td width="23%" align="left">SDQIIR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_inspection_instance_report_item</td>
+               <td width="23%" align="left">SDQ0</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_inspection_result</td>
+               <td width="23%" align="left">SDQIR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_inspection_result_representation</td>
+               <td width="23%" align="left">SDQIRR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_lower_value_limit</td>
+               <td width="23%" align="left">SDQLVL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_upper_value_limit</td>
+               <td width="23%" align="left">SDQUVL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_value_limit</td>
+               <td width="23%" align="left">SDQVL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_data_quality_value_range</td>
+               <td width="23%" align="left">SDQVR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_inspection_result_accuracy_association</td>
+               <td width="23%" align="left">SIRAA</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_inspection_result_representation_with_accuracy</td>
+               <td width="23%" align="left">SIRRWA</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_measurement_accuracy</td>
+               <td width="23%" align="left">SHMSAC</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">shape_summary_request_with_representative_value</td>
+               <td width="23%" align="left">SSRWRV</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">short_length_curve</td>
+               <td width="23%" align="left">SHLNCR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">short_length_curve_segment</td>
+               <td width="23%" align="left">SLCS</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">short_length_edge</td>
+               <td width="23%" align="left">SHLNED</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">small_area_face</td>
+               <td width="23%" align="left">SMARFC</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">small_area_surface</td>
+               <td width="23%" align="left">SMARSR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">small_area_surface_patch</td>
+               <td width="23%" align="left">SASP</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">small_volume_solid</td>
+               <td width="23%" align="left">SMVLSL</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">software_for_data_quality_check</td>
+               <td width="23%" align="left">SFDQC</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">solid_with_excessive_number_of_voids</td>
+               <td width="23%" align="left">SWENOV</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">solid_with_wrong_number_of_voids</td>
+               <td width="23%" align="left">SWWNOV</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">steep_angle_between_adjacent_edges</td>
+               <td width="23%" align="left">SABAE</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">steep_angle_between_adjacent_faces</td>
+               <td width="23%" align="left">SABAF</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">steep_geometry_transition_across_edge</td>
+               <td width="23%" align="left">SGTAE</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">summary_report_request</td>
+               <td width="23%" align="left">SMRPRQ</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">surface_with_excessive_patches_in_one_direction</td>
+               <td width="23%" align="left">SWEPIO</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">surface_with_small_curvature_radius</td>
+               <td width="23%" align="left">SWSCR</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">topology_related_to_multiply_defined_geometry</td>
+               <td width="23%" align="left">TRTMDG</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">topology_related_to_nearly_degenerate_geometry</td>
+               <td width="23%" align="left">TRTNDG</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">topology_related_to_overlapping_geometry</td>
+               <td width="23%" align="left">TRTOG</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">topology_related_to_self_intersecting_geometry</td>
+               <td width="23%" align="left">TRTSIG</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">unused_patches</td>
+               <td width="23%" align="left">UNSPTC</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">wrongly_oriented_void</td>
+               <td width="23%" align="left">WRORVD</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">wrongly_placed_loop</td>
+               <td width="23%" align="left">WRPLLP</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">wrongly_placed_void</td>
+               <td width="23%" align="left">WRPLVD</td>
+            </tr>
+            <tr>
+               <td width="77%" align="left">zero_surface_normal</td>
+               <td width="23%" align="left">ZRSRNR</td>
+            </tr>
+         </table>
+      </div><br><br><p>&copy; ISO 2014 &#8212; All rights reserved</p>
+   </BODY>
+</HTML>

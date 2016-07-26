@@ -1,0 +1,96 @@
+<h1>Product data equivalence definition</h1>
+<h2>product_data_equivalence_definition_schema entity definitions</h2>
+<li><b>equivalence_product_data_select</b></li>
+An <b>equivalence_product_data_select</b> type allows selection of either <b>product_definition</b> for comparing two representations in the same <b>product_definition</b> or <b>product_definitionrelationship</b> for comparing different <b>product_definition</b>s.
+EXPRESS specification:
+*)
+ TYPE target_product_data_select = SELECT
+  (product_definition,
+   Product_definition_relationship);
+ END_TYPE;
+ (*
+<li><b>used_equivalence_representations_select</b></li>
+An <b>used_equivalence_representation_select</b> type allows selection of either <b>data_equivalence_criteria_representation</b> or <b>data_equivalence_inspection_result_representation.</b>
+EXPRESS specification:
+*)
+ TYPE used_equivalence_representation_select = SELECT
+  (data_equivalence_criteria_representation,
+   data_equivalence_inspection_result_representation);
+ END_TYPE;
+ (*
+<h2>product data equivalence definition entity definitions</h2>
+<b>data_equivalence_definition</b>
+An instance of <b>data_equivalence_definition</b> represents a set of information on product data equivalence. Identification of the product data equivalence information represented will be given by <b>data_equivalence_definition_representation</b>. Information on the inspected couple of product data and management data for product data equivalence shall be related with this entity as necessary.
+EXPRESS specification:
+*)
+ ENTITY data_equivalence_definition;
+   description: text;
+ END_ENTITY;
+(*
+Attribute definitions:
+<b>description</b>: A textual description characterizing the <b>data_equivalence_definition</b>.
+<b>data_equivalence_definition_representation_relationship</b>
+An instance of <b>data_equivalence_definition_representation_relationship</b> represents a relationship between an instance of <b>data_equivalence_definition</b> and an instance of pertaining <b>representation</b> of product data equivalence. The <b>used_representation</b> may be a <b>data_equivalence_criteria_representation</b> as defined in <b>product_data_equivalence_criteria_schema</b> or a <b>data_equivalence_inspection_result_representation</b> as defined in <b>product_data_equivalence_inspection_result_schema</b>.
+EXPRESS specification:
+*)
+ ENTITY data_equivalence_definition_representation;
+   definition: data_equivalence_definition;
+   used_representation: used_equivalence_representation_select;
+   description: text;
+ END_ENTITY;
+(*
+Attribute definitions:
+<b>definition</b>: the <b>data_equivalence_definition</b> whose information is represented by <b>used_representation</b>.
+<b>used_representation</b>: the <b>representation</b> that represents the information of <b>definition</b>.
+<b>description</b>: A textual description characterizing the <b>data_equivalence_definition_representation_relationship</b>.
+<b>product_data_and_data_equivalence_relationship</b>
+An instance of <b>product_data_and_data_equivalence_relationship</b> represents a relationship between the product data equivalence information defined by <b>data_equivalence_definition</b> and the target product data inspected. 
+EXPRESS specification:
+*)
+ ENTITY product_data_and_data_equivalence_relationship;
+   product_data: equivalence_product_data_select;
+   data_equivalence: data_qequivalence_definition;
+   description: text;
+ END_ENTITY;
+ (*
+Attribute definitions:
+<b>product_data</b>: The product data whose equivalence is inspected.
+<b>data_equivalence</b>: product data equivalence information obtained by inspecting <b>product_data</b>.
+<b>description</b>: A textual description characterizing the <b>product_data_and_data_equivalence_relationship</b>.
+<b>data_equivalence_definition_relationship</b>
+An instance of <b>data_equivalence_definition_relationship</b> represents a relationship between two <b>data_equivalence_definition</b>s.
+EXAMPLE- When product data equivalence of a CAD data is checked multiple times with different requirements, data_equivalence_definition representing the former inspection can be related with the one representing the latter inspection using this entity to show the sequence of inspections.
+EXPRESS specification:
+*)
+ ENTITY data_equivalence_definition_relationship;
+   relating_data_equivalence_definition: data_equivalence_definition;
+   related_data_equivalence_definition: data_equivalence_definition;
+   description: text;
+ END_ENTITY;
+(*
+Attribute definitions:
+<b>relating_data_equivalence_definition</b>: one <b>data_equivalence_definition</b> that relates to <b>related_data_equivalence_definition</b>.
+<b>related_data_equivalence_definition</b>: another <b>data_equivalence_definition</b> that is related with 
+<b>relating_data_equivalence_definition</b>.
+<b>description</b>: A textual description characterizing the <b>data_equivalence_definition_relationship</b>.
+<b>software_used_for_data_equivalence_check (May be shifted to annotated_model_3d_equivalence_criteria module)</b>
+An instance of <b>software_used_for_data_equivalence_check</b> identifies an equivalence validation software used to obtain inspection results represented via <b>data_equvalence_definition</b>. 
+EXAMPLE – An equivalence validation checker is an example for software represented by this entity.
+EXPRESS specification:
+*)
+ ENTITY software_used_for_data_e_cquivalenceheck;
+   data_equivalence: data_equivalence_definition;
+   software_name: text;
+   software_version: text;
+   description: text;
+ END_ENTITY;
+(*
+Attribute definitions:
+<b>data_equivalence</b>: product data equivalence information obtained by applying the software identified.
+<b>software_name</b>: the name of the software.
+<b>software_version</b>: the version of the software.
+<b>description</b>: A textual description characterizing the<b> software_used_for_data_equivalence_check</b>.
+EXPRESS specification:
+*)
+END_SCHEMA; -- end product_data_equivalence_definition_schema
+(*

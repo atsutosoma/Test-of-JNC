@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../xsl/res_doc/imgfile.xsl"?>
+<!DOCTYPE imgfile.content SYSTEM "../../../dtd/text.ent">
+<imgfile.content module="equivalence_validation_of_product_data" file="product_data_equivalence_definition_schemaexpg2.xml">
+<img src="product_data_equivalence_definition_schemaexpg2.gif">
+<img.area shape="rect" coords="10,703,220,748" href="../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schema.xml#product_data_equivalence_definition_schema.used_equivalence_representation_select" />
+<img.area shape="rect" coords="74,162,329,206" href="../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schema.xml#product_data_equivalence_definition_schema.equivalence_product_data_select" />
+<img.area shape="rect" coords="23,11,279,79" href="../../resources/product_definition_schema/product_definition_schema.xml#product_definition_schema.product_definition_relationship" />
+<img.area shape="rect" coords="462,273,687,304" href="../../resources/support_resource_schema/support_resource_schema.xml#support_resource_schema.text" />
+<img.area shape="rect" coords="329,503,554,534" href="../../resources/support_resource_schema/support_resource_schema.xml#support_resource_schema.text" />
+<img.area shape="rect" coords="300,10,569,80" href="../../resources/product_definition_schema/product_definition_schema.xml#product_definition_schema.product_definition_or_reference" />
+<img.area shape="rect" coords="150,818,566,868" href="../../resources/product_data_equivalence_inspection_result_schema/product_data_equivalence_inspection_result_schema.xml#product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_representation" />
+<img.area shape="rect" coords="151,760,502,810" href="../../resources/product_data_equivalence_criteria_schema/product_data_equivalence_criteria_schema.xml#product_data_equivalence_criteria_schema.data_equivalence_criteria_representation" />
+<img.area shape="rect" coords="27,273,376,306" href="../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schema.xml#product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship" />
+<img.area shape="rect" coords="469,372,679,448" href="../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schema.xml#product_data_equivalence_definition_schema.data_equivalence_definition_relationship" />
+<img.area shape="rect" coords="40,597,443,630" href="../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schema.xml#product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship" />
+<img.area shape="rect" coords="15,372,223,448" href="../../resources/product_data_equivalence_definition_schema/product_data_equivalence_definition_schema.xml#product_data_equivalence_definition_schema.data_equivalence_definition" />
+</img>
+</imgfile.content>

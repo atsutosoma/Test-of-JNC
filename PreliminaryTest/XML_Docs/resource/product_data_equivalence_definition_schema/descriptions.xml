@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../xsl/descriptions.xsl"?>
+<!DOCTYPE ext_descriptions SYSTEM "../../../dtd/description.dtd">
+<ext_descriptions module_directory="product_data_equivalence_definition_schema" schema_file="product_data_equivalence_definition_schema.xml" describe.selects="YES" describe.subtype_constraints="YES" rcs.date="$Date: 2004/11/16 07:30:26 $" rcs.revision="$Revision: 1.13 $">
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Schema: product_data_equivalence_definition_schema
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <ext_description linkend="product_data_equivalence_definition_schema"></ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Type: equivalence_product_data_select 
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.equivalence_product_data_select"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.equivalence_product_data_select">An 
+    <b>equivalence_product_data_select</b> type allows selection of either 
+    <express_ref linkend="product_definition_schema:ir_express:product_definition_schema.product_definition"/> for comparing two representations in the same 
+    <express_ref linkend="product_definition_schema:ir_express:product_definition_schema.product_definition"/> or 
+    <express_ref linkend="product_definition_schema:ir_express:product_definition_schema.product_definition_relationship"/> for comparing different 
+    <express_ref linkend="product_definition_schema:ir_express:product_definition_schema.product_definition"/>s.
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Type: used_equivalence_representation_select 
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.used_equivalence_representation_select"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.used_equivalence_representation_select">An 
+    <b>used_equivalence_representation_select</b> type allows selection of either 
+    <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_criteria_representation"/> or 
+    <express_ref linkend="product_data_equivalence_inspection_result_schema:ir_express:product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_representation"/>.
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: data_equivalence_definition  
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.data_equivalence_definition">        An instance of 
+    <b>data_equivalence_definition</b> represents a set of information on product data equivalence. Identification of the product data equivalence information represented will be given by 
+    <b>data_equivalence_definition_representation</b>. Information on the inspected couple of product data and management data for product data equivalence shall be related with this entity as necessary.      
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: data_equivalence_definition  Attribute: description 
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition.description"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.data_equivalence_definition.description">        A textual description characterizing the 
+    <b>data_equivalence_definition</b>.      
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: data_equivalence_definition_relationship  
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition_relationship"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.data_equivalence_definition_relationship">
+    <p>An instance of 
+      <b>data_equivalence_definition_relationship</b> represents a relationship between two 
+      <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition"/>s.
+    </p>
+    <example>When product data equivalence of a CAD data is checked multiple times with different requirements, data_equivalence_definition representing the former inspection can be related with the one representing the latter inspection using this entity to show the sequence of inspections.</example>
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: data_equivalence_definition_relationship  Attribute: description 
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition_relationship.description"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.data_equivalence_definition_relationship.description">        A textual description characterizing the 
+    <b>data_equivalence_definition_relationship</b>.      
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: data_equivalence_definition_relationship  Attribute: relating_data_equivalence_definition 
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition_relationship.relating_data_equivalence_definition"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.data_equivalence_definition_relationship.relating_data_equivalence_definition">one 
+    <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition"/> that relates to 
+    <b>related_data_equivalence_definition</b>.
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: data_equivalence_definition_relationship  Attribute: related_data_equivalence_definition 
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition_relationship.related_data_equivalence_definition"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.data_equivalence_definition_relationship.related_data_equivalence_definition">another 
+    <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition"/> that is related with 
+    <b>relating_data_equivalence_definition</b>.
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: data_equivalence_definition_representation_relationship  
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship">        An instance of 
+    <b>data_equivalence_definition_representation_relationship</b> represents a relationship between an instance of 
+    <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition"/> and an instance of pertaining 
+    <express_ref linkend="representation_schema:ir_express:representation_schema.representation"/> of product data equivalence. The 
+    <b>used_representation</b> may be a 
+    <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema.data_equivalence_criteria_representation"/> as defined in 
+    <express_ref linkend="product_data_equivalence_criteria_schema:ir_express:product_data_equivalence_criteria_schema">product_data_equivalence_criteria_schema</express_ref> or a 
+    <express_ref linkend="product_data_equivalence_inspection_result_schema:ir_express:product_data_equivalence_inspection_result_schema.data_equivalence_inspection_result_representation"/> as defined in 
+    <express_ref linkend="product_data_equivalence_inspection_result_schema:ir_express:product_data_equivalence_inspection_result_schema">product_data_equivalence_inspection_result_schema</express_ref>.      
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: data_equivalence_definition_representation_relationship  Attribute: description 
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship.description"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship.description">        A textual description characterizing the 
+    <b>data_equivalence_definition_representation_relationship</b>.      
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: data_equivalence_definition_representation_relationship  Attribute: definition 
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship.definition"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship.definition">the 
+    <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition"/> whose information is represented by 
+    <b>used_representation</b>.
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: data_equivalence_definition_representation_relationship  Attribute: used_representation 
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship.used_representation"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.data_equivalence_definition_representation_relationship.used_representation">the 
+    <express_ref linkend="representation_schema:ir_express:representation_schema.representation"/> that represents the information of 
+    <b>definition</b>.
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: product_data_and_data_equivalence_relationship  
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship">        An instance of 
+    <b>product_data_and_data_equivalence_relationship</b> represents a relationship between the product data equivalence information defined by 
+    <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.data_equivalence_definition"/> and the target product data inspected.      
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: product_data_and_data_equivalence_relationship  Attribute: description 
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship.description"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship.description">        A textual description characterizing the 
+    <b>product_data_and_data_equivalence_relationship</b>.      
+  </ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: product_data_and_data_equivalence_relationship  Attribute: product_data 
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship.product_data"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship.product_data">The product data whose equivalence is inspected.</ext_description>
+  <!-- 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   Schema: product_data_equivalence_definition_schema  Entity: product_data_and_data_equivalence_relationship  Attribute: data_equivalence 
+   <express_ref linkend="product_data_equivalence_definition_schema:ir_express:product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship.data_equivalence"/>
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+  -->
+  <ext_description linkend="product_data_equivalence_definition_schema.product_data_and_data_equivalence_relationship.data_equivalence">product data equivalence information obtained by inspecting 
+    <b>product_data</b>.
+  </ext_description>
+</ext_descriptions>
